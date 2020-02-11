@@ -4,4 +4,6 @@
         "https://checkstyle.org/dtds/suppressions_1_0.dtd">
 
 <suppressions>
+    <!-- Don't check numbers in test classes -->
+    <suppress files=".*Test.*" checks="MagicNumber"/>
 </suppressions>
