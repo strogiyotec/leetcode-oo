@@ -17,29 +17,29 @@ public final class MinWindow {
      * @return Min substring
      */
     public String minWindow(final String text, final String pattern) {
-        final Map<Character, Integer> patternChars =
+        final Map<Character, Integer> patternCounter =
                 new HashMap<>(pattern.length(), 1);
-        final Map<Character, Integer> windowChars =
+        final Map<Character, Integer> windowCounter =
                 new HashMap<>(text.length(), 1);
-        final StringBuilder minWindow = new StringBuilder(text.length());
-        this.incrementCharCounter(patternChars, pattern);
+        final StringBuilder minWindowValue = new StringBuilder(text.length());
+        this.incrementCharCounter(patternCounter, pattern);
         int left = 0;
         int right = 0;
         int matchedSize = 0;
         int minWindowSize = Integer.MAX_VALUE;
         while (right < text.length()) {
             final Character rightChar = text.charAt(right);
-            if (this.patternHasChar(rightChar, windowChars, patternChars)) {
+            if (this.patternHasChar(rightChar, windowCounter, patternCounter)) {
                 minWindowSize++;
             }
-            while (matchedSize == patternChars.size()) {
+            while (matchedSize == patternCounter.size()) {
                 final Character leftChar = text.charAt(left);
                 final int currentWindowSize = right - left;
                 if (currentWindowSize < minWindowSize) {
                     minWindowSize = currentWindowSize;
-                    this.updateWindow(text, minWindow, left, right);
+                    this.updateWindowValue(text, minWindowValue, left, right);
                 }
-                if (this.missCharacter(leftChar, windowChars, patternChars)) {
+                if (this.windowCounterIsLower(leftChar, windowCounter, patternCounter)) {
                     matchedSize--;
                 }
                 left++;
@@ -47,7 +47,7 @@ public final class MinWindow {
             }
             right++;
         }
-        return minWindow.toString();
+        return minWindowValue.toString();
     }
 
     /**
@@ -81,7 +81,7 @@ public final class MinWindow {
      * @param patternChars Pattern chars counter
      * @return True if counters are the same
      */
-    private boolean missCharacter(
+    private boolean windowCounterIsLower(
             final Character character,
             final Map<Character, Integer> windowChars,
             final Map<Character, Integer> patternChars
@@ -102,7 +102,7 @@ public final class MinWindow {
      * @param left      Left index
      * @param right     Right index
      */
-    private void updateWindow(
+    private void updateWindowValue(
             final String text,
             final StringBuilder minWindow,
             final int left,
