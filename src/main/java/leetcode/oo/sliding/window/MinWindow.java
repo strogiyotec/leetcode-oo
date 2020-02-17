@@ -30,7 +30,7 @@ public final class MinWindow {
         while (right < text.length()) {
             final Character rightChar = text.charAt(right);
             if (this.patternHasChar(rightChar, windowCounter, patternCounter)) {
-                minWindowSize++;
+                matchedSize++;
             }
             while (matchedSize == patternCounter.size()) {
                 final Character leftChar = text.charAt(left);
