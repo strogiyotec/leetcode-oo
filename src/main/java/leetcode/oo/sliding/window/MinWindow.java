@@ -16,6 +16,7 @@ public final class MinWindow {
      * @param pattern Pattern
      * @return Min substring
      */
+    @SuppressWarnings("LineLength")
     public String minWindow(final String text, final String pattern) {
         final Map<Character, Integer> patternCounter =
                 new HashMap<>(pattern.length(), 1);
