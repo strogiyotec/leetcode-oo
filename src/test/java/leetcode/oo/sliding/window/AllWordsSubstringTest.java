@@ -32,23 +32,17 @@ public final class AllWordsSubstringTest {
                         Arrays.asList(0, 9)
                 )
         );
-        Assert.assertThat(
+        Assert.assertTrue(
                 this.allWordsSubstring.findSubstring(
                         "wordgoodgoodgoodbestword",
                         new String[]{"word", "good", "best", "word"}
-                ),
-                CoreMatchers.is(
-                        Collections.emptyList()
-                )
+                ).isEmpty()
         );
-        Assert.assertThat(
+        Assert.assertTrue(
                 this.allWordsSubstring.findSubstring(
                         "wordgoodgoodgoodbestword",
                         new String[0]
-                ),
-                CoreMatchers.is(
-                        Collections.emptyList()
-                )
+                ).isEmpty()
         );
     }
 }
