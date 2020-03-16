@@ -7,12 +7,12 @@ import org.junit.Test;
 /**
  * Test min window substring.
  */
-public final class MinWindowTest {
+public final class LongestUniqueSubStringTest {
 
     /**
      * Alg to test.
      */
-    private final MinWindow minWindow = new MinWindow();
+    private final LongestUniqueSubString longestUniqueSubString = new LongestUniqueSubString();
 
     /**
      * Min window test.
@@ -20,11 +20,11 @@ public final class MinWindowTest {
     @Test
     public void minWindow() {
         Assert.assertThat(
-                minWindow.minWindow("ADOBECODEBANC", "ABC"),
+                longestUniqueSubString.minWindow("ADOBECODEBANC", "ABC"),
                 CoreMatchers.is("BANC")
         );
         Assert.assertThat(
-                minWindow.minWindow("aa", "aa"),
+                longestUniqueSubString.minWindow("aa", "aa"),
                 CoreMatchers.is("aa")
         );
     }

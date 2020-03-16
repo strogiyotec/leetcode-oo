@@ -7,7 +7,7 @@ import java.util.Map;
  * Minimum Window Substring.
  * See {@link <a href ="https://leetcode.com/problems/longest-substring-without-repeating-characters/">https://leetcode.com/problems/minimum-window-substring/</a>}
  */
-public final class MinWindow {
+public final class LongestUniqueSubString {
 
     /**
      * Find min window string.
