@@ -1,9 +1,12 @@
 package leetcode.oo.sort;
 
+/**
+ * Represents int sequence.
+ */
 public final class Ints {
 
     /**
-     * Array of numbers;
+     * Array of numbers.
      */
     private final int[] array;
 
@@ -17,7 +20,7 @@ public final class Ints {
     }
 
     /**
-     * Sort those numbers
+     * Sort those numbers.
      *
      * @return Sorted numbers.
      */
@@ -58,7 +61,7 @@ public final class Ints {
     }
 
     /**
-     * Merge two arrays
+     * Merge two arrays.
      *
      * @param left        Left array
      * @param right       Right array
