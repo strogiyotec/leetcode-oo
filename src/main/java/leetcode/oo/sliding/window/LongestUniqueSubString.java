@@ -5,7 +5,7 @@ import java.util.Map;
 
 /**
  * Minimum Window Substring.
- * See {@link <a href ="https://leetcode.com/problems/longest-substring-without-repeating-characters/">https://leetcode.com/problems/minimum-window-substring/</a>}
+ * See {@link <a href ="https://leetcode.com/problems/minimum-window-substring/">https://leetcode.com/problems/minimum-window-substring/</a>}
  */
 public final class LongestUniqueSubString {
 
@@ -16,21 +16,20 @@ public final class LongestUniqueSubString {
      * @param pattern Pattern
      * @return Min substring
      */
-    @SuppressWarnings("LineLength")
+    @SuppressWarnings({"LineLength", "ExecutableStatementCount"})
     public String minWindow(final String text, final String pattern) {
-        final Map<Character, Integer> patternCounter =
-                new HashMap<>(pattern.length(), 1);
-        final Map<Character, Integer> windowCounter =
-                new HashMap<>(text.length(), 1);
-        final StringBuilder minWindowValue = new StringBuilder(text.length());
-        this.incrementCharCounter(patternCounter, pattern);
+        final Map<Character, Integer> patternCounter = new HashMap<>(pattern.length(), 1);
+        final Map<Character, Integer> windowCounter = new HashMap<>(text.length(), 1);
+        this.countChars(patternCounter, pattern);
+        String minSubstring = null;
         int left = 0;
         int right = 0;
         int matchedSize = 0;
         int minWindowSize = Integer.MAX_VALUE;
         while (right < text.length()) {
             final Character rightChar = text.charAt(right);
-            if (this.patternHasChar(rightChar, windowCounter, patternCounter)) {
+            final Integer rightCharCnt = this.incrementCntForChar(windowCounter, rightChar);
+            if (rightCharCnt.equals(patternCounter.get(rightChar))) {
                 matchedSize++;
             }
             while (matchedSize == patternCounter.size()) {
@@ -38,112 +37,73 @@ public final class LongestUniqueSubString {
                 final int currentWindowSize = right - left;
                 if (currentWindowSize < minWindowSize) {
                     minWindowSize = currentWindowSize;
-                    this.updateWindowValue(text, minWindowValue, left, right);
+                    minSubstring = text.substring(left, right + 1);
                 }
-                if (this.windowCounterIsLower(leftChar, windowCounter, patternCounter)) {
+                final Integer leftCharCnt = this.decrementCntForChar(windowCounter, leftChar);
+                final Integer patternLeftCnt = patternCounter.getOrDefault(leftChar, -1);
+                if (patternLeftCnt != -1 && leftCharCnt < patternLeftCnt) {
                     matchedSize--;
                 }
                 left++;
-
             }
             right++;
         }
-        return minWindowValue.toString();
+        return minSubstring == null ? "" : minSubstring;
     }
 
-    /**
-     * Check that given char is present in pattern.
-     * Add char to window and check that counters
-     * from window and pattern are the same
-     *
-     * @param character    Character to check
-     * @param windowChars  Window chars counter
-     * @param patternChars Pattern chars counter
-     * @return True if counters are the same
-     */
-    private boolean patternHasChar(
-            final Character character,
-            final Map<Character, Integer> windowChars,
-            final Map<Character, Integer> patternChars
-    ) {
-        this.incrementCharCounter(windowChars, character);
-        return windowChars.get(character).equals(patternChars.get(character));
-    }
 
     /**
-     * Check if window misses character from pattern.
-     * Decrement counter of character
-     * from window and then check that counters
-     * im window and pattern are the same for
-     * given char
+     * Count appearance of each char.
+     * Count appearance of each char from text
+     * and storage counter for char in given storage
      *
-     * @param character    Character to check
-     * @param windowChars  Window chars counter
-     * @param patternChars Pattern chars counter
-     * @return True if counters are the same
-     */
-    private boolean windowCounterIsLower(
-            final Character character,
-            final Map<Character, Integer> windowChars,
-            final Map<Character, Integer> patternChars
-    ) {
-        windowChars.computeIfPresent(
-                character,
-                (key, counter) -> --counter
-        );
-        final Integer patternCount = patternChars.getOrDefault(character, -1);
-        return patternCount != -1 && windowChars.get(character) < patternCount;
-    }
-
-    /**
-     * Update min sub window value.
-     *
-     * @param text      Original text
-     * @param minWindow Min window storage
-     * @param left      Left index
-     * @param right     Right index
-     */
-    private void updateWindowValue(
-            final String text,
-            final StringBuilder minWindow,
-            final int left,
-            final int right
-    ) {
-        minWindow.delete(0, minWindow.length());
-        minWindow.append(text.substring(left, right + 1));
-    }
-
-    /**
-     * Increment chars appearance from text in given counter.
-     * Counter is the map where key is char
-     * and value is amount times this character appears in text
-     *
-     * @param counter Counter to store chars
+     * @param storage Storage to store counts
      * @param text    Text
      */
-    private void incrementCharCounter(
-            final Map<Character, Integer> counter,
+    private void countChars(
+            final Map<Character, Integer> storage,
             final String text
     ) {
         for (int i = 0; i < text.length(); i++) {
-            final Character character = text.charAt(i);
-            this.incrementCharCounter(counter, character);
+            this.incrementCntForChar(storage, text.charAt(i));
         }
     }
 
     /**
-     * Increment counter for given character.
-     * Counter is the map where key is char
-     * and value is amount times this character appears in text
+     * Increment counter for given char.
+     * If storage doesn't have this char
+     * then put 1 , otherwise increment
+     * existing counter
      *
-     * @param counter   Counter to store chars
+     * @param storage   Storage to store counts
      * @param character Character
+     * @return Incremented counter for given char
      */
-    private void incrementCharCounter(
-            final Map<Character, Integer> counter,
+    private Integer incrementCntForChar(
+            final Map<Character, Integer> storage,
             final Character character
     ) {
-        counter.putIfAbsent(character, 0);
-        counter.computeIfPresent(character, (key, count) -> ++count);
+        storage.putIfAbsent(character, 0);
+        return storage.computeIfPresent(
+                character,
+                (key, count) -> ++count
+        );
+    }
+
+    /**
+     * Decrement counter for character in storage.
+     *
+     * @param storage   Storage
+     * @param character Character
+     * @return Decremented counter for given char
+     */
+    private Integer decrementCntForChar(
+            final Map<Character, Integer> storage,
+            final Character character
+    ) {
+        return storage.computeIfPresent(
+                character,
+                (key, count) -> --count
+        );
     }
 }

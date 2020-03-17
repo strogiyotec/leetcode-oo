@@ -2,6 +2,7 @@ package leetcode.oo.sliding.window;
 
 import org.hamcrest.CoreMatchers;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 /**
@@ -12,7 +13,15 @@ public final class LongestUniqueSubStringTest {
     /**
      * Alg to test.
      */
-    private final LongestUniqueSubString longestUniqueSubString = new LongestUniqueSubString();
+    private LongestUniqueSubString alg;
+
+    /**
+     * Init.
+     */
+    @Before
+    public void init() {
+        this.alg = new LongestUniqueSubString();
+    }
 
     /**
      * Min window test.
@@ -20,11 +29,11 @@ public final class LongestUniqueSubStringTest {
     @Test
     public void minWindow() {
         Assert.assertThat(
-                longestUniqueSubString.minWindow("ADOBECODEBANC", "ABC"),
+                alg.minWindow("ADOBECODEBANC", "ABC"),
                 CoreMatchers.is("BANC")
         );
         Assert.assertThat(
-                longestUniqueSubString.minWindow("aa", "aa"),
+                alg.minWindow("aa", "aa"),
                 CoreMatchers.is("aa")
         );
     }
