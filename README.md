@@ -17,3 +17,12 @@ Each implementation in this repository follows code conventions configured in [c
 and each implementation has tests written using [JUnit](https://junit.org/junit5/)
 
 
+| # | Title | Solution | Difficulty |
+|---| ----- | -------- | ---------- |
+| 3 |Longest Substring Without Repeating Characters| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/sliding/window/SlidingWindowUniqueCharsLength.java)| Medium| 
+| 30|Substring with Concatenation of All Words| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/sliding/window/AllWordsSubstring.java)| Hard|
+|76 |Minimum Window Substring| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/sliding/window/LongestUniqueSubString.java)| Hard|
+|239|Sliding Window Maximum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/sliding/window/MaxSlidingWindow.java)|Hard|
+
+
+
