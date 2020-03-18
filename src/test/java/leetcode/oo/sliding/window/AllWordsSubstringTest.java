@@ -5,6 +5,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.Arrays;
+import java.util.Collections;
 
 /**
  * Test Substring with Concatenation of All Words.
@@ -36,6 +37,13 @@ public final class AllWordsSubstringTest {
                         "wordgoodgoodgoodbestword",
                         new String[]{"word", "good", "best", "word"}
                 ).isEmpty()
+        );
+        Assert.assertThat(
+                this.allWordsSubstring.findSubstring(
+                        "wordgoodgoodgoodbestword",
+                        new String[]{"word", "good", "best", "good"}
+                ),
+                CoreMatchers.is(Collections.singletonList(8))
         );
         Assert.assertTrue(
                 this.allWordsSubstring.findSubstring(
