@@ -1,4 +1,4 @@
 /**
  * Solutions for pointer algorithms.
  */
-package leetcode.oo.sliding.pointers;
+package leetcode.oo.pointers;

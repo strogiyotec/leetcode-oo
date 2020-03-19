@@ -1,6 +1,5 @@
-package leetcode.oo.sliding.pointers;
+package leetcode.oo.pointers;
 
-import leetcode.oo.pointers.ContainerArea;
 import org.hamcrest.CoreMatchers;
 import org.junit.Assert;
 import org.junit.Before;

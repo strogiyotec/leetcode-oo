@@ -1,4 +1,4 @@
-package leetcode.oo.sliding.window;
+package leetcode.oo.window;
 
 import org.hamcrest.CoreMatchers;
 import org.junit.Assert;

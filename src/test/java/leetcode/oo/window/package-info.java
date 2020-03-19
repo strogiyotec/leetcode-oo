@@ -1,4 +1,4 @@
 /**
  * Tests for sliding windows problems.
  */
-package leetcode.oo.sliding.window;
+package leetcode.oo.window;

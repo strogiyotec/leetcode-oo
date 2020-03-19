@@ -20,15 +20,11 @@ public final class ContainerArea {
         int rightPointer = height.length - 1;
         int maxArea = 0;
         while (leftPointer < rightPointer) {
-            final int xAxisLength = rightPointer - leftPointer;
-            maxArea =
-                    Math.max(
-                            maxArea,
-                            Math.min(
-                                    height[leftPointer],
-                                    height[rightPointer]
-                            ) * xAxisLength
-                    );
+            final int xArea = rightPointer - leftPointer;
+            maxArea = Math.max(
+                    maxArea,
+                    Math.min(height[leftPointer], height[rightPointer]) * xArea
+            );
             if (height[leftPointer] < height[rightPointer]) {
                 leftPointer++;
             } else {

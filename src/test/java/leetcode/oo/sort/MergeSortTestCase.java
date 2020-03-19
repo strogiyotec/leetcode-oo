@@ -1,6 +1,5 @@
-package leetcode.oo.sliding.sort;
+package leetcode.oo.sort;
 
-import leetcode.oo.sort.Ints;
 import org.hamcrest.CoreMatchers;
 import org.junit.Assert;
 import org.junit.Test;
