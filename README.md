@@ -3,7 +3,7 @@ Storage of solutions for leetcode problems
 
 ## Introduction
 
-This repository contains a list of [leetcode](leetcode.com/) solutions.
+This repository contains a list of [leetcode](https://leetcode.com) solutions.
 
 ## Motivation 
 
