@@ -1,5 +1,6 @@
 package leetcode.oo.pointers;
 
+import leetcode.oo.ListNode;
 import org.hamcrest.CoreMatchers;
 import org.junit.Assert;
 import org.junit.Before;
@@ -18,7 +19,7 @@ public final class RemovedListTest {
     /**
      * Node.
      */
-    private RemovedList.ListNode head;
+    private ListNode head;
 
     /**
      * Init.
@@ -26,10 +27,10 @@ public final class RemovedListTest {
     @Before
     public void init() {
         this.list = new RemovedList();
-        RemovedList.ListNode node = new RemovedList.ListNode(1);
+        ListNode node = new ListNode(1);
         this.head = node;
         for (int i = 2; i <= 5; i++) {
-            node.next = new RemovedList.ListNode(i);
+            node.next = new ListNode(i);
             node = node.next;
         }
     }
@@ -40,7 +41,7 @@ public final class RemovedListTest {
     @Test
     @SuppressWarnings("LineLength")
     public void testRemove() {
-        final RemovedList.ListNode listNode = this.list.removeNthFromEnd(this.head, 2);
+        final ListNode listNode = this.list.removeNthFromEnd(this.head, 2);
         Assert.assertThat(
                 listNode.toString(),
                 CoreMatchers.is("1_2_3_5")
