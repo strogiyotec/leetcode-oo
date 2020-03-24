@@ -3,6 +3,7 @@ package leetcode.oo;
 /**
  * Single List Node.
  */
+@SuppressWarnings("VisibilityModifier")
 public final class ListNode {
     /**
      * Value.
@@ -23,12 +24,18 @@ public final class ListNode {
         this.val = value;
     }
 
-    public ListNode withNext(final int val) {
+    /**
+     * Add node to tail.
+     *
+     * @param variable Val of node
+     * @return Current node with new tail
+     */
+    public ListNode withNext(final int variable) {
         ListNode head = this;
         while (head.next != null) {
             head = head.next;
         }
-        head.next = new ListNode(val);
+        head.next = new ListNode(variable);
         return this;
     }
 
