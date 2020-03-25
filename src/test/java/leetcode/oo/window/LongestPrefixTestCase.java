@@ -44,6 +44,14 @@ public final class LongestPrefixTestCase {
                 CoreMatchers.is("a")
         );
         Assert.assertThat(
+                this.alg.longestCommonPrefix(
+                        new String[]{
+                                "aa", "a",
+                        }
+                ),
+                CoreMatchers.is("a")
+        );
+        Assert.assertThat(
                 this.alg.longestCommonPrefix(new String[0]),
                 CoreMatchers.is("")
         );
