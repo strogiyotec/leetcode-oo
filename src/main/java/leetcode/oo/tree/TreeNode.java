@@ -26,4 +26,25 @@ public interface TreeNode {
      */
     TreeNode right();
 
+    /**
+     * Update value in node.
+     *
+     * @param value New value
+     */
+    void updateValue(int value);
+
+    /**
+     * Update right node.
+     *
+     * @param left Left
+     */
+    void updateLeft(TreeNode left);
+
+    /**
+     * Update right node.
+     *
+     * @param right Right
+     */
+    void updateRight(TreeNode right);
+
 }

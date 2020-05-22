@@ -13,7 +13,7 @@ public final class ValidBst {
      * @param treeNode BST to check
      * @return True if valid
      */
-    public boolean isValid(final LeafNode treeNode) {
+    public boolean isValid(final BstNode treeNode) {
         return this.checkNode(treeNode, null, null);
     }
 
