@@ -5,7 +5,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * Convert BST to Greater Tree.
- * See {@link <a href ="https://leetcode.com/problems/validate-binary-search-tree/">https://leetcode.com/problems/validate-binary-search-tree/</a>}.
+ * See {@link <a href ="https://leetcode.com/problems/convert-bst-to-greater-tree/">https://leetcode.com/problems/convert-bst-to-greater-tree/</a>}.
  */
 public final class GreaterTree {
 
@@ -30,8 +30,7 @@ public final class GreaterTree {
     private TreeNode convert(final TreeNode node, final AtomicInteger sum) {
         if (node != null) {
             this.convert(node.right(), sum);
-            sum.addAndGet(node.value());
-            node.updateValue(sum.get());
+            node.updateValue(sum.addAndGet(node.value()));
             this.convert(node.left(), sum);
         }
         return node;
