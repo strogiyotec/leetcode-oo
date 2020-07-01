@@ -15,13 +15,14 @@ public final class ReversedList {
      * @return Reversed list
      */
     public ListNode reverseList(final ListNode head) {
-        if (this.isLast(head)) {
+        if (head.next == null) {
             return head;
         }
         final ListNode reversed = this.reverseList(head.next);
         head.next.next = head;
         head.next = null;
         return reversed;
+
     }
 
     /**
