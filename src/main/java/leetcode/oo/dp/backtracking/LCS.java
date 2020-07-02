@@ -4,7 +4,7 @@ package leetcode.oo.dp.backtracking;
  * Longest common subsequence.
  * See {@link <a href ="https://leetcode.com/problems/longest-common-subsequence/">https://leetcode.com/problems/longest-common-subsequence/</a>}
  */
-public final class LCS {
+final class LCS {
 
     int longestCommonSubsequence(final String first, final String second) {
         if (first == null || second == null) {
