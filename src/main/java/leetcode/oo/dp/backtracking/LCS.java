@@ -21,11 +21,12 @@ public final class LCS {
         for (int i = 1; i < table.length; i++) {
             for (int j = 1; j < table[0].length; j++) {
                 if (first.charAt(i - 1) == second.charAt(j - 1)) {
-                    table[i][j] = table[i - 1][j - 1] + 1;
-                } else if (table[i - 1][j] > table[i][j - 1]) {
-                    table[i][j] = table[i - 1][j];
+                    table[i][j] = 1 + table[i - 1][j - 1];
                 } else {
-                    table[i][j] = table[i][j - 1];
+                    table[i][j] = Math.max(
+                            table[i - 1][j],
+                            table[i][j - 1]
+                    );
                 }
             }
         }
