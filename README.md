@@ -41,4 +41,8 @@ and each implementation has tests written using [JUnit](https://junit.org/junit5
 |1143|Longest Common Subsequence| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/LCS.java)|Medium|
 
 
+## Introduction to Algorithms problems
 
+Here is the list of solution for problems from Introduction for Algorithms book by Thomas H. Cormen
+
+1. Greedy algorithms, [activity-selection problem](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/greedy/ActivitySelection.java)
