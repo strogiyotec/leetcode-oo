@@ -9,14 +9,18 @@ public final class CoinChangeTestCase {
     private CoinChange alg;
 
     @Before
-    public void init(){
-       this.alg = new CoinChange();
+    public void init() {
+        this.alg = new CoinChange();
     }
 
     @Test
-    public void test(){
+    public void test() {
         Assert.assertEquals(
-                this.alg.count(new int[]{1,2,5},11),
+                this.alg.count(new int[]{186, 419, 83, 408}, 6249),
+                20
+        );
+        Assert.assertEquals(
+                this.alg.count(new int[]{1, 2, 5}, 11),
                 3
         );
     }
