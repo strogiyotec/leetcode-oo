@@ -5,6 +5,8 @@ import java.util.Map;
 
 /**
  * Huffman code problem.
+ * Encoding is from hackerrrank
+ * See {@link <a href ="https://www.hackerrank.com/challenges/tree-huffman-decoding/problem">https://www.hackerrank.com/challenges/tree-huffman-decoding/problem</a>}
  * Check Introduction for algorithms
  * Greedy algorithms section
  */
