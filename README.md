@@ -20,6 +20,7 @@ and each implementation has tests written using [JUnit](https://junit.org/junit5
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
 |3 |Longest Substring Without Repeating Characters| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/window/SlidingWindowUniqueCharsLength.java)| Medium| 
+|5 |Longest Palindromic Substring| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/LPS.java)| Medium| 
 |11 |Container With Most Water| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/ContainerArea.java)| Medium| 
 |14 |Longest Common Prefix| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/window/LongestPrefix.java)| Easy| 
 |19 |Remove Nth Node From End of List| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/RemovedList.java)| Medium| 

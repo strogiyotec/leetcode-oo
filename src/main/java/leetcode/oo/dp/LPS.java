@@ -1,6 +1,10 @@
 package leetcode.oo.dp;
 
-public final class LPS {
+/**
+ * Longest Palindromic Substring.
+ * See {@link <a href ="https://leetcode.com/problems/longest-palindromic-substring/">https://leetcode.com/problems/longest-palindromic-substring/</a>}
+ */
+final class LPS {
 
     String dynamicApproach(final String input) {
         int end = 0;
