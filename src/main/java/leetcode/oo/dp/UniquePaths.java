@@ -1,5 +1,9 @@
 package leetcode.oo.dp;
 
+/**
+ * Unique Paths.
+ * See {@link <a href ="https://leetcode.com/problems/unique-paths/">https://leetcode.com/problems/unique-paths/</a>}
+ */
 final class UniquePaths {
 
     int uniquePaths(int length, int width) {

@@ -1,29 +1,10 @@
 package leetcode.oo.dp;
 
+/**
+ * Unique Paths 2.
+ * See {@link <a href ="https://leetcode.com/problems/unique-paths/">https://leetcode.com/problems/unique-paths/</a>}
+ */
 final class UniquePathsWithObstacle {
-
-
-    public static void main(String[] args) {
-        System.out.println(new UniquePathsWithObstacle().uniquePathsWithObstacles(
-                new int[][]{
-                        {1}
-
-                }
-        ));
-        System.out.println(new UniquePathsWithObstacle().uniquePathsWithObstacles(
-                new int[][]{
-                        {1, 0}
-
-                }
-        ));
-        System.out.println(new UniquePathsWithObstacle().uniquePathsWithObstacles(
-                new int[][]{
-                        {0, 0, 0},
-                        {0, 1, 0},
-                        {0, 0, 0}
-                }
-        ));
-    }
 
     int uniquePathsWithObstacles(int[][] obstacleGrid) {
         if (obstacleGrid[0][0] == 1) {
