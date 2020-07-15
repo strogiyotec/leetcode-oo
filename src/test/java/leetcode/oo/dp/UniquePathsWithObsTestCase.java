@@ -18,6 +18,16 @@ public final class UniquePathsWithObsTestCase {
         Assert.assertEquals(
                 this.alg.uniquePathsWithObstacles(
                         new int[][]{
+                                {0, 0},
+                                {1, 1},
+                                {0, 0}
+                        }
+                ),
+                0
+        );
+        Assert.assertEquals(
+                this.alg.uniquePathsWithObstacles(
+                        new int[][]{
                                 {1, 0}
                         }
                 ),
