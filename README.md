@@ -19,6 +19,7 @@ and each implementation has tests written using [JUnit](https://junit.org/junit5
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|1 |Two Sum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/TwoSum.java)| Easy| 
 |3 |Longest Substring Without Repeating Characters| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/window/SlidingWindowUniqueCharsLength.java)| Medium| 
 |5 |Longest Palindromic Substring| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/LPS.java)| Medium| 
 |11 |Container With Most Water| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/ContainerArea.java)| Medium| 
@@ -36,6 +37,7 @@ and each implementation has tests written using [JUnit](https://junit.org/junit5
 |80 |Remove Duplicates from Sorted Array II| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/duplicates/SortedArrayDup2.java)| Medium|
 |94|Binary Tree Inorder Traversal| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/traversal/InOrderTraversal.java)|Medium|
 |98|Validate Binary Search Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/ValidBst.java)|Medium|
+|167|Two Sum II - Input array is sorted| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/TwoSumSorted.java)|Easy|
 |206|Reverse Linked List| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/reverse/ReversedList.java)|Easy|
 |239|Sliding Window Maximum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/window/MaxSlidingWindow.java)|Hard|
 |300|Longest Increasing Subsequence| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/IncreasingSequence.java)|Medium|
