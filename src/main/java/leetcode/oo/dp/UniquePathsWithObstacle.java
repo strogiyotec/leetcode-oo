@@ -2,7 +2,7 @@ package leetcode.oo.dp;
 
 /**
  * Unique Paths 2.
- * See {@link <a href ="https://leetcode.com/problems/unique-paths/">https://leetcode.com/problems/unique-paths/</a>}
+ * See {@link <a href ="https://leetcode.com/problems/unique-paths-ii/">https://leetcode.com/problems/unique-paths-ii/</a>}
  */
 final class UniquePathsWithObstacle {
 
