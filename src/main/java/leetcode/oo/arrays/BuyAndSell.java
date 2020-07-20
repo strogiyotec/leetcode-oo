@@ -1,5 +1,10 @@
 package leetcode.oo.arrays;
 
+
+/**
+ * Best Time to Buy and Sell Stock.
+ * See {@link <a href ="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/">https://leetcode.com/problems/best-time-to-buy-and-sell-stock/</a>}
+ */
 final class BuyAndSell {
 
     int maxProfit(int[] prices) {
