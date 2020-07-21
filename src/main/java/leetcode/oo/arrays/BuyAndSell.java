@@ -12,19 +12,17 @@ final class BuyAndSell {
     }
 
     private int fastApproach(final int[] prices) {
-        int minBuy = Integer.MAX_VALUE;
-        int maxSell = 0;
+        int min = Integer.MAX_VALUE;
+        int max = 0;
         for (final int price : prices) {
-            if (minBuy > price) {
-                minBuy = price;
+            if (min > price) {
+                min = price;
             } else {
-                final int sell = price - minBuy;
-                if (maxSell < sell) {
-                    maxSell = sell;
-                }
+                final int benefit = price - min;
+                max = Math.max(benefit,max);
             }
         }
-        return maxSell;
+        return max;
     }
 
     private int bruteForce(final int[] prices) {
