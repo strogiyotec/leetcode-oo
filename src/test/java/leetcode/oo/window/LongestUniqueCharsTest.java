@@ -7,13 +7,13 @@ import org.junit.Test;
 /**
  * Test sliding window for unique chars.
  */
-public final class SlidingWindowUniqueCharsLengthTest {
+public final class LongestUniqueCharsTest {
 
     /**
      * Alg to test.
      */
     @SuppressWarnings("LineLength")
-    private final SlidingWindowUniqueCharsLength length = new SlidingWindowUniqueCharsLength();
+    private final LongestUniqueChars length = new LongestUniqueChars();
 
     /**
      * Test cases.
