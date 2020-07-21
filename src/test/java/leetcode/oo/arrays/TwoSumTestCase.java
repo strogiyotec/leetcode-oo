@@ -27,5 +27,9 @@ public final class TwoSumTestCase {
                 this.agl.twoSum(new int[]{-1, -2, -3, -4, -5}, -8),
                 new int[]{2, 4}
         );
+        Assert.assertArrayEquals(
+                this.agl.twoSum(new int[]{3, 2, 4}, 6),
+                new int[]{1, 2}
+        );
     }
 }
