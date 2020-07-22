@@ -47,4 +47,16 @@ public final class RemovedListTest {
                 CoreMatchers.is("1_2_3_5")
         );
     }
+
+    @Test
+    public void testTwoElements() {
+        final ListNode listNode = new ListNode(1);
+        listNode.next = new ListNode(2);
+        Assert.assertEquals(this.list.removeNthFromEnd(listNode, 2).toString(),"2");
+    }
+
+    @Test
+    public void testOneElem() {
+        Assert.assertNull(this.list.removeNthFromEnd(new ListNode(1), 1));
+    }
 }

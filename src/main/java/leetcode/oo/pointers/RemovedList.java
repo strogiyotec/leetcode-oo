@@ -4,9 +4,9 @@ import leetcode.oo.ListNode;
 
 /**
  * List with removed element from tail.
- * See {@link <a href ="https://leetcode.com/problems/remove-nth-node-from-end-of-list/solution/">https://leetcode.com/problems/remove-nth-node-from-end-of-list/solution/</a>}
+ * See {@link <a href ="https://leetcode.com/problems/remove-nth-node-from-end-of-list/">https://leetcode.com/problems/remove-nth-node-from-end-of-list/</a>}
  */
-public final class RemovedList {
+final class RemovedList {
 
     /**
      * Remove Nth element from end.
@@ -15,20 +15,22 @@ public final class RemovedList {
      * @param position Position
      * @return Node with removed element
      */
-    public ListNode removeNthFromEnd(final ListNode head, final int position) {
-        final ListNode freshHead = new ListNode(0);
-        ListNode start = freshHead;
-        ListNode end = freshHead;
-        freshHead.next = head;
-        for (int i = 0; i <= position; i++) {
-            end = end.next;
+    ListNode removeNthFromEnd(ListNode head, final int position) {
+        ListNode findLength = head;
+        final ListNode dummy = new ListNode(0);
+        dummy.next = head;
+        int length = 0;
+        while (findLength != null) {
+            length++;
+            findLength = findLength.next;
         }
-        while (end != null) {
-            end = end.next;
-            start = start.next;
+        int removePosition = length - position;
+        findLength = dummy;
+        while (removePosition > 0) {
+            findLength = findLength.next;
+            removePosition--;
         }
-        start.next = start.next.next;
-        return freshHead.next;
-
+        findLength.next = findLength.next.next;
+        return dummy.next;
     }
 }
