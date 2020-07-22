@@ -2,6 +2,10 @@ package leetcode.oo.arrays;
 
 import java.util.*;
 
+/**
+ * Three sum.
+ * See {@link <a href ="https://leetcode.com/problems/3sum/">https://leetcode.com/problems/3sum/</a>}
+ */
 final class ThreeSum {
 
     public static void main(String[] args) {

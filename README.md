@@ -24,6 +24,7 @@ and each implementation has tests written using [JUnit](https://junit.org/junit5
 |5 |Longest Palindromic Substring| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/LPS.java)| Medium| 
 |11 |Container With Most Water| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/ContainerArea.java)| Medium| 
 |14 |Longest Common Prefix| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/window/LongestPrefix.java)| Easy| 
+|15 |3Sum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/ThreeSum.java)| Medium| 
 |19 |Remove Nth Node From End of List| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/RemovedList.java)| Medium| 
 |20 |Valid Parentheses| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/stacks/ValidParentheses.java)| Easy| 
 |23 |Merge k Sorted Lists| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/sort/SortedLists.java)| Hard| 
