@@ -8,11 +8,8 @@ import java.util.*;
  */
 final class ThreeSum {
 
-    public static void main(String[] args) {
-    }
-
     List<List<Integer>> threeSum(int[] nums) {
-        final Set<List<Integer>> set = new HashSet<>();
+        final Set<List<Integer>> solution = new HashSet<>(nums.length + 2, 1);
         Arrays.sort(nums);
         for (int i = 0; i < nums.length; i++) {
             int left = i + 1;
@@ -20,9 +17,7 @@ final class ThreeSum {
             while (left < right) {
                 final int sum = nums[i] + nums[left] + nums[right];
                 if (sum == 0) {
-                    set.add(Arrays.asList(nums[i], nums[left], nums[right]));
-                    left++;
-                    right--;
+                    solution.add(Arrays.asList(nums[i], nums[left++], nums[right--]));
                 } else if (sum > 0) {
                     right--;
                 } else {
@@ -30,7 +25,7 @@ final class ThreeSum {
                 }
             }
         }
-        return new ArrayList<>(set);
+        return new ArrayList<>(solution);
     }
 
     private List<List<Integer>> bruteForce(final int[] nums) {
