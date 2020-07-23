@@ -17,8 +17,20 @@ public final class IncreasingSequenceTestCase {
     public void test() {
         Assert.assertEquals(
                 this.alg.lengthOfLIS(
+                        new int[]{10,9,2,5,3,4}
+                ),
+                3
+        );
+        Assert.assertEquals(
+                this.alg.lengthOfLIS(
+                        new int[]{2, 2}
+                ),
+                1
+        );
+        Assert.assertEquals(
+                this.alg.lengthOfLIS(
                         new int[]{10, 9, 2, 5, 3, 7, 101, 18}
-                        ),
+                ),
                 4
         );
     }
