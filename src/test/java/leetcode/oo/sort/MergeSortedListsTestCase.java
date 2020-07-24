@@ -7,21 +7,21 @@ import org.junit.Before;
 import org.junit.Test;
 
 /**
- * Test {@link SortedLists}.
+ * Test {@link MergeSortedLists}.
  */
-public final class SortedListsTestCase {
+public final class MergeSortedListsTestCase {
 
     /**
      * Alg to test.
      */
-    private SortedLists alg;
+    private MergeSortedLists alg;
 
     /**
      * Init.
      */
     @Before
     public void init() {
-        this.alg = new SortedLists();
+        this.alg = new MergeSortedLists();
     }
 
     /**
