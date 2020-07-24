@@ -7,22 +7,23 @@ package leetcode.oo.arrays;
  */
 final class BuyAndSell {
 
-    int maxProfit(int[] prices) {
+    int maxProfit(final int[] prices) {
         return this.fastApproach(prices);
     }
 
     private int fastApproach(final int[] prices) {
         int min = Integer.MAX_VALUE;
-        int max = 0;
+        int maxProfit = 0;
         for (final int price : prices) {
+            int diff;
             if (min > price) {
                 min = price;
             } else {
-                final int benefit = price - min;
-                max = Math.max(benefit,max);
+                diff = price - min;
+                maxProfit = Math.max(diff, maxProfit);
             }
         }
-        return max;
+        return maxProfit;
     }
 
     private int bruteForce(final int[] prices) {
