@@ -8,19 +8,19 @@ import org.junit.Test;
 /**
  * Test min window substring.
  */
-public final class LongestUniqueSubStringTest {
+public final class MinWindowSubstringTest {
 
     /**
      * Alg to test.
      */
-    private LongestUniqueSubString alg;
+    private MinWindowSubstring alg;
 
     /**
      * Init.
      */
     @Before
     public void init() {
-        this.alg = new LongestUniqueSubString();
+        this.alg = new MinWindowSubstring();
     }
 
     /**
@@ -29,11 +29,19 @@ public final class LongestUniqueSubStringTest {
     @Test
     public void minWindow() {
         Assert.assertThat(
-                alg.minWindow("ADOBECODEBANC", "ABC"),
+                this.alg.minWindow("bbaa", "aba"),
+                CoreMatchers.is("baa")
+        );
+        Assert.assertThat(
+                this.alg.minWindow("bba", "ab"),
+                CoreMatchers.is("ba")
+        );
+        Assert.assertThat(
+                this.alg.minWindow("ADOBECODEBANC", "ABC"),
                 CoreMatchers.is("BANC")
         );
         Assert.assertThat(
-                alg.minWindow("aa", "aa"),
+                this.alg.minWindow("aa", "aa"),
                 CoreMatchers.is("aa")
         );
     }
