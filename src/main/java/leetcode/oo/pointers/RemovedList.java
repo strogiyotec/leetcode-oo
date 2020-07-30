@@ -16,21 +16,23 @@ final class RemovedList {
      * @return Node with removed element
      */
     ListNode removeNthFromEnd(ListNode head, final int position) {
-        ListNode findLength = head;
-        final ListNode dummy = new ListNode(0);
-        dummy.next = head;
-        int length = 0;
-        while (findLength != null) {
-            length++;
-            findLength = findLength.next;
+        ListNode temp = head;
+        int size = 0;
+        while (temp != null) {
+            temp = temp.next;
+            size++;
         }
-        int removePosition = length - position;
-        findLength = dummy;
-        while (removePosition > 0) {
-            findLength = findLength.next;
-            removePosition--;
+        if (size == 1) {
+            return null;
         }
-        findLength.next = findLength.next.next;
-        return dummy.next;
+        if (size == position) {
+            return head.next;
+        }
+        temp = head;
+        for (int i = 0; i < (size - position) - 1; i++) {
+            temp = temp.next;
+        }
+        temp.next = temp.next.next;
+        return head;
     }
 }
