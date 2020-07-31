@@ -11,10 +11,10 @@ public final class LRUCacheTestCase {
         cache.put(1, 1);
         cache.put(2, 2);
         Assert.assertEquals(cache.get(1), 1);
-        //should delete 2 as it's least frequently used
+        //should delete 2 as it's least recently used
         cache.put(3, 3);
         Assert.assertEquals(cache.get(2), -1);
-        //should delete 1 as it's least frequently used
+        //should delete 1 as it's least recently used
         cache.put(4, 4);
         Assert.assertEquals(cache.get(1), -1);
 
