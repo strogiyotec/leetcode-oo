@@ -1,5 +1,5 @@
 # leetcode-oo
-Storage of solutions for leetcode problems 
+Storage of solutions for leetcode solutions written in Java 
 
 ## Introduction
 
