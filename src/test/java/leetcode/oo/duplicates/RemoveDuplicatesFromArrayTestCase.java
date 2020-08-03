@@ -10,7 +10,7 @@ import java.util.Arrays;
 /**
  * Test {@link RemoveDuplicatesFromArray}.
  */
-public final class SortedArrayDupTestCase {
+public final class RemoveDuplicatesFromArrayTestCase {
 
     /**
      * Alg to test.
