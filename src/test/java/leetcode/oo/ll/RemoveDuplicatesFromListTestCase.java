@@ -5,16 +5,16 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-public final class RemoveDuplicatesTestCase {
+public final class RemoveDuplicatesFromListTestCase {
 
-    private RemoveDuplicates alg;
+    private RemoveDuplicatesFromList alg;
 
     /**
      * Init.
      */
     @Before
     public void init() {
-        this.alg = new RemoveDuplicates();
+        this.alg = new RemoveDuplicatesFromList();
     }
 
     @Test

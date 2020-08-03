@@ -6,7 +6,7 @@ import leetcode.oo.ListNode;
  * Remove Duplicates from Sorted List.
  * See {@link <a href ="https://leetcode.com/problems/remove-duplicates-from-sorted-list/">https://leetcode.com/problems/remove-duplicates-from-sorted-list/</a>}
  */
-final class RemoveDuplicates {
+final class RemoveDuplicatesFromList {
 
     ListNode deleteDuplicates(final ListNode head) {
         ListNode answer = head;
