@@ -27,6 +27,7 @@ and each implementation has tests written using [JUnit](https://junit.org/junit5
 |15 |3Sum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/ThreeSum.java)| Medium| 
 |19 |Remove Nth Node From End of List| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/RemovedList.java)| Medium| 
 |20 |Valid Parentheses| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/stacks/ValidParentheses.java)| Easy| 
+|21 |Merge Two Sorted Lists| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/ll/MergeTwoLinkedList.java)| Easy| 
 |23 |Merge k Sorted Lists| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/sort/MergeSortedLists.java)| Hard| 
 |26 |Remove Duplicates from Sorted Array| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/duplicates/SortedArrayDuplicates.java)| Easy| 
 |30|Substring with Concatenation of All Words| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/window/AllWordsSubstring.java)| Hard|

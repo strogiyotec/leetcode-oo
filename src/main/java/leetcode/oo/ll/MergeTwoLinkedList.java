@@ -7,12 +7,6 @@ import leetcode.oo.ListNode;
  * See {@link <a href ="https://leetcode.com/problems/merge-two-sorted-lists/">https://leetcode.com/problems/merge-two-sorted-lists/</a>}
  */
 final class MergeTwoLinkedList {
-    static void main(String[] args) {
-        System.out.println(new MergeTwoLinkedList().mergeTwoLists(
-                new ListNode(1).withNext(2).withNext(4),
-                new ListNode(1).withNext(3).withNext(4)
-        ));
-    }
 
     ListNode mergeTwoLists(ListNode first, ListNode second) {
         ListNode node;
