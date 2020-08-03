@@ -29,7 +29,7 @@ and each implementation has tests written using [JUnit](https://junit.org/junit5
 |20 |Valid Parentheses| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/stacks/ValidParentheses.java)| Easy| 
 |21 |Merge Two Sorted Lists| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/ll/MergeTwoLinkedList.java)| Easy| 
 |23 |Merge k Sorted Lists| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/sort/MergeSortedLists.java)| Hard| 
-|26 |Remove Duplicates from Sorted Array| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/duplicates/SortedArrayDuplicates.java)| Easy| 
+|26 |Remove Duplicates from Sorted Array| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/duplicates/RemoveDuplicatesFromArray.java)| Easy| 
 |30|Substring with Concatenation of All Words| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/window/AllWordsSubstring.java)| Hard|
 |32|Longest Valid Parentheses| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/stacks/LongestParentheses.java)| Hard|
 |39|Combination Sum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/CombinationSum.java)| Medium|
