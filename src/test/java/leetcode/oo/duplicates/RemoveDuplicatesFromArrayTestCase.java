@@ -8,21 +8,21 @@ import org.junit.Test;
 import java.util.Arrays;
 
 /**
- * Test {@link SortedArrayDuplicates}.
+ * Test {@link RemoveDuplicatesFromArray}.
  */
 public final class SortedArrayDupTestCase {
 
     /**
      * Alg to test.
      */
-    private SortedArrayDuplicates alg;
+    private RemoveDuplicatesFromArray alg;
 
     /**
      * Init.
      */
     @Before
     public void init() {
-        this.alg = new SortedArrayDuplicates();
+        this.alg = new RemoveDuplicatesFromArray();
     }
 
     /**

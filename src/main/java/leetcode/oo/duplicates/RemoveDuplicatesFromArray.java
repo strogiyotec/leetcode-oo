@@ -4,7 +4,7 @@ package leetcode.oo.duplicates;
  * Remove Duplicates from Sorted Array.
  * See {@link <a href ="https://leetcode.com/problems/remove-duplicates-from-sorted-array/">https://leetcode.com/problems/remove-duplicates-from-sorted-array/</a>}.
  */
-public final class SortedArrayDuplicates {
+final class RemoveDuplicatesFromArray {
 
     /**
      * Count amount of unique numbers in array.
@@ -19,20 +19,13 @@ public final class SortedArrayDuplicates {
      * @param nums Array of sorted numbers
      * @return Amount of unique numbers
      */
-    public int removeDuplicates(final int[] nums) {
-        final int length = nums.length;
-        if (length == 0) {
-            return 0;
-        }
-        if (length == 1) {
-            return 1;
-        }
-        int uniqueCnt = 0;
-        for (int i = 1; i < length; i++) {
-            if (nums[uniqueCnt] != nums[i]) {
-                nums[++uniqueCnt] = nums[i];
+    int removeDuplicates(final int[] nums) {
+        int left = 0;
+        for (int right = 1; right < nums.length; right++) {
+            if (nums[right] != nums[left]) {
+                nums[++left] = nums[right];
             }
         }
-        return uniqueCnt + 1;
+        return left + 1;
     }
 }
