@@ -52,6 +52,7 @@ and each implementation has tests written using [JUnit](https://junit.org/junit5
 |206|Reverse Linked List| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/reverse/ReversedList.java)|Easy|
 |209|Minimum Size Subarray Sum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/MinSizeSubArray.java)|Medium|
 |239|Sliding Window Maximum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/window/MaxSlidingWindow.java)|Hard|
+|283|Move zeroes| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/MoveZeroes.java)|Easy|
 |300|Longest Increasing Subsequence| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/IncreasingSequence.java)|Medium|
 |322|Coin Change| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/CoinChange.java)|Medium|
 |435|Non-overlapping Intervals| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/greedy/NonOverlapInterval.java)|Medium|
