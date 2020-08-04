@@ -1,7 +1,12 @@
 package leetcode.oo.pointers;
 
+
+/**
+ * Sort colors.
+ * See {@link <a href ="https://leetcode.com/problems/sort-colors/">https://leetcode.com/problems/sort-colors/</a>}
+ */
 final class SortColors {
-    void sortColors(int[] nums) {
+    void sortColors(final int[] nums) {
         if (nums.length == 0 || nums.length == 1) {
             return;
         }

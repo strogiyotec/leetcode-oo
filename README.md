@@ -38,6 +38,7 @@ and each implementation has tests written using [JUnit](https://junit.org/junit5
 |62 |Unique Paths| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/UniquePaths.java)| Medium|
 |63 |Unique Paths 2| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/UniquePathsWithObstacle.java)| Medium|
 |64 |Minimum Path Sum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/MinPathSum.java)| Medium|
+|75 |Sort colors| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/SortColors.java)| Medium|
 |76 |Minimum Window Substring| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/window/MinWindowSubstring.java)| Hard|
 |80 |Remove Duplicates from Sorted Array II| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/duplicates/SortedArrayDup2.java)| Medium|
 |83|Remove Duplicates from Sorted List| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/ll/RemoveDuplicatesFromList.java)| Easy|
