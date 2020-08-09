@@ -39,6 +39,7 @@ and each implementation has tests written using [JUnit](https://junit.org/junit5
 |63 |Unique Paths 2| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/UniquePathsWithObstacle.java)| Medium|
 |64 |Minimum Path Sum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/MinPathSum.java)| Medium|
 |75 |Sort colors| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/SortColors.java)| Medium|
+|70 |Climbing Stairs| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/ClimbStairs.java)| Easy|
 |76 |Minimum Window Substring| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/window/MinWindowSubstring.java)| Hard|
 |80 |Remove Duplicates from Sorted Array II| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/duplicates/SortedArrayDup2.java)| Medium|
 |83|Remove Duplicates from Sorted List| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/ll/RemoveDuplicatesFromList.java)| Easy|
@@ -60,6 +61,7 @@ and each implementation has tests written using [JUnit](https://junit.org/junit5
 |435|Non-overlapping Intervals| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/greedy/NonOverlapInterval.java)|Medium|
 |538|Convert BST to Greater Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/GreaterTree.java)|Easy|
 |583|Delete Operation for Two Strings| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/StrDeleteSteps.java)|Medium|
+|876|Middle of the Linked List| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/ll/MiddleOfLinked.java)|Easy|
 |977|Squares of a Sorted Array| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/SquaresSortedArray.java)|Easy|
 |1143|Longest Common Subsequence| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/LCS.java)|Medium|
 
