@@ -12,6 +12,7 @@ final class CoinChange {
     int count(final int[] coins, final int sum) {
         final int max = sum + 1;
         final int[] dp = new int[max];
+        Arrays.sort(coins);
         Arrays.fill(dp, max);
         dp[0] = 0;
         for (int i = 1; i < max; i++) {
