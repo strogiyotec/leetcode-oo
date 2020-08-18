@@ -1,4 +1,4 @@
-package leetcode.oo.dp.backtracking;
+package leetcode.oo.graphs;
 
 /**
  * Word Search.
