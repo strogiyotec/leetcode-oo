@@ -1,5 +1,6 @@
 package leetcode.oo.dp.backtracking;
 
+import leetcode.oo.graphs.WordSearch;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
