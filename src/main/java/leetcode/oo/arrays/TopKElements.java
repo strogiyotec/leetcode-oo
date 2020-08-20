@@ -8,7 +8,7 @@ import java.util.PriorityQueue;
 
 /**
  * Top k elements.
- * See {@link <a href ="https://leetcode.com/problems/word-search/">https://leetcode.com/problems/word-search/</a>}
+ * See {@link <a href ="https://leetcode.com/problems/top-k-frequent-elements/">https://leetcode.com/problems/top-k-frequent-elements/</a>}
  */
 final class TopKElements {
 
