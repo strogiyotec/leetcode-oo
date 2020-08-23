@@ -18,6 +18,15 @@ public final class CompressStringTestCase {
     }
 
     @Test
+    public void test2() {
+        final char[] array = "aabbc".toCharArray();
+        Assert.assertEquals(
+                this.alg.compress(array),
+                4
+        );
+        Assert.assertThat(new String(array), CoreMatchers.containsString("a2b2c"));
+    }
+    @Test
     public void test() {
         final char[] array = "aabbccc".toCharArray();
         Assert.assertEquals(
