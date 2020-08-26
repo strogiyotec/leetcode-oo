@@ -40,6 +40,19 @@ public final class RemoveDuplicatesFromArrayTestCase {
         Assert.assertThat(noDup, CoreMatchers.is(new int[]{1, 2, 3, 4}));
     }
 
+
+    @Test
+    public void testTwoNumbers() {
+        final int[] array = new int[]{1, 2};
+        final int uniqueCnt = this.alg.removeDuplicates(array);
+        Assert.assertThat(
+                uniqueCnt,
+                CoreMatchers.is(2)
+        );
+        final int[] noDup = Arrays.copyOfRange(array, 0, uniqueCnt);
+        Assert.assertThat(noDup, CoreMatchers.is(new int[]{1, 2}));
+    }
+
     /**
      * Test empty array.
      */
