@@ -6,20 +6,20 @@ package leetcode.oo.dp;
  */
 final class IncreasingSequence {
 
-    int lengthOfLIS(int[] nums) {
+    int lengthOfLIS(final int[] nums) {
         final int[] dp = new int[nums.length];
         dp[0] = 1;
-        int length = 0;
+        int longest = 0;
         for (int i = 1; i < nums.length; i++) {
             int max = 0;
             for (int j = 0; j < i; j++) {
-                if (nums[i] > nums[j]) {
+                if (nums[j] < nums[i]) {
                     max = Math.max(max, dp[j]);
                 }
             }
             dp[i] = max + 1;
-            length = Math.max(length, dp[i]);
+            longest = Math.max(dp[i], longest);
         }
-        return length;
+        return longest;
     }
 }
