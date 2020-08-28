@@ -61,6 +61,7 @@ and each implementation has tests written using [JUnit](https://junit.org/junit5
 |206|Reverse Linked List| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/reverse/ReversedList.java)|Easy|
 |208|Trie| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/design/Trie.java)|Medium|
 |209|Minimum Size Subarray Sum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/MinSizeSubArray.java)|Medium|
+|230|https://leetcode.com/problems/kth-smallest-element-in-a-bst/| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/KthSmallest.java)|Medium|
 |239|Sliding Window Maximum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/window/MaxSlidingWindow.java)|Hard|
 |268|Missing number| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/bits/MissingNumber.java)|Easy|
 |283|Move zeroes| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/MoveZeroes.java)|Easy|
