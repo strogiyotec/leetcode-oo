@@ -19,7 +19,7 @@ final class Permutations {
             public void find(final int left, final int right) {
                 if (left == right) {
                     solution.add(Arrays.stream(nums).boxed().collect(Collectors.toList()));
-
+                    return;
                 }
                 for (int i = left; i <= right; i++) {
                     swap(nums, i, left);

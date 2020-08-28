@@ -4,7 +4,7 @@ package leetcode.oo.tree;
  * Leaf node.
  */
 @SuppressWarnings("HiddenField")
-public final class BstNode implements TreeNode {
+final class BstNode implements TreeNode {
 
     /**
      * Value.
@@ -28,7 +28,7 @@ public final class BstNode implements TreeNode {
      * @param left  Left
      * @param right Right
      */
-    public BstNode(
+    BstNode(
             final int value,
             final BstNode left,
             final BstNode right
@@ -44,7 +44,7 @@ public final class BstNode implements TreeNode {
      *
      * @param value Value
      */
-    public BstNode(
+     BstNode(
             final int value
     ) {
         this(
@@ -55,22 +55,22 @@ public final class BstNode implements TreeNode {
     }
 
     @Override
-    public  int value() {
+    public int value() {
         return this.value;
     }
 
     @Override
-    public  TreeNode left() {
+    public TreeNode left() {
         return this.left;
     }
 
     @Override
-    public  TreeNode right() {
+    public TreeNode right() {
         return this.right;
     }
 
     @Override
-    public  void updateValue(final int value) {
+    public void updateValue(final int value) {
         this.value = value;
     }
 
