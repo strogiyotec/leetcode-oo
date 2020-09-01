@@ -1,7 +1,7 @@
 package leetcode.oo.tree;
 
-import org.hamcrest.CoreMatchers;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 /**
@@ -9,17 +9,29 @@ import org.junit.Test;
  */
 public final class NodeDepthTestCase {
 
+    private NodeDepth alg;
+
+    /**
+     * Init.
+     */
+    @Before
+    public void init() {
+        this.alg = new NodeDepth();
+    }
+
     /**
      * Depth of 6 is 3.
      */
     @Test
     public void testDepth() {
-        final TreeNode treeNode = new BstFromArray().create(
-                new int[]{
-                        5, 2, 13, 0, 8, 6,
-                }
+        final PlainTree tree = new PlainTree(3);
+        tree.left = new PlainTree(9);
+        tree.right = new PlainTree(20);
+        tree.right.left = new PlainTree(15);
+        tree.right.right = new PlainTree(7);
+        Assert.assertEquals(
+                this.alg.maxDepth(tree),
+                3
         );
-        final int depth = new NodeDepth().depth(treeNode, 6);
-        Assert.assertThat(depth, CoreMatchers.is(3));
     }
 }
