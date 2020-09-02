@@ -1,4 +1,4 @@
-package leetcode.oo.dp;
+package leetcode.oo.dp.greedy;
 
 import java.util.HashSet;
 import java.util.Set;
