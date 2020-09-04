@@ -4,9 +4,9 @@ package leetcode.oo.tree;
  * Maximum Depth of Binary Tree.
  * See {@link <a href ="https://leetcode.com/problems/maximum-depth-of-binary-tree/">https://leetcode.com/problems/maximum-depth-of-binary-tree/</a>}.
  */
-public final class NodeDepth {
+final class NodeDepth {
 
-    public int maxDepth(final PlainTree root) {
+    int maxDepth(final PlainTree root) {
         return this.helper(root, 0);
     }
 
