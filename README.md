@@ -61,6 +61,7 @@ and each implementation has tests written using [JUnit](https://junit.org/junit5
 |139|Word Break| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/WordBreak.java)|Medium|
 |146|LRU Cache| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/design/LRUCache.java)|Medium|
 |167|Two Sum II - Input array is sorted| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/TwoSumSorted.java)|Easy|
+|169|Majority element| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/Majority.java)|Easy|
 |198|House Robber| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/HouseRobber.java)|Easy|
 |200|Number of Islands| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/NumberOfIslands.java)|Medium|
 |206|Reverse Linked List| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/reverse/ReversedList.java)|Easy|
