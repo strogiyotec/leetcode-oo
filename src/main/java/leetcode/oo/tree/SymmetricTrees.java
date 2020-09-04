@@ -2,12 +2,15 @@ package leetcode.oo.tree;
 
 
 /**
- *  Symmetric Trees.
+ * Symmetric Trees.
  * See {@link <a href ="https://leetcode.com/problems/symmetric-tree/">https://leetcode.com/problems/symmetric-tree/</a>}
  */
 final class SymmetricTrees {
 
     boolean isSymmetric(final PlainTree root) {
+        if (root == null) {
+            return true;
+        }
         return this.isSymmetric(root.left, root.right);
     }
 
