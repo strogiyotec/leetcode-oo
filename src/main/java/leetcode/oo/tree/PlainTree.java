@@ -10,4 +10,9 @@ public final class PlainTree {
     public PlainTree(final int val) {
         this.val = val;
     }
+
+    @Override
+    public String toString() {
+        return String.valueOf(this.val);
+    }
 }
