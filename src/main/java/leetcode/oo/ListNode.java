@@ -1,5 +1,7 @@
 package leetcode.oo;
 
+import java.util.Objects;
+
 /**
  * Single List Node.
  */
@@ -57,5 +59,19 @@ public final class ListNode {
             }
         }
         return result.toString();
+    }
+
+    @Override
+    public boolean equals(final Object another) {
+        if (this == another) return true;
+        if (another == null || getClass() != another.getClass()) return false;
+        final ListNode listNode = (ListNode) another;
+        return val == listNode.val &&
+                Objects.equals(next, listNode.next);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(val, next);
     }
 }
