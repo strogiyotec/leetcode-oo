@@ -19,7 +19,7 @@ final class ReorganizeString {
         final PriorityQueue<Character> queue = new PriorityQueue<>((a, b) -> counts.get(b) - counts.get(a));
         queue.addAll(counts.keySet());
         final StringBuilder result = new StringBuilder(word.length() + 2);
-        while (queue.size() > 1) {
+        while (queue.size() >= 2) {
             final Character first = queue.poll();
             final Character second = queue.poll();
             result.append(first).append(second);
@@ -32,7 +32,7 @@ final class ReorganizeString {
         }
         if (!queue.isEmpty()) {
             final Character last = queue.poll();
-            if (counts.get(last) > 1) {
+            if (counts.get(last) >=2) {
                 return "";
             } else {
                 result.append(last);
