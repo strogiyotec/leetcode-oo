@@ -1,7 +1,7 @@
 package leetcode.oo.graphs;
 
 /**
- * Number of islands
+ * Number of islands.
  * See {@link <a href ="https://leetcode.com/problems/number-of-islands/">https://leetcode.com/problems/number-of-islands/</a>}
  */
 final class NumberOfIslands {
