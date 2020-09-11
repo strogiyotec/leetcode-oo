@@ -30,4 +30,20 @@ public final class NumberOfIslandsTestCase {
                 1
         );
     }
+
+    @Test
+    public void test2() {
+        Assert.assertEquals(
+                this.alg.numIslands(
+                        new char[][]{
+                                "11000".toCharArray(),
+                                "11000".toCharArray(),
+                                "00100".toCharArray(),
+                                "00011".toCharArray()
+                        }
+                ),
+                1
+        );
+    }
+
 }
