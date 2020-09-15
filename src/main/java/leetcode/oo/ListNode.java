@@ -32,6 +32,21 @@ public final class ListNode {
      * @param variable Val of node
      * @return Current node with new tail
      */
+    public ListNode withNext(final ListNode next) {
+        ListNode head = this;
+        while (head.next != null) {
+            head = head.next;
+        }
+        head.next = next;
+        return this;
+    }
+
+    /**
+     * Add node to tail.
+     *
+     * @param variable Val of node
+     * @return Current node with new tail
+     */
     public ListNode withNext(final int variable) {
         ListNode head = this;
         while (head.next != null) {
