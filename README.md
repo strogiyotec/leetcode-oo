@@ -70,6 +70,7 @@ and each implementation has tests written using [JUnit](https://junit.org/junit5
 |143|Reorder list| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/ll/ReorderList.java)|Medium|
 |146|LRU Cache| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/design/LRUCache.java)|Medium|
 |148|Sort list| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/ll/SortList.java)|Medium|
+|160|Intersection of Two Linked Lists| [Java](https://github.com/strogiyotec/leetcode-oo/blob/02795e7bb2aa4e958d35ffc48944149dd0aaf161/src/main/java/leetcode/oo/ll/Intersection.java)|Easy|
 |167|Two Sum II - Input array is sorted| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/TwoSumSorted.java)|Easy|
 |169|Majority element| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/Majority.java)|Easy|
 |198|House Robber| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/HouseRobber.java)|Easy|
