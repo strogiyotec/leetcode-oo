@@ -7,6 +7,7 @@ import org.junit.Test;
 import java.util.List;
 
 public final class PhoneNumberCombinationsTestCase {
+
     private PhoneNumberCombinations alg;
 
     /**
@@ -20,12 +21,12 @@ public final class PhoneNumberCombinationsTestCase {
     @Test
     public void test() {
         final List<String> combinations = this.alg.letterCombinations("23");
-        Assert.assertEquals(combinations.size(), 9);
+        Assert.assertEquals(9, combinations.size());
     }
 
     @Test
     public void testEmpty() {
         final List<String> combinations = this.alg.letterCombinations("");
-        Assert.assertEquals(combinations.size(), 0);
+        Assert.assertEquals(0, combinations.size());
     }
 }
