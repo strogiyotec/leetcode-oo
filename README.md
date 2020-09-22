@@ -29,6 +29,7 @@ and each implementation has tests written using [JUnit](https://junit.org/junit5
 |19 |Remove Nth Node From End of List| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/RemovedList.java)| Medium| 
 |20 |Valid Parentheses| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/stacks/ValidParentheses.java)| Easy| 
 |21 |Merge Two Sorted Lists| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/ll/MergeTwoLinkedList.java)| Easy| 
+|22 |Generate Parentheses| [Java](https://github.com/strogiyotec/leetcode-oo/blob/50897dfd15580988ba66c474049377bd7e8e9cbb/src/main/java/leetcode/oo/dp/backtracking/GenerateParentheses.java)| Medium| 
 |23 |Merge k Sorted Lists| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/sort/MergeSortedLists.java)| Hard| 
 |26 |Remove Duplicates from Sorted Array| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/duplicates/RemoveDuplicatesFromArray.java)| Easy| 
 |27 |Remove element| [Java](https://github.com/strogiyotec/leetcode-oo/blob/cb713a818445362cb0451500c38adf4496eb304d/src/main/java/leetcode/oo/arrays/RemoveElement.java)| Easy| 
