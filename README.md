@@ -96,6 +96,7 @@ and each implementation has tests written using [JUnit](https://junit.org/junit5
 |344|Reverse String| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/ReverseString.java)|Easy|
 |347|Top k elements| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/TopKElements.java)|Medium|
 |349|Intersection of Two Arrays| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/ArraysIntersection.java)|Easy|
+|383|Ransom Note| [Java](https://github.com/strogiyotec/leetcode-oo/blob/30acc74a949222ac9a988d79b3a5daacb4b74668/src/main/java/leetcode/oo/strings/RansomNote.java)|Easy|
 |435|Non-overlapping Intervals| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/greedy/NonOverlapInterval.java)|Medium|
 |443|String Compression| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/CompressString.java)|Easy|
 |448|Find All Numbers Disappeared in an Array| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/DisappearedNumbers.java)|Easy|
