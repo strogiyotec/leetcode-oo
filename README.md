@@ -105,6 +105,7 @@ and each implementation has tests written using [JUnit](https://junit.org/junit5
 |538|Convert BST to Greater Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/GreaterTree.java)|Easy|
 |583|Delete Operation for Two Strings| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/StrDeleteSteps.java)|Medium|
 |767|Reorganize string| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/greedy/ReorganizeString.java)|Medium|
+|784|Letter case permutations| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/LetterCasePermutations.java)|Medium|
 |876|Middle of the Linked List| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/ll/MiddleOfLinked.java)|Easy|
 |884|Uncommon Words| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/UncommonWords.java)|Easy|
 |938|Range sum of Bst| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/RangeSumOfBst.java)|Easy|
