@@ -18,14 +18,13 @@ public final class MinSizeSubArrayTestCase {
 
     @Test
     public void test() {
-
         Assert.assertEquals(
-                this.alg.minSubArrayLen(7, new int[]{2, 3, 1, 2, 4, 3}),
-                2
+            0L,
+            (long) this.alg.minSubArrayLen(100, new int[]{})
         );
         Assert.assertEquals(
-                this.alg.minSubArrayLen(100, new int[]{}),
-                0
+            2L,
+            (long) this.alg.minSubArrayLen(7, new int[]{2, 3, 1, 2, 4, 3})
         );
     }
 }
