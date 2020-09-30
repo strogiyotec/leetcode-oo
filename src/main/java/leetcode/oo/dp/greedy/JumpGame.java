@@ -2,6 +2,7 @@ package leetcode.oo.dp.greedy;
 
 import java.util.HashSet;
 import java.util.Set;
+import leetcode.oo.IntPair;
 
 /**
  * Jump Game.
@@ -9,36 +10,18 @@ import java.util.Set;
  */
 final class JumpGame {
 
-    static class IntPair {
-        int first;
-        int second;
-
-        IntPair(final int first, final int second) {
-            this.first = first;
-            this.second = second;
-        }
-
-        @Override
-        public String toString() {
-            return "IntPair{" +
-                    "first=" + first +
-                    ", second=" + second +
-                    '}';
-        }
-    }
-
     boolean canJump(final int[] nums) {
         IntPair pair = new IntPair(0, 0);
         while (true) {
             int canRich = -1;
-            for (int i = pair.first; i <= pair.second; i++) {
+            for (int i = pair.getFirst(); i <= pair.getSecond(); i++) {
                 canRich = Math.max(canRich, nums[i] + i);
             }
             if (canRich >= nums.length - 1) {
                 return true;
             }
-            pair = new IntPair(pair.second + 1, canRich);
-            if (pair.first > pair.second) {
+            pair = new IntPair(pair.getSecond() + 1, canRich);
+            if (pair.getFirst() > pair.getSecond()) {
                 return false;
             }
         }

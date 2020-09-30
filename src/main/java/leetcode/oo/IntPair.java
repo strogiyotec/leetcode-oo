@@ -12,6 +12,14 @@ public final class IntPair {
         this.second = second;
     }
 
+    public int getFirst() {
+        return this.first;
+    }
+
+    public int getSecond() {
+        return this.second;
+    }
+
     @Override
     public String toString() {
         return "IntPair{" +
