@@ -20,7 +20,7 @@ public final class WordBreakTestCase {
 
     @Test
     public void test() {
-        Assert.assertTrue(this.alg.wordBreak("leetcode", Arrays.asList("leet","code")));
         Assert.assertFalse(this.alg.wordBreak("catsandog", Arrays.asList("cats", "dog", "sand", "and", "cat")));
+        Assert.assertTrue(this.alg.wordBreak("leetcode", Arrays.asList("leet","code")));
     }
 }
