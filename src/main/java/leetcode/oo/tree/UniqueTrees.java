@@ -2,7 +2,7 @@ package leetcode.oo.tree;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Objects;
+import leetcode.oo.IntPair;
 
 /**
  *Unique BST.
@@ -34,35 +34,4 @@ final class UniqueTrees {
         }
     }
 
-    static class IntPair {
-        final int first;
-        final int second;
-
-        public IntPair(final int first, final int second) {
-            this.first = first;
-            this.second = second;
-        }
-
-        @Override
-        public String toString() {
-            return "IntPair{" +
-                    "first=" + first +
-                    ", second=" + second +
-                    '}';
-        }
-
-        @Override
-        public boolean equals(final Object o) {
-            if (this == o) return true;
-            if (o == null || getClass() != o.getClass()) return false;
-            final IntPair intPair = (IntPair) o;
-            return first == intPair.first &&
-                    second == intPair.second;
-        }
-
-        @Override
-        public int hashCode() {
-            return Objects.hash(first, second);
-        }
-    }
 }
