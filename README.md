@@ -124,6 +124,7 @@ and each implementation has tests written using [JUnit](https://junit.org/junit5
 |1288|Remove covered intervals| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/greedy/RemoveCovered.java)|Medium|
 |1143|Longest Common Subsequence| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/LCS.java)|Medium|
 |1512|Good Pairs| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/GoodPairs.java)|Easy|
+|1576|Replace All ?'s to Avoid Consecutive Repeating Characters| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/ReplaceAll.java)|Easy|
 |1582|Special position matrix| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/SpecialPositionMatrix.java)|Easy|
 
 
