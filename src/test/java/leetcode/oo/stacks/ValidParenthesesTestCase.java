@@ -1,6 +1,5 @@
-package leetcode.oo.stack;
+package leetcode.oo.stacks;
 
-import leetcode.oo.stacks.ValidParentheses;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

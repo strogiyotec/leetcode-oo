@@ -1,6 +1,5 @@
-package leetcode.oo.stack;
+package leetcode.oo.stacks;
 
-import leetcode.oo.stacks.LongestParentheses;
 import org.hamcrest.CoreMatchers;
 import org.junit.Assert;
 import org.junit.Before;
