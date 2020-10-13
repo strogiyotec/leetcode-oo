@@ -4,10 +4,6 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-/**
- * Merge intervals;
- * See {@link <a href ="https://leetcode.com/problems/merge-intervals/">https://leetcode.com/problems/merge-intervals/</a>}
- */
 public final class MergeIntervalsTestCase {
 
     private MergeIntervals alg;

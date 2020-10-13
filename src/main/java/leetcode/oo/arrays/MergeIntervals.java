@@ -5,6 +5,10 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
+/**
+ * Merge intervals;
+ * See {@link <a href ="https://leetcode.com/problems/merge-intervals/">https://leetcode.com/problems/merge-intervals/</a>}
+ */
 final class MergeIntervals {
 
     int[][] merge(final int[][] intervals) {
