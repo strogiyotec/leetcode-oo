@@ -15,17 +15,16 @@ final class RemoveDuplicatesFromArray {
      * Original array = 1,2,2,3,4
      * Modified = 1,2,3,4,4
      * As you can see all unique sorted parts are in the left
-     *
      * @param nums Array of sorted numbers
      * @return Amount of unique numbers
      */
     int removeDuplicates(final int[] nums) {
         int left = 0;
         for (int right = 1; right < nums.length; right++) {
-            if (nums[right] != nums[left]) {
+            if (nums[left] != nums[right]) {
                 nums[++left] = nums[right];
             }
         }
-        return left + 1;
+        return left == 0 ? 0 : left + 1;
     }
 }
