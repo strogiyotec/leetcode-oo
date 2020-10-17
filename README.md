@@ -83,6 +83,7 @@ and each implementation has tests written using [JUnit](https://junit.org/junit5
 |169|Majority element| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/Majority.java)|Easy|
 |173|BST iterator| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/design/BSTIterator.java)|Medium|
 |187|DNA Sequence| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/window/DnaSeq.java)|Medium|
+|189|Rotate Array| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/RotateArray.java)|Medium|
 |198|House Robber| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/HouseRobber.java)|Easy|
 |200|Number of Islands| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/NumberOfIslands.java)|Medium|
 |206|Reverse Linked List| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/reverse/ReversedList.java)|Easy|
