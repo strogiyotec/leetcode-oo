@@ -61,6 +61,7 @@ and each implementation has tests written using [JUnit](https://junit.org/junit5
 |96|Unique Binary Search Trees| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/UniqueTrees.java)|Medium|
 |98|Validate Binary Search Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/ValidBst.java)|Medium|
 |101|Symmetric Trees| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/SymmetricTrees.java)|Easy|
+|102|Binary Tree Level Order Traversal| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/LevelOrderTraversal.java)|Medium|
 |104|Maximum Depth of Binary Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/NodeDepth.java)|Easy|
 |108|Sorted Array to Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/ArrayToTree.java)|Easy|
 |110|Balanced binary tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/BalancedBinaryTree.java)|Easy|
