@@ -9,17 +9,15 @@ final class IncreasingSequence {
     int lengthOfLIS(final int[] nums) {
         final int[] dp = new int[nums.length];
         dp[0] = 1;
-        int longest = 0;
+        int max = 0;
         for (int i = 1; i < nums.length; i++) {
-            int max = 0;
             for (int j = 0; j < i; j++) {
-                if (nums[j] < nums[i]) {
-                    max = Math.max(max, dp[j]);
+                if (nums[i] > nums[j]) {
+                    dp[i] = Math.max(dp[i],dp[j]);
                 }
             }
-            dp[i] = max + 1;
-            longest = Math.max(dp[i], longest);
+            max = Math.max(++dp[i], max);
         }
-        return longest;
+        return max;
     }
 }
