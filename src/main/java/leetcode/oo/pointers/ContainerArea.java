@@ -4,33 +4,32 @@ package leetcode.oo.pointers;
  * Container with max area.
  * See {@link <a href ="https://leetcode.com/problems/container-with-most-water/">https://leetcode.com/problems/container-with-most-water/</a>}
  */
-public final class ContainerArea {
+final class ContainerArea {
 
     /**
      * Calculate max area.
      * Uses two pointers as xAxis points
      * and iterate through them
      * Complexity: O(n)
-     *
      * @param height Array of heights
      * @return Max area
      */
-    public int maxArea(final int[] height) {
-        int leftPointer = 0;
-        int rightPointer = height.length - 1;
-        int maxArea = 0;
-        while (leftPointer < rightPointer) {
-            final int xArea = rightPointer - leftPointer;
-            maxArea = Math.max(
-                    maxArea,
-                    Math.min(height[leftPointer], height[rightPointer]) * xArea
+    int maxArea(final int[] height) {
+        int left = 0;
+        int right = height.length - 1;
+        int max = 0;
+        while (left < right) {
+            final int xLength = right - left;
+            max = Math.max(
+                max,
+                Math.min(height[left], height[right]) * xLength
             );
-            if (height[leftPointer] < height[rightPointer]) {
-                leftPointer++;
-            } else {
-                rightPointer--;
+            if(height[left]<height[right]){
+                left++;
+            } else{
+                right--;
             }
         }
-        return maxArea;
+        return max;
     }
 }

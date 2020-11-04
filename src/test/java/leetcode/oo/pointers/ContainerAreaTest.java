@@ -1,6 +1,5 @@
 package leetcode.oo.pointers;
 
-import org.hamcrest.CoreMatchers;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -28,11 +27,11 @@ public final class ContainerAreaTest {
      */
     @Test
     public void testContainerArea() {
-        Assert.assertThat(
-                this.alg.maxArea(
-                        new int[]{1, 8, 6, 2, 5, 4, 8, 3, 7}
-                ),
-                CoreMatchers.is(49)
+        Assert.assertEquals(
+            49L,
+            (long) this.alg.maxArea(
+                new int[]{1, 8, 6, 2, 5, 4, 8, 3, 7}
+            )
         );
     }
 }
