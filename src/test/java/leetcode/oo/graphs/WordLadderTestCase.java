@@ -20,8 +20,8 @@ public final class WordLadderTestCase {
     @Test
     public void test() {
         Assert.assertEquals(
-            4L,
-            (long) this.alg.ladderLength("hit", "dog", Arrays.asList("hot", "dot", "dog", "lot", "log", "cog"))
+            5L,
+            (long) this.alg.ladderLength("hit", "cog", Arrays.asList("hot", "dot", "dog", "lot", "log", "cog"))
         );
     }
 }
