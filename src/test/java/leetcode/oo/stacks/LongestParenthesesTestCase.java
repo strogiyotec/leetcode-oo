@@ -15,7 +15,6 @@ public final class LongestParenthesesTestCase {
      */
     private LongestParentheses alg;
 
-
     /**
      * Init.
      */
@@ -29,17 +28,22 @@ public final class LongestParenthesesTestCase {
      */
     @Test
     public void testLength() {
-        Assert.assertThat(
-                this.alg.longestValidParentheses(")()())"),
-                CoreMatchers.is(4)
+        Assert.assertEquals(
+            2L,
+            (long) this.alg.longestValidParentheses("()(()")
+
         );
         Assert.assertThat(
-                this.alg.longestValidParentheses("{"),
-                CoreMatchers.is(0)
+            this.alg.longestValidParentheses(")()())"),
+            CoreMatchers.is(4)
         );
         Assert.assertThat(
-                this.alg.longestValidParentheses(""),
-                CoreMatchers.is(0)
+            this.alg.longestValidParentheses("{"),
+            CoreMatchers.is(0)
+        );
+        Assert.assertThat(
+            this.alg.longestValidParentheses(""),
+            CoreMatchers.is(0)
         );
     }
 }
