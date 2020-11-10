@@ -58,6 +58,7 @@ and each implementation has tests written using [JUnit](https://junit.org/junit5
 |79 |Word Search| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/WordSearch.java)| Medium|
 |80 |Remove Duplicates from Sorted Array II| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/duplicates/SortedArrayDup2.java)| Medium|
 |83|Remove Duplicates from Sorted List| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/ll/RemoveDuplicatesFromList.java)| Easy|
+|90|Subsets2| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/Subsets2.java)|Medium|
 |91|Decode Ways| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/DecodingWays.java)|Medium|
 |94|Binary Tree Inorder Traversal| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/traversal/InOrderTraversal.java)|Medium|
 |96|Unique Binary Search Trees| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/UniqueTrees.java)|Medium|
