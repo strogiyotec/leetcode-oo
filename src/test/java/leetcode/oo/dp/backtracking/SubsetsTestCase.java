@@ -22,18 +22,18 @@ public final class SubsetsTestCase {
     @Test
     public void test() {
         Assert.assertEquals(
-                this.alg.subsets(new int[]{1, 2, 3}),
-                Arrays.asList(
-                        Collections.emptyList(),
-                        Collections.singletonList(1),
-                        Arrays.asList(1, 2),
-                        Arrays.asList(1, 2, 3),
-                        Arrays.asList(1, 3),
-                        Collections.singletonList(2),
-                        Arrays.asList(2, 3),
-                        Collections.singletonList(3)
+            Arrays.asList(
+                    Collections.emptyList(),
+                    Collections.singletonList(1),
+                    Arrays.asList(1, 2),
+                    Arrays.asList(1, 2, 3),
+                    Arrays.asList(1, 3),
+                    Collections.singletonList(2),
+                    Arrays.asList(2, 3),
+                    Collections.singletonList(3)
 
-                )
+            ),
+            this.alg.subsets(new int[]{1, 2, 3})
         );
     }
 }
