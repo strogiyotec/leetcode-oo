@@ -139,9 +139,10 @@ and each implementation has tests written using [JUnit](https://junit.org/junit5
 |994|Rotting Oranges| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/RottingOranges.java)|Medium|
 |1007|Minimum Domino Rotations For Equal Row| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/greedy/DominoRotations.java)|Medium|
 |1079|Letter Tile Possibilities| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/TilePossibilities.java)|Medium|
+|1143|Longest Common Subsequence| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/LCS.java)|Medium|
 |1160|Find Words That Can Be Formed by Characters| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/WordsByCharacters.java)|Easy|
 |1288|Remove covered intervals| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/greedy/RemoveCovered.java)|Medium|
-|1143|Longest Common Subsequence| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/LCS.java)|Medium|
+|1365|How Many Numbers Are Smaller Than the Current Number| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/HowManySmallerNumbers.java)|Easy|
 |1512|Good Pairs| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/GoodPairs.java)|Easy|
 |1576|Replace All ?'s to Avoid Consecutive Repeating Characters| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/ReplaceAll.java)|Easy|
 |1582|Special position matrix| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/SpecialPositionMatrix.java)|Easy|
