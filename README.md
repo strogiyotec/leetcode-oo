@@ -89,6 +89,7 @@ and each implementation has tests written using [JUnit](https://junit.org/junit5
 |169|Majority element| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/Majority.java)|Easy|
 |173|BST iterator| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/design/BSTIterator.java)|Medium|
 |187|DNA Sequence| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/window/DnaSeq.java)|Medium|
+|188|Best Time to Buy and Sell Stock IV| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/BuyAndSell4.java)|Hard|
 |189|Rotate Array| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/RotateArray.java)|Medium|
 |198|House Robber| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/HouseRobber.java)|Easy|
 |200|Number of Islands| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/NumberOfIslands.java)|Medium|
