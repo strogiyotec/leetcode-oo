@@ -73,6 +73,7 @@ and each implementation has tests written using [JUnit](https://junit.org/junit5
 |112|Path Sum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/path/PathSum1.java)|Easy|
 |113|Path Sum 2| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/path/PathSum2.java)|Medium|
 |121|Best Time to Buy and Sell Stock| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/BuyAndSell.java)|Easy|
+|123|Best Time to Buy and Sell Stock 3 | [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/BuyAndSell3.java)|Hard|
 |124|Binary Tree Maximum Path Sum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/MaxPathSum.java)|Hard|
 |127|Word Ladder| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/WordLadder.java)|Medium|
 |128|Longest Consecutive sequence| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/LongestConsSeq.java)|Hard|
