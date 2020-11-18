@@ -1,37 +1,25 @@
 package leetcode.oo.tree;
 
-import java.util.HashMap;
-import java.util.Map;
-import leetcode.oo.IntPair;
+import java.util.Arrays;
 
 /**
- *Unique BST.
+ * Unique BST.
  * See {@link <a href ="https://leetcode.com/problems/unique-binary-search-trees/">https://leetcode.com/problems/unique-binary-search-trees/</a>}
  */
 final class UniqueTrees {
 
     int numTrees(final int number) {
-        final Map<IntPair, Integer> map = new HashMap<>();
-        return this.calculate(1, number, number, map);
-    }
-
-    private int calculate(final int start, final int end, final int limit, final Map<IntPair, Integer> map) {
-        if (start < 0 || end > limit || start >= end) {
-            return 1;
-        }
-        final IntPair pair = new IntPair(start, end);
-        if (map.containsKey(pair)) {
-            return map.get(pair);
-        } else {
-            int cnt = 0;
-            for (int i = start; i <= end; i++) {
-                int left = this.calculate(start, i - 1, limit, map);
-                int right = this.calculate(i + 1, end, limit, map);
-                cnt += left * right;
+        final int[] dp = new int[number + 1];
+        Arrays.fill(dp, 1);
+        for (int node = 2; node < dp.length; node++) {
+            int total = 0;
+            for (int root = 1; root <= node; root++) {
+                final int left = root - 1;
+                final int right = node - root;
+                total += dp[left] * dp[right];
             }
-            map.put(new IntPair(start, end), cnt);
-            return cnt;
+            dp[node] = total;
         }
+        return dp[number];
     }
-
 }
