@@ -117,6 +117,7 @@ and each implementation has tests written using [JUnit](https://junit.org/junit5
 |435|Non-overlapping Intervals| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/greedy/NonOverlapInterval.java)|Medium|
 |443|String Compression| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/CompressString.java)|Easy|
 |448|Find All Numbers Disappeared in an Array| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/DisappearedNumbers.java)|Easy|
+|501|Find Mode in Binary Search Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/ModeInBst.java)|Easy|
 |520|Detect Capital| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/DetectCapital.java)|Easy|
 |538|Convert BST to Greater Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/GreaterTree.java)|Easy|
 |559|Maximum Depth of N-ary Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/MaxDepthNTree.java)|Easy|
