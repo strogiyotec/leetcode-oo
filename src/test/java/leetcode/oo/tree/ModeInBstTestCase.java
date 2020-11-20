@@ -17,6 +17,17 @@ public final class ModeInBstTestCase {
     }
 
     @Test
+    public void test2() {
+        final PlainTree tree = new PlainTree(1);
+        tree.right = new PlainTree(2);
+        tree.left = new PlainTree(1);
+        Assert.assertArrayEquals(
+            new int[]{1},
+            this.alg.findMode(tree)
+        );
+    }
+
+    @Test
     public void test() {
         final PlainTree tree = new PlainTree(1);
         tree.right = new PlainTree(2);
