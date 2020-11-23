@@ -19,16 +19,20 @@ public final class ReorganizeStringTestCase {
     @Test
     public void test(){
         Assert.assertEquals(
-                this.alg.reorganizeString("aab"),
-                "aba"
+            "",
+            this.alg.reorganizeString("bbbbbb")
         );
         Assert.assertEquals(
-                this.alg.reorganizeString("abbabbaaab"),
-                "ababababab"
+            "aba",
+            this.alg.reorganizeString("aab")
         );
         Assert.assertEquals(
-                this.alg.reorganizeString("aaba"),
-                ""
+            "ababababab",
+            this.alg.reorganizeString("abbabbaaab")
+        );
+        Assert.assertEquals(
+            "",
+            this.alg.reorganizeString("aaba")
         );
     }
 }
