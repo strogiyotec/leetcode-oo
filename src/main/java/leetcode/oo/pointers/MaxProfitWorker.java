@@ -5,7 +5,7 @@ import java.util.Comparator;
 import leetcode.oo.IntPair;
 
 /**
- *Most Profit Assigning Work.
+ * Most Profit Assigning Work.
  * See {@link <a href ="https://leetcode.com/problems/most-profit-assigning-work/">https://leetcode.com/problems/most-profit-assigning-work/</a>}.
  */
 final class MaxProfitWorker {
@@ -19,14 +19,15 @@ final class MaxProfitWorker {
         Arrays.sort(worker);
         int workerId = 0;
         int maxProfit = 0;
+        int diffIndex = 0;
+        int currentProfit = 0;
         while (workerId < worker.length) {
-            int diffIndex = 0;
-            int currentProfit = 0;
             while (diffIndex < pairs.length && pairs[diffIndex].getFirst() <= worker[workerId]) {
                 currentProfit = Math.max(currentProfit, pairs[diffIndex].getSecond());
                 diffIndex++;
             }
             maxProfit += currentProfit;
+            diffIndex = Math.max(0, diffIndex - 1);
             workerId++;
         }
         return maxProfit;
