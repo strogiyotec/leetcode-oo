@@ -123,6 +123,7 @@ and each implementation has tests written using [JUnit](https://junit.org/junit5
 |520|Detect Capital| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/DetectCapital.java)|Easy|
 |538|Convert BST to Greater Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/GreaterTree.java)|Easy|
 |559|Maximum Depth of N-ary Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/MaxDepthNTree.java)|Easy|
+|560|Subarray sum equals| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/SubArraySum.java)|Medium|
 |583|Delete Operation for Two Strings| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/StrDeleteSteps.java)|Medium|
 |621|Task Scheduler| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/greedy/TaskScheduler.java)|Medium|
 |647|Palindrome substrings| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/PalindromeSubs.java)|Medium|
