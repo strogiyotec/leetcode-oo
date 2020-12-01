@@ -103,6 +103,7 @@ and each implementation has tests written using [JUnit](https://junit.org/junit5
 |234|Palindrome Linked List| [Java](https://github.com/strogiyotec/leetcode-oo/blob/7476429b4542c620e83b4586a194baec2075f57d/src/main/java/leetcode/oo/ll/PalindromeLL.java)|Easy|
 |235|Lowest Common Ancestor of a Binary Search Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/LowestCommonAncestor.java)|Easy|
 |239|Sliding Window Maximum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/window/MaxSlidingWindow.java)|Hard|
+|257|Binary Tree Paths| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/path/BinaryTreePaths.java)|Easy|
 |268|Missing number| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/bits/MissingNumber.java)|Easy|
 |283|Move zeroes| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/MoveZeroes.java)|Easy|
 |298|BINARY TREE LONGEST CONSECUTIVE SEQUENCE| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/LongestConsSeqTree.java)|Medium|
