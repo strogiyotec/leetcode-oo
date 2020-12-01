@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.stream.IntStream;
 
 /**
- *Minimum Operations to Reduce X to Zero.
+ * Minimum Operations to Reduce X to Zero.
  * See {@link <a href ="https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/">https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/</a>}.
  */
 final class MinOperationsX {
@@ -13,7 +13,7 @@ final class MinOperationsX {
     int minOperations(final int[] nums, final int x) {
         final int sum = IntStream.of(nums).sum();
         final int diff = sum - x;
-        if(diff  == 0){
+        if (diff == 0) {
             return nums.length;
         }
         final Map<Integer, Integer> map = new HashMap<>(nums.length);
