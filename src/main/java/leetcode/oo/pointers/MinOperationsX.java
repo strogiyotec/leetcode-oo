@@ -13,6 +13,9 @@ final class MinOperationsX {
     int minOperations(final int[] nums, final int x) {
         final int sum = IntStream.of(nums).sum();
         final int diff = sum - x;
+        if(diff  == 0){
+            return nums.length;
+        }
         final Map<Integer, Integer> map = new HashMap<>(nums.length);
         map.put(0, -1);
         int totalSum = 0;

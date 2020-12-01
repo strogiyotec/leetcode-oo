@@ -19,6 +19,13 @@ public final class MinOperationReduceTestCase {
     @Test
     public void test() {
         Assert.assertEquals(
+            16L,
+            (long) this.alg.minOperations(
+                new int[]{8828, 9581, 49, 9818, 9974, 9869, 9991, 10000, 10000, 10000, 9999, 9993, 9904, 8819, 1231, 6309},
+                134365
+            )
+        );
+        Assert.assertEquals(
             -1L,
             (long) this.alg.minOperations(
                 new int[]{1, 1},
