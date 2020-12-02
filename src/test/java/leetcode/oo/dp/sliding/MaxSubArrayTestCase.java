@@ -19,8 +19,8 @@ public final class MaxSubArrayTestCase {
     @Test
     public void test() {
         Assert.assertEquals(
-                this.alg.maxSubArray(new int[]{-2, 1, -3, 4, -1, 2, 1, -5, 4}),
-                6
+            6L,
+            (long) this.alg.maxSubArray(new int[]{-2, 1, -3, 4, -1, 2, 1, -5, 4})
         );
     }
 }
