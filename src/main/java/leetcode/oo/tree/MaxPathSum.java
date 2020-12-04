@@ -7,19 +7,20 @@ package leetcode.oo.tree;
 final class MaxPathSum {
 
     int maxPathSum(final PlainTree root) {
-        final int[] sum = new int[1];
-        sum[0] = Integer.MIN_VALUE;
-        this.dfs(sum, root);
+        final int[] sum = {root.val};
+        this.dfs(root, sum);
         return sum[0];
     }
 
-    private int dfs(final int[] sum, final PlainTree root) {
-        if (root == null) {
+    private int dfs(final PlainTree tree, final int[] sum) {
+        if (tree != null) {
+            final int left = Math.max(0, this.dfs(tree.left, sum));
+            final int right = Math.max(0, this.dfs(tree.right, sum));
+            sum[0] = Math.max(sum[0], tree.val + left + right);
+            return Math.max(left + tree.val, right + tree.val);
+        } else {
             return 0;
         }
-        final int left = Math.max(0, this.dfs(sum, root.left));
-        final int right = Math.max(0, this.dfs(sum, root.right));
-        sum[0] = Math.max(sum[0], root.val + left + right);
-        return Math.max(left, right) + root.val;
     }
+
 }
