@@ -24,8 +24,8 @@ public final class RootToLeafSumTestCase {
         tree.left.left = new PlainTree(5);
         tree.left.right = new PlainTree(1);
         Assert.assertEquals(
-                this.alg.sumNumbers(tree),
-                1026
+            this.alg.sumNumbers(tree),
+            1026
         );
     }
 
@@ -35,8 +35,21 @@ public final class RootToLeafSumTestCase {
         tree.left = new PlainTree(2);
         tree.right = new PlainTree(3);
         Assert.assertEquals(
-                this.alg.sumNumbers(tree),
-                25
+            this.alg.sumNumbers(tree),
+            25
+        );
+    }
+
+    @Test
+    public void test3() {
+        final PlainTree tree = new PlainTree(4);
+        tree.left = new PlainTree(9);
+        tree.right = new PlainTree(0);
+        tree.left.left = new PlainTree(5);
+        tree.left.right = new PlainTree(1);
+        Assert.assertEquals(
+            1026L,
+            (long) this.alg.sumNumbers(tree)
         );
     }
 }

@@ -13,33 +13,22 @@ final class RootToLeafSum {
         if (root == null) {
             return 0;
         }
-        final List<String> numbers = new ArrayList<>();
-        this.toLeaf(numbers, new StringBuilder(), root);
-        return numbers.stream().mapToInt(Integer::parseInt).sum();
+        final List<String> list = new ArrayList<>(16);
+        this.toLeaf(root, list, new StringBuilder(16));
+        return list.stream().mapToInt(Integer::valueOf).sum();
     }
 
-    private void toLeaf(
-            final List<String> numbers,
-            final StringBuilder current,
-            final PlainTree tree
-    ) {
-        if (tree.left == null && tree.right == null) {
-            current.append(tree.val);
-            numbers.add(current.toString());
-            return;
-        }
-        current.append(tree.val);
-        if (tree.left != null) {
-            this.toLeaf(numbers, current, tree.left);
-            if (current.length() != 0) {
-                current.deleteCharAt(current.length() - 1);
+    private void toLeaf(final PlainTree root, final List<String> list, final StringBuilder builder) {
+        if (root != null) {
+            builder.append(root.val);
+            if (root.left == null && root.right == null) {
+                list.add(builder.toString());
+            } else {
+                this.toLeaf(root.left, list, builder);
+                this.toLeaf(root.right, list, builder);
             }
-        }
-        if (tree.right != null) {
-            this.toLeaf(numbers, current, tree.right);
-            if (current.length() != 0) {
-                current.deleteCharAt(current.length() - 1);
-            }
+            builder.deleteCharAt(builder.length() - 1);
         }
     }
+
 }
