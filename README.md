@@ -144,6 +144,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |994|Rotting Oranges| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/RottingOranges.java)|Medium|
 |1004|Max Consecutive Ones III| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/window/MaxConsOnes3.java)|Medium|
 |1007|Minimum Domino Rotations For Equal Row| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/greedy/DominoRotations.java)|Medium|
+|1043|Partition Array for Maximum Sum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/MaxSumArrayPartition.java)|Medium|
 |1079|Letter Tile Possibilities| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/TilePossibilities.java)|Medium|
 |1092|Shortest Common Supersequence| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/SCS.java)|Hard|
 |1143|Longest Common Subsequence| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/LCS.java)|Medium|
