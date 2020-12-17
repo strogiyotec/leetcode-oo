@@ -7,16 +7,20 @@ package leetcode.oo.pointers;
 final class SubArrayProduct {
 
     int numSubarrayProductLessThanK(final int[] nums, final int sum) {
-        int left = 0;
-        int ans = 0;
-        int product = 1;
-        for (int i = 0; i < nums.length; i++) {
-            product *= nums[i];
-            while (product >= sum) {
-                product /= nums[left++];
-            }
-            ans += i - left + 1;
+        if (sum <= 1) {
+            return 0;
         }
-        return ans;
+        int left = 0;
+        int right = 0;
+        int cnt = 0;
+        int total = 1;
+        while (right < nums.length) {
+            total *= nums[right++];
+            while (total >= sum) {
+                total /= nums[left++];
+            }
+            cnt += right - left;
+        }
+        return cnt;
     }
 }
