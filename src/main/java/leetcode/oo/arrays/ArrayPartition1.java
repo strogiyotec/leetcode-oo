@@ -8,16 +8,6 @@ import java.util.Arrays;
  */
 final class ArrayPartition1 {
 
-    static void main(final String[] args) {
-        System.out.println(new ArrayPartition1().arrayPairSum(
-            new int[]{1, 4, 3, 2}
-        ));
-
-        System.out.println(new ArrayPartition1().arrayPairSum(
-            new int[]{6, 2, 6, 5, 1, 2}
-        ));
-    }
-
     int arrayPairSum(final int[] nums) {
         Arrays.sort(nums);
         int sum = 0;
