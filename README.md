@@ -143,6 +143,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |876|Middle of the Linked List| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/ll/MiddleOfLinked.java)|Easy|
 |884|Uncommon Words| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/UncommonWords.java)|Easy|
 |886|Possible Bipartition| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/PossibleBiPart.java)|Medium|
+|894|All Possible Full Binary Trees| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/PossibleTrees.java)|Medium|
 |938|Range sum of Bst| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/RangeSumOfBst.java)|Easy|
 |973|K Closest Points to Origin| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/KClosestElements.java)|Medium|
 |977|Squares of a Sorted Array| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/SquaresSortedArray.java)|Easy|
