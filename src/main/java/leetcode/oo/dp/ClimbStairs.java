@@ -1,6 +1,5 @@
 package leetcode.oo.dp;
 
-
 /**
  * Climbing stairs.
  * See {@link <a href ="https://leetcode.com/problems/climbing-stairs/">https://leetcode.com/problems/climbing-stairs/</a>}
@@ -11,13 +10,12 @@ final class ClimbStairs {
         if (amount == 1 || amount == 2) {
             return amount;
         }
-        final int[] dp = new int[amount + 1];
-        dp[0] = 0;
-        dp[1] = 1;
-        dp[2] = 2;
-        for (int i = 3; i <= amount; i++) {
-            dp[i] = dp[i - 1] + dp[i - 2];
+        final int[] memo = new int[amount];
+        memo[0] = 1;
+        memo[1] = 2;
+        for (int i = 2; i < amount; i++) {
+            memo[i] = memo[i - 1] + memo[i - 2];
         }
-        return dp[amount];
+        return memo[amount-1];
     }
 }

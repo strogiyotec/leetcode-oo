@@ -17,8 +17,8 @@ public final class ClimbStairsTestCase {
 
     @Test
     public void test(){
-        Assert.assertEquals(this.alg.climbStairs(4),5);
-        Assert.assertEquals(this.alg.climbStairs(3),3);
-        Assert.assertEquals(this.alg.climbStairs(2),2);
+        Assert.assertEquals(5L, (long) this.alg.climbStairs(4));
+        Assert.assertEquals(3L, (long) this.alg.climbStairs(3));
+        Assert.assertEquals(2L, (long) this.alg.climbStairs(2));
     }
 }
