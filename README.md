@@ -130,6 +130,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |673|Number of Longest Increasing Subsequence| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/IncSequences.java)|Medium|
 |687|Longest Univalue Path| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/LongestUnivaluePath.java)|Medium|
 |692|Top K Frequent Words| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/TopKFrequentWords.java)|Medium|
+|695|Max Area Of Islands| [Java](https://github.com/strogiyotec/leetcode-oo/blob/ab0a2e9675d59e1932d26ea9a8be5e1cb7408d5e/src/main/java/leetcode/oo/dp/MaxAreadOfIslands.java)|Medium|
 |704|Binary Search| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/BinarySearch.java)|Easy|
 |713|Subarray Product Less Than K| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/SubArrayProduct.java)|Medium|
 |718|Maximum Length of Repeated Subarray| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/MaxLengthRepeatedSubArray.java)|Medium|
