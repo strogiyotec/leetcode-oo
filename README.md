@@ -88,6 +88,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |209|Minimum Size Subarray Sum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/MinSizeSubArray.java)|Medium|
 |212|Word Search 2| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/WordSearch2.java)|Hard|
 |215|Kth Largest element in the array| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/KthLargest.java)|Medium|
+|221|Maximum Square| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/BiggestSquare.java)|Medium|
 |226|Invert Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/InvertTree.java)|Easy|
 |230|Kth Smallest Element in a BST| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/KthSmallest.java)|Medium|
 |234|Palindrome Linked List| [Java](https://github.com/strogiyotec/leetcode-oo/blob/7476429b4542c620e83b4586a194baec2075f57d/src/main/java/leetcode/oo/ll/PalindromeLL.java)|Easy|
