@@ -146,6 +146,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |763|Partition Labels| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/PartitionLabels.java)|Medium|
 |767|Reorganize string| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/greedy/ReorganizeString.java)|Medium|
 |784|Letter case permutations| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/LetterCasePermutations.java)|Medium|
+|787|Cheapest flight with K stops| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/CheapestFlight.java)|Medium|
 |791|Custom Sort String| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/CustomSortString.java)|Medium|
 |826|Most Profit Assigning Work| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/MaxProfitWorker.java)|Medium|
 |844|Backspace String Compare| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/stacks/BackSpaceStrCompare.java)|Easy|
