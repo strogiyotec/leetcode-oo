@@ -18,7 +18,7 @@ public final class SortColorsTestCase {
 
     @Test
     public void testTwo() {
-        final int[] ar = new int[]{2, 0, 1};
+        final int[] ar = {2, 0, 1};
         this.alg.sortColors(ar);
         Assert.assertArrayEquals(
                 ar,
@@ -28,7 +28,7 @@ public final class SortColorsTestCase {
 
     @Test
     public void testOne() {
-        final int[] ar = new int[]{2, 0, 2, 1, 1, 0};
+        final int[] ar = {2, 0, 2, 1, 1, 0};
         this.alg.sortColors(ar);
         Assert.assertArrayEquals(
                 ar,
