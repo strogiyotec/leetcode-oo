@@ -157,6 +157,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |886|Possible Bipartition| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/PossibleBiPart.java)|Medium|
 |894|All Possible Full Binary Trees| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/PossibleTrees.java)|Medium|
 |938|Range sum of Bst| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/RangeSumOfBst.java)|Easy|
+|951|Flip Equivalent Binary Trees| [Java](https://github.com/strogiyotec/leetcode-oo/blob/4a7806b32d377e1ebe90ba815897ab3a29d19226/src/main/java/leetcode/oo/tree/EvenGrandParents.java)|Medium|
 |973|K Closest Points to Origin| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/KClosestElements.java)|Medium|
 |977|Squares of a Sorted Array| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/SquaresSortedArray.java)|Easy|
 |993|Cousins in Binary tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/Cousins.java)|Easy|
