@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+//https://leetcode.com/problems/find-all-anagrams-in-a-string/
 final class Anagrams {
 
     List<Integer> findAnagrams(final String line, final String word) {
