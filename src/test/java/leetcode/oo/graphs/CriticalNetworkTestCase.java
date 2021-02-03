@@ -23,6 +23,21 @@ public final class CriticalNetworkTestCase {
         Assert.assertEquals(
             Collections.singletonList(Arrays.asList(1, 3)),
             this.alg.criticalConnections(
+                6,
+                Arrays.asList(
+                    Arrays.asList(0, 1),
+                    Arrays.asList(1, 2),
+                    Arrays.asList(2, 0),
+                    Arrays.asList(1, 3),
+                    Arrays.asList(3, 4),
+                    Arrays.asList(4, 5),
+                    Arrays.asList(5, 3)
+                )
+            )
+        );
+        Assert.assertEquals(
+            Collections.singletonList(Arrays.asList(1, 3)),
+            this.alg.criticalConnections(
                 4,
                 Arrays.asList(
                     Arrays.asList(0, 1),
