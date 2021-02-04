@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+//https://leetcode.com/problems/critical-connections-in-a-network/
 final class CriticalNetwork {
 
     List<List<Integer>> criticalConnections(int n, List<List<Integer>> connections) {
