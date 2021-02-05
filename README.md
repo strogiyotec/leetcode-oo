@@ -30,6 +30,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |41|First Missing positive| [Java](https://github.com/strogiyotec/leetcode-oo/blob/39fb6d02acb6420c0f8c25a6f976d138f61e3905/src/main/java/leetcode/oo/arrays/MissingPositive.java)| Hard|
 |45|Jump Game 2| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/greedy/JumpGame2.java)| Hard|
 |46|Permutations| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/Permutations.java)| Medium|
+|49|Group Anagrams| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/GroupAnagrams.java)| Medium|
 |51 |M-Queens| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/NQueens.java)| Hard|
 |52 |Maximum Subarray| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/sliding/MaxSubArray.java)| Easy|
 |55 |Jump Game| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/greedy/JumpGame.java)| Medium|
