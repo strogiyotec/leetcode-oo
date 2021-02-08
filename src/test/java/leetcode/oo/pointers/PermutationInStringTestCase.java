@@ -18,6 +18,12 @@ public final class PermutationInStringTestCase {
 
     @Test
     public void test() {
+        Assert.assertFalse(
+            this.alg.checkInclusion(
+                "abc",
+                "ccccbbbbaaaa"
+            )
+        );
         Assert.assertTrue(
             this.alg.checkInclusion(
                 "ab",
