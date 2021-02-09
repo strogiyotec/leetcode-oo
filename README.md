@@ -113,6 +113,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |383|Ransom Note| [Java](https://github.com/strogiyotec/leetcode-oo/blob/30acc74a949222ac9a988d79b3a5daacb4b74668/src/main/java/leetcode/oo/strings/RansomNote.java)|Easy|
 |387|First unique character| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/FirstUniqueCharacter.java)|Easy|
 |394|Decode String| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/stacks/DecodeString.java)|Medium|
+|395|Longest Substring with At Least K Repeating Characters| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/LongestStrWithKRepeatedChars.java)|Medium|
 |416|Partition Equal Subset Sum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/PartitionEqualSubset.java)|Medium|
 |424|Longest Repeating Character Replacement| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/window/LongestRepCharRepl.java)|Medium|
 |433|Minimum Genetic Mutation| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/MinGenMutations.java)|Medium|
