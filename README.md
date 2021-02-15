@@ -147,6 +147,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |704|Binary Search| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/BinarySearch.java)|Easy|
 |713|Subarray Product Less Than K| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/SubArrayProduct.java)|Medium|
 |718|Maximum Length of Repeated Subarray| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/MaxLengthRepeatedSubArray.java)|Medium|
+|735|Asteroids Collision| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/stacks/Asteroids.java)|Medium|
 |739|Daily Temperatures| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/stacks/DailyTemperature.java)|Medium|
 |746|Min cost climbing| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/MinCostClimbing.java)|Easy|
 |763|Partition Labels| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/PartitionLabels.java)|Medium|
