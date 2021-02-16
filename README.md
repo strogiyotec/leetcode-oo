@@ -180,6 +180,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1161|Maximum Level Sum of a Binary Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/MaxLevelSumOfBinaryTree.java)|Medium|
 |1160|Find Words That Can Be Formed by Characters| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/WordsByCharacters.java)|Easy|
 |1288|Remove covered intervals| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/greedy/RemoveCovered.java)|Medium|
+|1337|Weakest Rows In Matrix| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/WeakestRowsMatrix.java)|Easy|
 |1365|How Many Numbers Are Smaller Than the Current Number| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/HowManySmallerNumbers.java)|Easy|
 |1512|Good Pairs| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/GoodPairs.java)|Easy|
 |1576|Replace All ?'s to Avoid Consecutive Repeating Characters| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/ReplaceAll.java)|Easy|
