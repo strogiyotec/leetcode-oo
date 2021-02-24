@@ -3,8 +3,7 @@ package leetcode.oo.arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-//
-https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/
+//https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/
 final class PairOfSongs {
 
     int numPairsDivisibleBy60(int[] time) {
