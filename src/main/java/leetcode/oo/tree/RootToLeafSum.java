@@ -23,9 +23,14 @@ final class RootToLeafSum {
             builder.append(root.val);
             if (root.left == null && root.right == null) {
                 list.add(builder.toString());
-            } else {
-                this.toLeaf(root.left, list, builder);
-                this.toLeaf(root.right, list, builder);
+                builder.deleteCharAt(builder.length() - 1);
+                return;
+            }
+            if(root.left != null){
+                this.toLeaf(root.left,list,builder);
+            }
+            if(root.right != null){
+                this.toLeaf(root.right,list,builder);
             }
             builder.deleteCharAt(builder.length() - 1);
         }

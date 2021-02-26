@@ -22,6 +22,15 @@ public final class NetworkDelayTestCase {
             2L,
             (long) this.alg.networkDelayTime(
                 new int[][]{
+                    {1, 2, 1}, {2, 3, 2}, {1, 3, 2}
+                },
+                3, 1
+            )
+        );
+        Assert.assertEquals(
+            2L,
+            (long) this.alg.networkDelayTime(
+                new int[][]{
                     {2, 1, 2}, {1, 2, 1}
                 },
                 2, 2
