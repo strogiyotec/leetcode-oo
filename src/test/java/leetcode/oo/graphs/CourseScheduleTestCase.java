@@ -18,21 +18,23 @@ public final class CourseScheduleTestCase {
 
     @Test
     public void test() {
-        Assert.assertFalse(this.alg.canFinish(
-            2,
-            new int[][]{
-                {1, 0},
-                {0, 1}
-            }
-        ));
-        Assert.assertTrue(this.alg.canFinish(
-            4,
-            new int[][]{
-                {1, 0},
-                {2, 0},
-                {3, 1},
-                {3, 2}
-            }
-        ));
+        Assert.assertFalse(
+            this.alg.canFinish(
+                2,
+                new int[][]{
+                    {1, 0},
+                    {0, 1}
+                }
+            ));
+        Assert.assertTrue(
+            this.alg.canFinish(
+                4,
+                new int[][]{
+                    {1, 0},
+                    {2, 0},
+                    {3, 1},
+                    {3, 2}
+                }
+            ));
     }
 }

@@ -1,14 +1,9 @@
 package leetcode.oo.graphs;
 
-import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Map;
-import java.util.Queue;
+import java.util.Set;
 
 /**
  * Possible bipartition.
@@ -21,45 +16,39 @@ final class PossibleBiPart {
     private static final int BLUE = 2;
 
     boolean possibleBipartition(final int nodes, final int[][] dislikes) {
-        final Map<Integer, List<Integer>> map = PossibleBiPart.buildMap(nodes, dislikes);
-        final int[] colors = new int[nodes + 1];
-        final Queue<Integer> queue = new ArrayDeque<>(nodes);
-        final Collection<Integer> visited = new HashSet<>(nodes);
+        final Map<Integer, Set<Integer>> adjacent = new HashMap<>();
         for (int i = 1; i <= nodes; i++) {
-            queue.add(i);
-            while (!queue.isEmpty()) {
-                final Integer current = queue.poll();
-                if (!visited.contains(current)) {
-                    visited.add(current);
-                    for (final Integer edge : map.getOrDefault(current, Collections.emptyList())) {
-                        if (colors[edge] == 0) {
-                            colors[edge] = colors[current] == RED ? BLUE : RED;
-                            queue.add(edge);
-                        } else {
-                            if (colors[edge] == colors[current]) {
-                                return false;
-                            }
-                        }
-                    }
+            adjacent.put(i, new HashSet<>());
+        }
+        for (final int[] dislike : dislikes) {
+            adjacent.get(dislike[0]).add(dislike[1]);
+            adjacent.get(dislike[1]).add(dislike[0]);
+        }
+        final int[] colors = new int[nodes + 1];
+        for (int i = 1; i <= nodes; i++) {
+            if (colors[i] == 0) {
+                if (this.dfs(adjacent, i, 1, colors)) {
+                    return false;
                 }
             }
         }
         return true;
     }
 
-    private static Map<Integer, List<Integer>> buildMap(final int nodes, final int[][] dislikes) {
-        final Map<Integer, List<Integer>> map = new HashMap<>(nodes);
-        for (final int[] dislike : dislikes) {
-            map.merge(dislike[0], new ArrayList<>(Collections.singletonList(dislike[1])), (old, n) -> {
-                old.addAll(n);
-                return old;
-            });
-            map.merge(dislike[1], new ArrayList<>(Collections.singletonList(dislike[0])), (old, n) -> {
-                old.addAll(n);
-                return old;
-            });
+    private boolean dfs(final Map<Integer, Set<Integer>> adjacent, final int node, final int color, final int[] colors) {
+        colors[node] = color;
+        for (final Integer verticle : adjacent.get(node)) {
+            if (colors[verticle] == color) {
+                return true;
+            }
+            if (colors[verticle] != 0) {
+                continue;
+            }
+            if (this.dfs(adjacent, verticle, -1 * color, colors)) {
+                return true;
+            }
         }
-        return map;
+        return false;
     }
 
 }

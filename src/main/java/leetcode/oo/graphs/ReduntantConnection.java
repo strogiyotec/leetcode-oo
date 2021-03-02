@@ -25,18 +25,19 @@ final class ReduntantConnection {
         return solution;
     }
 
-    private boolean dfs(final int min, final int max, final int prev, final Map<Integer, List<Integer>> adjacent) {
-        for (final Integer verticle : adjacent.get(min)) {
-            if (verticle.equals(prev)) {
+    private boolean dfs(final int from, final int to, final int prev, final Map<Integer, List<Integer>> adjacent) {
+        for (final Integer verticle : adjacent.get(from)) {
+            if(verticle.equals(prev)){
                 continue;
             }
-            if (verticle.equals(max)) {
+            if(verticle.equals(to)){
                 return true;
             }
-            if (this.dfs(verticle, max, min, adjacent)) {
+            if(this.dfs(verticle,to,from,adjacent)){
                 return true;
             }
         }
         return false;
     }
+
 }
