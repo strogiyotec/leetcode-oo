@@ -7,6 +7,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.concurrent.atomic.AtomicInteger;
 
 //https://leetcode.com/problems/critical-connections-in-a-network/
 final class CriticalNetwork {
@@ -20,34 +21,29 @@ final class CriticalNetwork {
             adjacent.get(connection.get(0)).add(connection.get(1));
             adjacent.get(connection.get(1)).add(connection.get(0));
         }
-        final Set<Integer> visited = new HashSet<>();
+        final Set<Integer> cache = new HashSet<>();
+        final int[] indexes = new int[n + 1];
         final List<List<Integer>> solution = new ArrayList<>();
-        final int[] timestamps = new int[n];
-        this.dfs(0, visited, adjacent, solution, timestamps);
+        this.dfs(0, cache, indexes, solution, adjacent, new AtomicInteger(0));
         return solution;
     }
 
-    private void dfs(
-        final int currentNode,
-        final Set<Integer> visited,
-        final Map<Integer, Set<Integer>> adjacent,
-        final List<List<Integer>> solution,
-        final int[] timestamps
-    ) {
-        timestamps[currentNode] = currentNode;
-        final int before = timestamps[currentNode];
-        visited.add(currentNode);
-        for (final Integer verticle : adjacent.get(currentNode)) {
-            if (visited.contains(verticle)) {
-                timestamps[currentNode] = Math.min(timestamps[currentNode], timestamps[verticle]);
+    private void dfs(final int node, final Set<Integer> cache, final int[] indexes, final List<List<Integer>> solution, Map<Integer, Set<Integer>> adjacent,final AtomicInteger cnt) {
+        indexes[node] = cnt.getAndIncrement();
+        final int before = indexes[node];
+        cache.add(node);
+        for (final Integer vertx : adjacent.get(node)) {
+            if (cache.contains(vertx)) {
+                indexes[node] = Math.min(indexes[vertx], indexes[node]);
             } else {
-                adjacent.get(verticle).remove(currentNode);
-                this.dfs(verticle, visited, adjacent, solution, timestamps);
-                timestamps[currentNode] = Math.min(timestamps[currentNode], timestamps[verticle]);
-                if (before < timestamps[verticle]) {
-                    solution.add(Arrays.asList(currentNode, verticle));
+                adjacent.get(vertx).remove(node);
+                this.dfs(vertx, cache, indexes, solution, adjacent,cnt);
+                indexes[node] = Math.min(indexes[node], indexes[vertx]);
+                if (before < indexes[vertx]) {
+                    solution.add(Arrays.asList(node,vertx));
                 }
             }
         }
     }
+
 }
