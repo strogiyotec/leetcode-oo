@@ -18,28 +18,25 @@ final class TaskScheduler {
         for (final char task : tasks) {
             cnt.merge(task, 1, Integer::sum);
         }
-
         final PriorityQueue<Integer> queue = new PriorityQueue<>(Comparator.comparingInt(value -> (int) value).reversed());
         queue.addAll(cnt.values());
-        int cycles = 0;
+        int interval = 0;
         while (!queue.isEmpty()) {
             final List<Integer> temp = new ArrayList<>();
             for (int i = 0; i <= limit; i++) {
-                if (queue.isEmpty()) {
-                    cycles++;
-                } else {
+                if (!queue.isEmpty()) {
                     final Integer poll = queue.poll();
-                    cycles++;
-                    if (poll > 1) {
+                    if (poll - 1 > 0) {
                         temp.add(poll - 1);
                     }
                 }
-                if(temp.isEmpty()){
-                    break;
+                interval++;
+                if(temp.isEmpty() && queue.isEmpty()){
+                    return interval;
                 }
             }
             queue.addAll(temp);
         }
-        return cycles;
+        return interval;
     }
 }
