@@ -144,6 +144,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |652|Find Duplicate Subtrees| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/DuplicateSubTrees.java)|Medium|
 |653|Two Sum IV - Input is a BST| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/TwoSum4.java)|Easy|
 |673|Number of Longest Increasing Subsequence| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/IncSequences.java)|Medium|
+|678|Valid Parenthesis in String| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/stacks/ValidParenthesisString.java)|Medium|
 |684|Redundant Connection| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/ReduntantConnection.java)|Medium|
 |687|Longest Univalue Path| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/LongestUnivaluePath.java)|Medium|
 |692|Top K Frequent Words| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/TopKFrequentWords.java)|Medium|
