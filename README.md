@@ -136,6 +136,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |560|Subarray sum equals| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/SubArraySum.java)|Medium|
 |561|Array Partition I| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/ArrayPartition1.java)|Easy|
 |583|Delete Operation for Two Strings| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/StrDeleteSteps.java)|Medium|
+|590|N-ary Tree Postorder traversal| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/traversal/PostOrderTraversal.java)|Easy|
 |617|Merge Two Binary Trees| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/MergeTrees.java)|Easy|
 |621|Task Scheduler| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/greedy/TaskScheduler.java)|Medium|
 |637|Average of Levels in Binary Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/dda3e5efe7bddfea2f2b7d4a78a12006ba5cdefb/src/main/java/leetcode/oo/graphs/AverageLevels.java)|Easy|
