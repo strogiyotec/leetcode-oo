@@ -135,6 +135,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |559|Maximum Depth of N-ary Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/MaxDepthNTree.java)|Easy|
 |560|Subarray sum equals| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/SubArraySum.java)|Medium|
 |561|Array Partition I| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/ArrayPartition1.java)|Easy|
+|575|Distribute Candies| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/DistributeCandies.java)|Easy|
 |583|Delete Operation for Two Strings| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/StrDeleteSteps.java)|Medium|
 |590|N-ary Tree Postorder traversal| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/traversal/PostOrderTraversal.java)|Easy|
 |617|Merge Two Binary Trees| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/MergeTrees.java)|Easy|
