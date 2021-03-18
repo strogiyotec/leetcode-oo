@@ -192,6 +192,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1160|Find Words That Can Be Formed by Characters| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/WordsByCharacters.java)|Easy|
 |1254|Number of Closed Islands| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/dfs/NumberOfClosedIslands.java)|Medium|
 |1288|Remove covered intervals| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/greedy/RemoveCovered.java)|Medium|
+|1297|Maximum Length Of a concatenated string with unique characters| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/MaxLengthConcatStr.java)|Medium|
 |1337|Weakest Rows In Matrix| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/WeakestRowsMatrix.java)|Easy|
 |1365|How Many Numbers Are Smaller Than the Current Number| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/HowManySmallerNumbers.java)|Easy|
 |1376|Time needed to inform all employees| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/NotifyEmployess.java)|Medium|
