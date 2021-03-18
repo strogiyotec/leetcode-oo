@@ -104,6 +104,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |257|Binary Tree Paths| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/path/BinaryTreePaths.java)|Easy|
 |268|Missing number| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/bits/MissingNumber.java)|Easy|
 |283|Move zeroes| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/MoveZeroes.java)|Easy|
+|297|Serialize and Deserialize Binary Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/SerializeAndDeser.java)|Hard|
 |298|BINARY TREE LONGEST CONSECUTIVE SEQUENCE| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/LongestConsSeqTree.java)|Medium|
 |300|Longest Increasing Subsequence| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/IncreasingSequence.java)|Medium|
 |301|Remove Invalid Parentheses| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/RemoveInvalidParentheses.java)|Hard|
