@@ -177,6 +177,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |934|Shortest Bridge| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/dfs/ShortestBridge.java)|Medium|
 |938|Range sum of Bst| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/RangeSumOfBst.java)|Easy|
 |951|Flip Equivalent Binary Trees| [Java](https://github.com/strogiyotec/leetcode-oo/blob/4a7806b32d377e1ebe90ba815897ab3a29d19226/src/main/java/leetcode/oo/tree/EvenGrandParents.java)|Medium|
+|953|Alien dictionary| [Java](https://github.com/strogiyotec/leetcode-oo/blob/a7bb5b5b88db0dbb9efc9667113948dd41db95a0/src/main/java/leetcode/oo/strings/AlienDictionary.java)|Easy|
 |973|K Closest Points to Origin| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/KClosestElements.java)|Medium|
 |977|Squares of a Sorted Array| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/SquaresSortedArray.java)|Easy|
 |988|Smallest String Starting From Leaf| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/RootToLeafSum.java)|Medium|
