@@ -202,6 +202,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1376|Time needed to inform all employees| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/NotifyEmployess.java)|Medium|
 |1423|Max Points Obtain from Cards| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/MaxPointsObtain.java)|Medium|
 |1443|Minimum time to collect apples in a tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/MinCostApples.java)|Medium|
+|1448|Count good nodes in binary tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/GoodNodes.java)|Medium|
 |1512|Good Pairs| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/GoodPairs.java)|Easy|
 |1524|Number of Sub arrays with odd sum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/OddSumSubArrays.java)|Medium|
 |1539|Kth missing positive number| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/KthMissingPositive.java)|Easy|
