@@ -13,19 +13,19 @@ final class Permutations {
 
     List<List<Integer>> permute(final int[] nums) {
         final List<List<Integer>> list = new ArrayList<>();
-        this.dfs(0, nums.length, list, nums);
+        this.dfs(0, list, nums);
         return list;
     }
 
-    private void dfs(final int left, final int right, final List<List<Integer>> list, final int[] nums) {
-        if (left == right) {
-            list.add(IntStream.of(nums).boxed().collect(Collectors.toList()));
+    private void dfs(final int left, final List<List<Integer>> list, final int[] array) {
+        if (left == array.length - 1) {
+            list.add(IntStream.of(array).boxed().collect(Collectors.toList()));
             return;
         }
-        for (int i = left; i < right; i++) {
-            swap(nums,i,left);
-            this.dfs(left+1,right,list,nums);
-            swap(nums,i,left);
+        for (int i = left; i < array.length; i++) {
+            swap(array, i, left);
+            this.dfs(left + 1, list, array);
+            swap(array, i, left);
         }
     }
 
