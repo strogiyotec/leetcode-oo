@@ -23,6 +23,6 @@ public final class DuplicateSubTreeTestCase {
         tree.right = new PlainTree(11);
         tree.left.left = new PlainTree(11);
         tree.right.left = new PlainTree(1);
-        Assert.assertTrue(new DuplicateSubTrees().findDuplicateSubtrees(tree).isEmpty());
+        Assert.assertTrue(this.alg.findDuplicateSubtrees(tree).isEmpty());
     }
 }
