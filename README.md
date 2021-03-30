@@ -218,6 +218,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1647|Minimum Deletions to Make Character Frequencies Unique| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/MinDeletionToMakeUnique.java)|Medium|
 |1658|Minimum Operations to Reduce X to Zero| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/MinOperationsX.java)|Medium|
 |1691|Maximum Height by Stacking Cuboids| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/Cubes.java)|Hard|
+|1700|Number of Students unable to eat lunch| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/NumberOfStudentsWithoutLunch.java)|Easy|
 |1726|Tuples with same product| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/TuplesWithSameProduct.java)|Medium|
 |1770|Max Score performing operations| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/MaxScore.java)|Medium|
 
