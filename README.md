@@ -192,6 +192,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1004|Max Consecutive Ones III| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/window/MaxConsOnes3.java)|Medium|
 |1007|Minimum Domino Rotations For Equal Row| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/greedy/DominoRotations.java)|Medium|
 |1010|Pair of Songs| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/PairOfSongs.java)|Medium|
+|1031|Max Sum of Two Non-Overlapping subarrays| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/MaxSumOfTwoArrays.java)|Medium|
 |1043|Partition Array for Maximum Sum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/MaxSumArrayPartition.java)|Medium|
 |1079|Letter Tile Possibilities| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/TilePossibilities.java)|Medium|
 |1091|Shortest Path in Binary Matrix| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/ShortestPathMatrix.java)|Medium|
