@@ -4,16 +4,15 @@ package leetcode.oo.arrays;
 final class MaxPointsObtain {
 
     int maxScore(final int[] cardPoints, final int k) {
-        int leftSum = 0;
+        int leftScore = 0;
         for (int i = 0; i < k; i++) {
-            leftSum += cardPoints[i];
+            leftScore += cardPoints[i];
         }
-        int rightSum = 0;
-        int max = leftSum;
-        for (int i = 0; i < k; i++) {
-            leftSum -= cardPoints[k - i - 1];
-            rightSum += cardPoints[cardPoints.length - 1 - i];
-            max = Math.max(max, leftSum + rightSum);
+        int max = leftScore;
+        for (int right = cardPoints.length - 1, left = k - 1; right >= cardPoints.length - k; right--, left--) {
+            leftScore -= cardPoints[left];
+            leftScore += cardPoints[right];
+            max = Math.max(max, leftScore);
         }
         return max;
     }
