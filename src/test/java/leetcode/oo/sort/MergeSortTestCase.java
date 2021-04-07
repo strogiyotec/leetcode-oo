@@ -1,7 +1,7 @@
 package leetcode.oo.sort;
 
 import org.hamcrest.CoreMatchers;
-import org.junit.Assert;
+import org.hamcrest.MatcherAssert;
 import org.junit.Test;
 
 /**
@@ -14,7 +14,7 @@ public final class MergeSortTestCase {
      */
     @Test
     public void testSort() {
-        Assert.assertThat(
+        MatcherAssert.assertThat(
                 new Ints(
                         new int[]{87, 17, 6, 22, 3, 41, 13, 54}
                 ).mergeSorted(),
