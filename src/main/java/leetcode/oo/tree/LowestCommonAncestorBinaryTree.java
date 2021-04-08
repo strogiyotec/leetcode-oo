@@ -4,7 +4,7 @@ package leetcode.oo.tree;
 final class LowestCommonAncestorBinaryTree {
 
     PlainTree lowestCommonAncestor(final PlainTree root, final PlainTree p, final PlainTree q) {
-        if (root == null || root == q || root == p) {
+        if (root == null || root.val == p.val || root.val == q.val) {
             return root;
         }
         final PlainTree left = this.lowestCommonAncestor(root.left, p, q);
@@ -14,9 +14,8 @@ final class LowestCommonAncestorBinaryTree {
         }
         if (left != null) {
             return left;
-        } else {
-            return right;
         }
+        return right;
     }
 }
 
