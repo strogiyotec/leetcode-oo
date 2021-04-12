@@ -176,6 +176,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |844|Backspace String Compare| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/stacks/BackSpaceStrCompare.java)|Easy|
 |859|Buddy Strings| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/BuddyStrings.java)|Easy|
 |860|Lemonade Change| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/greedy/LemonadeChange.java)|Easy|
+|870|Advantage Shuffle| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/AdvantageShuffle.java)|Medium|
 |876|Middle of the Linked List| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/ll/MiddleOfLinked.java)|Easy|
 |884|Uncommon Words| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/UncommonWords.java)|Easy|
 |886|Possible Bipartition| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/PossibleBiPart.java)|Medium|
