@@ -221,6 +221,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1557|Minimum number of vertices to reach all nodes| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/MinVerticesToReachAllNodes.java)|Medium|
 |1572|Matrix Diagonal Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/MatrixDiagSum.java)|Easy|
 |1576|Replace All ?'s to Avoid Consecutive Repeating Characters| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/ReplaceAll.java)|Easy|
+|1578|Min deletion cost to avoid repeating characters| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/greedy/MinDeletionCost.java)|Medium|
 |1582|Special position matrix| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/SpecialPositionMatrix.java)|Easy|
 |1593|Split a String Into the Max Number of Unique Substrings| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/UniqueSplitString.java)|Medium|
 |1647|Minimum Deletions to Make Character Frequencies Unique| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/MinDeletionToMakeUnique.java)|Medium|
