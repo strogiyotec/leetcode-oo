@@ -221,6 +221,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1557|Minimum number of vertices to reach all nodes| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/MinVerticesToReachAllNodes.java)|Medium|
 |1572|Matrix Diagonal Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/MatrixDiagSum.java)|Easy|
 |1576|Replace All ?'s to Avoid Consecutive Repeating Characters| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/ReplaceAll.java)|Easy|
+|1577|Number of Ways Square Equals to Product| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/SquareEqualToProduct.java)|Medium|
 |1578|Min deletion cost to avoid repeating characters| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/greedy/MinDeletionCost.java)|Medium|
 |1582|Special position matrix| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/SpecialPositionMatrix.java)|Easy|
 |1593|Split a String Into the Max Number of Unique Substrings| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/UniqueSplitString.java)|Medium|
@@ -229,6 +230,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1690|Stone Game 7| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/StoneGame7.java)|Medium|
 |1691|Maximum Height by Stacking Cuboids| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/Cubes.java)|Hard|
 |1700|Number of Students unable to eat lunch| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/NumberOfStudentsWithoutLunch.java)|Easy|
+|1712|Ways to split array into three| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/SplitArrayIntoThree.java)|Medium|
 |1726|Tuples with same product| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/TuplesWithSameProduct.java)|Medium|
 |1770|Max Score performing operations| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/MaxScore.java)|Medium|
 
