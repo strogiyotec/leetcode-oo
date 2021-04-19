@@ -168,6 +168,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |746|Min cost climbing| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/MinCostClimbing.java)|Easy|
 |763|Partition Labels| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/PartitionLabels.java)|Medium|
 |767|Reorganize string| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/greedy/ReorganizeString.java)|Medium|
+|775|Global and Local inversions| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/GlobalAndLocalInversions.java)|Medium|
 |784|Letter case permutations| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/LetterCasePermutations.java)|Medium|
 |787|Cheapest flight with K stops| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/CheapestFlight.java)|Medium|
 |791|Custom Sort String| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/CustomSortString.java)|Medium|
