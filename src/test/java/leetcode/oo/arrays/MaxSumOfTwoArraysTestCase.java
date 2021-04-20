@@ -19,6 +19,12 @@ public final class MaxSumOfTwoArraysTestCase {
     @Test
     public void test() {
         Assert.assertEquals(
+            20,
+            this.alg.maxSumTwoNoOverlap(
+                new int[]{0,6,5,2,2,5,1,9,4}, 2, 1
+            )
+        );
+        Assert.assertEquals(
             31,
             this.alg.maxSumTwoNoOverlap(
                 new int[]{2, 1, 5, 6, 0, 9, 5, 0, 3, 8}, 4, 3

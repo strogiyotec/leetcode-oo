@@ -13,18 +13,18 @@ final class PartitionLabels {
         for (int i = 0; i < line.length(); i++) {
             map.put(line.charAt(i), i);
         }
+        final List<Integer> list = new ArrayList<>(line.length());
         int left = 0;
-        final List<Integer> solution = new ArrayList<>(line.length());
         while (left < line.length()) {
-            int end = map.get(line.charAt(left));
             int right = left;
-            while (right != end) {
-                end = Math.max(end, map.get(line.charAt(right)));
+            int max = map.get(line.charAt(left));
+            while (right < max) {
                 right++;
+                max = Math.max(map.get(line.charAt(right)), max);
             }
-            solution.add(right - left + 1);
+            list.add(right - left + 1);
             left = right + 1;
         }
-        return solution;
+        return list;
     }
 }

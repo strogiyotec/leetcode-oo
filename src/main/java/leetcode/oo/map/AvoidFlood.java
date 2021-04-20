@@ -8,26 +8,31 @@ import java.util.TreeSet;
 final class AvoidFlood {
 
     int[] avoidFlood(final int[] rains) {
-        final Map<Integer, Integer> rainCnt = new HashMap<>(rains.length);
+        final TreeSet<Integer> empty = new TreeSet<>();
+        final Map<Integer, Integer> fulled = new HashMap<>();
         final int[] answer = new int[rains.length];
-        final TreeSet<Integer> set = new TreeSet<>();
         for (int i = 0; i < rains.length; i++) {
             if (rains[i] == 0) {
-                set.add(i);
+                empty.add(i);
             } else {
-                if (rainCnt.containsKey(rains[i])) {
-                    final Integer next = set.ceiling(rainCnt.get(rains[i]));
-                    if (next == null) {
+                if (fulled.containsKey(rains[i])) {
+                    if (empty.isEmpty()) {
                         return new int[]{};
+                    } else {
+                        final Integer higher = empty.higher(fulled.get(rains[i]));
+                        if (higher == null) {
+                            return new int[]{};
+                        } else {
+                            answer[higher] = rains[i];
+                            empty.remove(higher);
+                        }
                     }
-                    answer[next] = rains[i];
-                    set.remove(next);
                 }
                 answer[i] = -1;
-                rainCnt.put(rains[i], i);
+                fulled.put(rains[i], i);
             }
         }
-        for (final Integer index : set) {
+        for (final Integer index : empty) {
             answer[index] = 1;
         }
         return answer;

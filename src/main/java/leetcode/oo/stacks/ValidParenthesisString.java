@@ -5,28 +5,28 @@ import java.util.Stack;
 final class ValidParenthesisString {
 
     boolean checkValidString(final String str) {
-        final Stack<Integer> leftBrackets = new Stack<>();
-        final Stack<Integer> stars = new Stack<>();
+        final Stack<Integer> left = new Stack<>();
+        final Stack<Integer> star = new Stack<>();
         for (int i = 0; i < str.length(); i++) {
             if (str.charAt(i) == '(') {
-                leftBrackets.push(i);
+                left.push(i);
             } else if (str.charAt(i) == '*') {
-                stars.push(i);
+                star.push(i);
             } else {
-                if (!leftBrackets.isEmpty()) {
-                    leftBrackets.pop();
-                } else if (!stars.isEmpty()) {
-                    stars.pop();
+                if (!left.isEmpty()) {
+                    left.pop();
+                } else if (!star.isEmpty()) {
+                    star.pop();
                 } else {
                     return false;
                 }
             }
         }
-        while (!leftBrackets.isEmpty() && !stars.isEmpty()) {
-            if (leftBrackets.pop() > stars.pop()) {
+        while(!left.isEmpty() && !star.isEmpty()){
+            if(left.pop() > star.pop()){
                 return false;
             }
         }
-        return leftBrackets.isEmpty();
+        return left.isEmpty();
     }
 }

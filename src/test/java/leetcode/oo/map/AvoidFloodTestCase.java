@@ -19,6 +19,10 @@ public final class AvoidFloodTestCase {
     @Test
     public void test() {
         Assert.assertArrayEquals(
+            new int[]{-1,69,1,1,-1},
+            this.alg.avoidFlood(new int[]{69,0,0,0,69})
+        );
+        Assert.assertArrayEquals(
             new int[]{-1, 1, -1, 2, -1, -1},
             this.alg.avoidFlood(new int[]{1, 0, 2, 0, 2, 1})
         );
