@@ -75,6 +75,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |129|Sum Root to Leaf Numbers| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/RootToLeafSum.java)|Medium|
 |130|Surrounded Regions| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/SurroundRegions.java)|Medium|
 |133|Clone Graph| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/CloneGraph.java)|Medium|
+|135|Candies| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/greedy/Candies.java)|Hard|
 |139|Word Break| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/WordBreak.java)|Medium|
 |140|Word Break 2 | [Java](https://github.com/strogiyotec/leetcode-oo/blob/5abd3598527c369b9cda33b5b28fdbf967f5d49d/src/main/java/leetcode/oo/dp/WordBreak2.java)|Hard|
 |143|Reorder list| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/ll/ReorderList.java)|Medium|
@@ -237,7 +238,6 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1726|Tuples with same product| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/TuplesWithSameProduct.java)|Medium|
 |1770|Max Score performing operations| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/MaxScore.java)|Medium|
 |1779|Find Nearest point| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/NearestPoint.java)|Easy|
-
 
 ## Introduction to Algorithms problems
 

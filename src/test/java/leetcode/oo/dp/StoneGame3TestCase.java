@@ -19,6 +19,18 @@ public final class StoneGame3TestCase {
     @Test
     public void test() {
         Assert.assertEquals(
+            "Tie",
+            this.alg.stoneGameIII(
+                new int[]{-1, -2, -3}
+            )
+        );
+        Assert.assertEquals(
+            "Tie",
+            this.alg.stoneGameIII(
+                new int[]{1, 2, 3, 6}
+            )
+        );
+        Assert.assertEquals(
             "Alice",
             this.alg.stoneGameIII(
                 new int[]{1, 2, 3, -9}
