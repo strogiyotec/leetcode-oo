@@ -219,6 +219,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1443|Minimum time to collect apples in a tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/MinCostApples.java)|Medium|
 |1448|Count good nodes in binary tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/GoodNodes.java)|Medium|
 |1462|Course Schedule 4| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/CourseSchedule4.java)|Medium|
+|1482|Min number of days to make bouquets| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/binarysearch/MinNumberDaysBouquets.java)|Medium|
 |1488|Avoid Flood in the city| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/AvoidFlood.java)|Medium|
 |1509|Min Diff Between min and max in three moves| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/sort/MinDiffInThreeMoves.java)|Medium|
 |1512|Good Pairs| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/GoodPairs.java)|Easy|
