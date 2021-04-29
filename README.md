@@ -106,6 +106,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |239|Sliding Window Maximum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/window/MaxSlidingWindow.java)|Hard|
 |257|Binary Tree Paths| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/path/BinaryTreePaths.java)|Easy|
 |268|Missing number| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/bits/MissingNumber.java)|Easy|
+|274|H-Index| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/HIndex.java)|Medium|
 |283|Move zeroes| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/MoveZeroes.java)|Easy|
 |297|Serialize and Deserialize Binary Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/SerializeAndDeser.java)|Hard|
 |298|BINARY TREE LONGEST CONSECUTIVE SEQUENCE| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/LongestConsSeqTree.java)|Medium|
