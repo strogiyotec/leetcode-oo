@@ -192,6 +192,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |973|K Closest Points to Origin| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/KClosestElements.java)|Medium|
 |977|Squares of a Sorted Array| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/SquaresSortedArray.java)|Easy|
 |979|Distribute coins in binary tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/DistributeCoins.java)|Medium|
+|986|Interval List Intersections| [Java](https://github.com/strogiyotec/leetcode-oo/blob/f8aed4c462598ca9392c7483af6dd263b48db0ff/src/main/java/leetcode/oo/pointers/ListIntersection.java)|Medium|
 |988|Smallest String Starting From Leaf| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/RootToLeafSum.java)|Medium|
 |993|Cousins in Binary tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/Cousins.java)|Easy|
 |994|Rotting Oranges| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/RottingOranges.java)|Medium|
