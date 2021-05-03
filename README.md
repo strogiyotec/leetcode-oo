@@ -249,6 +249,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1726|Tuples with same product| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/TuplesWithSameProduct.java)|Medium|
 |1770|Max Score performing operations| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/MaxScore.java)|Medium|
 |1779|Find Nearest point| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/NearestPoint.java)|Easy|
+|1796|Second Largest Digit| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/SecondLargestDigit.java)|Easy|
 |1839|Longest Substring of All Vowels| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/LongestSubstringOfAllVowels.java)|Medium|
 
 ## Introduction to Algorithms problems
