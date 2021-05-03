@@ -42,6 +42,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |64 |Minimum Path Sum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/MinPathSum.java)| Medium|
 |66 |Plus one| [Java](https://github.com/strogiyotec/leetcode-oo/blob/2d3bb11a6194aa522a70bbb8c638b18dfae7e78d/src/main/java/leetcode/oo/arrays/PlusOne.java)| Easy|
 |70 |Climbing Stairs| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/ClimbStairs.java)| Easy|
+|71 |Simplify Path| [Java](https://github.com/strogiyotec/leetcode-oo/blob/942d7ad2c859ee3b9d53aa4ad9cac2292f77a615/src/main/java/leetcode/oo/strings/SimplifyPath.java)| Medium|
 |72 |Edit Distance| [Java](https://github.com/strogiyotec/leetcode-oo/blob/88f17915fc27a01be6ebabd4d6fdc44253bcab10/src/main/java/leetcode/oo/dp/EditDistance.java)| Hard|
 |74 |Search a 2D Matrix| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/SearchMatrix.java)| Medium|
 |75 |Sort colors| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/SortColors.java)| Medium|
