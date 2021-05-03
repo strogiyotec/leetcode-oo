@@ -1,6 +1,6 @@
 package leetcode.oo.strings;
 
-//https://leetcode.com/problems/robot-return-to-origin/
+//
 final class RobotReturnOrigin {
 
     boolean judgeCircle(final String moves) {
@@ -11,7 +11,7 @@ final class RobotReturnOrigin {
                 left++;
             } else if (moves.charAt(i) == 'R') {
                 left--;
-            } else if (moves.charAt(i) == '') {
+            } else if (moves.charAt(i) == 'U') {
                 top++;
             } else if (moves.charAt(i) == 'D') {
                 top--;
