@@ -191,6 +191,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |894|All Possible Full Binary Trees| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/PossibleTrees.java)|Medium|
 |917|Reverse Only Letters| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/ReverseLetters.java)|Easy|
 |929|Unique Emails| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/UniqueEmails.java)|Easy|
+|930|Binary Subarray with Sum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/BinarySubArrayWithSum.java)|Medium|
 |934|Shortest Bridge| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/dfs/ShortestBridge.java)|Medium|
 |938|Range sum of Bst| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/RangeSumOfBst.java)|Easy|
 |951|Flip Equivalent Binary Trees| [Java](https://github.com/strogiyotec/leetcode-oo/blob/4a7806b32d377e1ebe90ba815897ab3a29d19226/src/main/java/leetcode/oo/tree/EvenGrandParents.java)|Medium|
