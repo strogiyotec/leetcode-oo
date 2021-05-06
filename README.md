@@ -80,6 +80,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |135|Candies| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/greedy/Candies.java)|Hard|
 |139|Word Break| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/WordBreak.java)|Medium|
 |140|Word Break 2 | [Java](https://github.com/strogiyotec/leetcode-oo/blob/5abd3598527c369b9cda33b5b28fdbf967f5d49d/src/main/java/leetcode/oo/dp/WordBreak2.java)|Hard|
+|141|Linked List has cycles| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/ll/ListHasCycle.java)|Easy|
 |143|Reorder list| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/ll/ReorderList.java)|Medium|
 |146|LRU Cache| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/design/LRUCache.java)|Medium|
 |148|Sort list| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/ll/SortList.java)|Medium|
