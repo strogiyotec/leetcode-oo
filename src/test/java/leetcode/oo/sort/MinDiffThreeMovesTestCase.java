@@ -22,5 +22,9 @@ public final class MinDiffThreeMovesTestCase {
             2,
             this.alg.minDifference(new int[]{6, 6, 0, 1, 1, 4, 6})
         );
+        Assert.assertEquals(
+            1,
+            this.alg.minDifference(new int[]{1, 5, 0, 10, 14})
+        );
     }
 }

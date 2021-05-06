@@ -20,6 +20,16 @@ public final class MergeIntervalsTestCase {
     public void test() {
         Assert.assertArrayEquals(
             new int[][]{
+                {1, 10}
+            },
+            this.alg.merge(
+                new int[][]{
+                    {2, 3}, {4, 5}, {6, 7}, {8, 9}, {1, 10}
+                }
+            )
+        );
+        Assert.assertArrayEquals(
+            new int[][]{
                 {1, 6},
                 {8, 10},
                 {15, 18}
@@ -30,16 +40,6 @@ public final class MergeIntervalsTestCase {
                     {2, 6},
                     {8, 10},
                     {15, 18}
-                }
-            )
-        );
-        Assert.assertArrayEquals(
-            new int[][]{
-                {1, 10}
-            },
-            this.alg.merge(
-                new int[][]{
-                    {2, 3}, {4, 5}, {6, 7}, {8, 9}, {1, 10}
                 }
             )
         );
