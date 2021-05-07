@@ -118,6 +118,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |301|Remove Invalid Parentheses| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/RemoveInvalidParentheses.java)|Hard|
 |316|Remove duplicate Letters| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/stacks/RemoveDuplicateLetters.java)|Medium|
 |322|Coin Change| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/CoinChange.java)|Medium|
+|332|Reconstruct Itinerary| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/ReconstructItinerary.java)|Medium|
 |337|House Robber 3| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/HouseRobber3.java)|Medium|
 |341|Flatten Nested Iterator| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/design/NestedIterator.java)|Medium|
 |344|Reverse String| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/ReverseString.java)|Easy|
