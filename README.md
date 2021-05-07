@@ -116,6 +116,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |298|BINARY TREE LONGEST CONSECUTIVE SEQUENCE| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/LongestConsSeqTree.java)|Medium|
 |300|Longest Increasing Subsequence| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/IncreasingSequence.java)|Medium|
 |301|Remove Invalid Parentheses| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/RemoveInvalidParentheses.java)|Hard|
+|307|Range sum query Mutable| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/design/NumArray.java)|Medium|
 |316|Remove duplicate Letters| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/stacks/RemoveDuplicateLetters.java)|Medium|
 |322|Coin Change| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/CoinChange.java)|Medium|
 |332|Reconstruct Itinerary| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/ReconstructItinerary.java)|Medium|
