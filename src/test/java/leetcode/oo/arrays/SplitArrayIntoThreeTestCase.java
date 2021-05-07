@@ -19,6 +19,12 @@ public final class SplitArrayIntoThreeTestCase {
     @Test
     public void test() {
         Assert.assertEquals(
+            1,
+            this.alg.waysToSplit(
+                new int[]{1,1,1}
+            )
+        );
+        Assert.assertEquals(
             3,
             this.alg.waysToSplit(
                 new int[]{1, 2, 2, 2, 5, 0}
