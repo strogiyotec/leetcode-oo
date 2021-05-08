@@ -21,6 +21,14 @@ public final class CarPoolingTestCase {
         Assert.assertTrue(
             this.alg.carPooling(
                 new int[][]{
+                    {3, 2, 8}, {4, 4, 6}, {10, 8, 9}
+                },
+                11
+            )
+        );
+        Assert.assertTrue(
+            this.alg.carPooling(
+                new int[][]{
                     {9, 3, 4}, {9, 1, 7}, {4, 2, 4}, {7, 4, 5}
                 },
                 23
