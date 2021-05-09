@@ -186,6 +186,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |791|Custom Sort String| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/CustomSortString.java)|Medium|
 |797|All Paths From Source to Target| [Java](https://github.com/strogiyotec/leetcode-oo/blob/26fc9f7df8129f08116fdb26d074779f98d25659/src/main/java/leetcode/oo/graphs/AllPathFromSource.java)|Medium|
 |826|Most Profit Assigning Work| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/MaxProfitWorker.java)|Medium|
+|834|Sum Of Distances in tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/SumDistanceTree.java)|Hard|
 |844|Backspace String Compare| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/stacks/BackSpaceStrCompare.java)|Easy|
 |859|Buddy Strings| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/BuddyStrings.java)|Easy|
 |860|Lemonade Change| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/greedy/LemonadeChange.java)|Easy|
