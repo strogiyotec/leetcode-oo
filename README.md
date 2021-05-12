@@ -224,6 +224,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1092|Shortest Common Supersequence| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/SCS.java)|Hard|
 |1094|Car Pooling| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/CarPooling.java)|Medium|
 |1143|Longest Common Subsequence| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/LCS.java)|Medium|
+|1145|Binary Tree Coloring Game| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/BinaryTreeColoring.java)|Medium|
 |1161|Maximum Level Sum of a Binary Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/MaxLevelSumOfBinaryTree.java)|Medium|
 |1160|Find Words That Can Be Formed by Characters| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/WordsByCharacters.java)|Easy|
 |1249|Minimum Remove to make a valid parenthesis| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/stacks/MinRemoveValidParenthesis.java)|Medium|
