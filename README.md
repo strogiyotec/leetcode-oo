@@ -271,6 +271,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1781|Sum Of beauty of All Substrings| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/SumOfBeautyOfAllStrings.java)|Medium|
 |1786|Number Of Restricted Paths| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/NumberOfRestrictPaths.java)|Medium|
 |1796|Second Largest Digit| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/SecondLargestDigit.java)|Easy|
+|1812|Square is white| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/SquareIsWhite.java)|Easy|
 |1839|Longest Substring of All Vowels| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/LongestSubstringOfAllVowels.java)|Medium|
 |1855|Distance Between two points| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/MaxDistanceBetweenPairs.java)|Medium|
 
