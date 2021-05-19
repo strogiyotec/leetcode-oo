@@ -6,19 +6,12 @@ import java.util.Set;
 //https://leetcode.com/problems/distribute-candies/
 final class DistributeCandies {
 
-    int distributeCandies(int[] array) {
-        int limit = array.length / 2;
-        int cnt = 0;
-        final Set<Integer> set = new HashSet<>();
-        for (final int j : array) {
-            if (limit <= 0) {
-                break;
-            }
-            if (set.add(j)) {
-                cnt++;
-                limit--;
-            }
+    int distributeCandies(final int[] array) {
+        final int limit = array.length / 2;
+        final Set<Integer> set = new HashSet<>(array.length);
+        for (final int i : array) {
+            set.add(i);
         }
-        return cnt;
+        return Math.min(set.size(),limit);
     }
 }
