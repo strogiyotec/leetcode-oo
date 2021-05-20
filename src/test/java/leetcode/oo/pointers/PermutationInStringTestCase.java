@@ -20,8 +20,14 @@ public final class PermutationInStringTestCase {
     public void test() {
         Assert.assertTrue(
             this.alg.checkInclusion(
-                "abcdxabcde",
-                "abcdeabcdx"
+                "adc",
+                "dcda"
+            )
+        );
+        Assert.assertTrue(
+            this.alg.checkInclusion(
+                "ab",
+                "eidbaooo"
             )
         );
         Assert.assertFalse(
@@ -32,8 +38,8 @@ public final class PermutationInStringTestCase {
         );
         Assert.assertTrue(
             this.alg.checkInclusion(
-                "ab",
-                "eidbaooo"
+                "abcdxabcde",
+                "abcdeabcdx"
             )
         );
     }

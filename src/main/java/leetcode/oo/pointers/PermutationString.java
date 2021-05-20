@@ -7,30 +7,33 @@ import java.util.Map;
 final class PermutationString {
 
     boolean checkInclusion(final String s1, final String s2) {
-        final Map<Character, Integer> cnt = new HashMap<>();
+        final Map<Character, Integer> originalCnt = new HashMap<>(s1.length());
+        final Map<Character, Integer> permutationCnt = new HashMap<>(s2.length());
         for (int i = 0; i < s1.length(); i++) {
-            cnt.merge(s1.charAt(i), 1, Integer::sum);
+            originalCnt.merge(s1.charAt(i), 1, Integer::sum);
         }
-        int matched = 0;
-        for (int i = 0; i < s2.length(); i++) {
-            final char c = s2.charAt(i);
-            if (cnt.containsKey(c)) {
-                if (cnt.computeIfPresent(c, (character, integer) -> integer - 1) == 0) {
-                    matched++;
-                }
-            }
-            if (i >= s1.length()) {
-                final int mode = i - s1.length();
-                if (cnt.containsKey(s2.charAt(mode))) {
-                    if (cnt.get(s2.charAt(mode)) == 0) {
-                        matched--;
+        int left = 0;
+        int right = 0;
+        while (right <= s2.length()) {
+            if (right-left == s1.length()) {
+                if (permutationCnt.equals(originalCnt)) {
+                    return true;
+                } else {
+                    if (permutationCnt.computeIfPresent(s2.charAt(left), (oldKey, oldValue) -> oldValue - 1) == 0) {
+                        permutationCnt.remove(s2.charAt(left));
                     }
-                    cnt.merge(s2.charAt(mode), 1, Integer::sum);
+                    left++;
+                    if (right < s2.length()) {
+                        permutationCnt.merge(s2.charAt(right), 1, Integer::sum);
+                    }
                 }
+            } else {
+                if (right == s2.length()) {
+                    break;
+                }
+                permutationCnt.merge(s2.charAt(right), 1, Integer::sum);
             }
-            if (matched == cnt.size()) {
-                return true;
-            }
+            right++;
         }
         return false;
     }
