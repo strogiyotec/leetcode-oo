@@ -1,40 +1,35 @@
 package leetcode.oo.pointers;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 //https://leetcode.com/problems/interval-list-intersections/
 final class ListIntersection {
 
     int[][] intervalIntersection(int[][] firstList, int[][] secondList) {
-        if (firstList.length == 0 || secondList.length == 0) {
-            return new int[0][0];
-        }
-        final List<List<Integer>> solution = new ArrayList<>();
+        final List<int[]> solution = new ArrayList<>();
         int firstIndex = 0;
         int secondIndex = 0;
         while (firstIndex < firstList.length && secondIndex < secondList.length) {
-            if ((firstList[firstIndex][1] <= secondList[secondIndex][1] && firstList[firstIndex][1] >= secondList[secondIndex][0]) ||
-                (secondList[secondIndex][1] <= firstList[firstIndex][1] && secondList[secondIndex][1] >= firstList[firstIndex][0])
-            ) {
-                solution.add(
-                    Arrays.asList(
-                        Math.max(firstList[firstIndex][0], secondList[secondIndex][0]),
-                        Math.min(firstList[firstIndex][1], secondList[secondIndex][1])
-                    )
-                );
-            }
-            if (firstList[firstIndex][1] <= secondList[secondIndex][1]) {
+            final int[] second = secondList[secondIndex];
+            final int[] first = firstList[firstIndex];
+            if (second[0] > first[1]) {
                 firstIndex++;
-            } else {
+            } else if (first[0] > second[1]) {
                 secondIndex++;
+            } else {
+                solution.add(new int[]{Math.max(second[0], first[0]), Math.min(first[1], second[1])});
+                if (first[1] < second[1]) {
+                    firstIndex++;
+                } else {
+                    secondIndex++;
+                }
             }
         }
-        final int[][] asMatrix = new int[solution.size()][2];
+        final int[][] matrix = new int[solution.size()][2];
         for (int i = 0; i < solution.size(); i++) {
-            asMatrix[i] = new int[]{solution.get(i).get(0), solution.get(i).get(1)};
+            matrix[i] = solution.get(i);
         }
-        return asMatrix;
+        return matrix;
     }
 }
