@@ -9,31 +9,39 @@ final class MinNumberDaysBouquets {
         }
         int min = Integer.MAX_VALUE;
         int max = Integer.MIN_VALUE;
-        for (final int day : bloomDays) {
-            min = Math.min(min, day);
-            max = Math.max(max, day);
+        for (final int bloomDay : bloomDays) {
+            min = Math.min(min, bloomDay);
+            max = Math.max(max, bloomDay);
         }
-        while (min < max) {
-            final int middle = min + (max - min) / 2;
-            int freq = 0;
-            int cnt = 0;
-            for (final int day : bloomDays) {
-                if (day <= middle) {
-                    freq++;
-                } else {
-                    freq = 0;
+        int days = Integer.MAX_VALUE;
+        while (min <= max) {
+            final int middle = (max - min) / 2 + min;
+            int count = 0;
+            int currentAmount = 0;
+            for (final int bloomDay : bloomDays) {
+                if(currentAmount == bouquets){
+                    break;
                 }
-                if (freq == amount) {
-                    cnt++;
-                    freq = 0;
+                if (bloomDay <= middle) {
+                    count++;
+                }
+                if (bloomDay > middle) {
+                    count = 0;
+                }
+                if (count == amount) {
+                    count = 0;
+                    currentAmount++;
                 }
             }
-            if (cnt < bouquets) {
-                min = middle + 1;
+            if(currentAmount == bouquets){
+                days = Math.min(days, middle);
+            }
+            if (currentAmount >= bouquets) {
+                max = middle - 1;
             } else {
-                max = middle;
+                min = middle + 1;
             }
         }
-        return min;
+        return days;
     }
 }
