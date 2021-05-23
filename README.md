@@ -200,6 +200,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |859|Buddy Strings| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/BuddyStrings.java)|Easy|
 |860|Lemonade Change| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/greedy/LemonadeChange.java)|Easy|
 |870|Advantage Shuffle| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/AdvantageShuffle.java)|Medium|
+|875|Koko eating bananas| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/binarysearch/KokoEatingBanana.java)|Medium|
 |876|Middle of the Linked List| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/ll/MiddleOfLinked.java)|Easy|
 |884|Uncommon Words| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/UncommonWords.java)|Easy|
 |886|Possible Bipartition| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/PossibleBiPart.java)|Medium|
@@ -249,6 +250,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1443|Minimum time to collect apples in a tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/MinCostApples.java)|Medium|
 |1448|Count good nodes in binary tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/GoodNodes.java)|Medium|
 |1462|Course Schedule 4| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/CourseSchedule4.java)|Medium|
+|1466|Reourder Routes| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/ReorderRoutes.java)|Medium|
 |1481|Least Number of Unique Integers after K removal| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/LeastNumberUniqueElement.java)|Medium|
 |1482|Min number of days to make bouquets| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/binarysearch/MinNumberDaysBouquets.java)|Medium|
 |1488|Avoid Flood in the city| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/AvoidFlood.java)|Medium|
