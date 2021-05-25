@@ -264,6 +264,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1550|Three consecuve odds| [Java](https://github.com/strogiyotec/leetcode-oo/blob/2e200c2530d60390eebbeb7a6a54a6a1d328dac2/src/main/java/leetcode/oo/arrays/ThreeConsecutiveOdds.java)|Easy|
 |1557|Minimum number of vertices to reach all nodes| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/MinVerticesToReachAllNodes.java)|Medium|
 |1572|Matrix Diagonal Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/MatrixDiagSum.java)|Easy|
+|1575|Count all routes| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/CountAllRoutes.java)|Hard|
 |1576|Replace All ?'s to Avoid Consecutive Repeating Characters| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/ReplaceAll.java)|Easy|
 |1577|Number of Ways Square Equals to Product| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/SquareEqualToProduct.java)|Medium|
 |1578|Min deletion cost to avoid repeating characters| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/greedy/MinDeletionCost.java)|Medium|
