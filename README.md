@@ -246,6 +246,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1337|Weakest Rows In Matrix| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/WeakestRowsMatrix.java)|Easy|
 |1365|How Many Numbers Are Smaller Than the Current Number| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/HowManySmallerNumbers.java)|Easy|
 |1376|Time needed to inform all employees| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/NotifyEmployess.java)|Medium|
+|1377|Frog Position after T seconds| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/FrogPosition.java)|Hard|
 |1395|Count Number Of Teams| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/CountSolders.java)|Medium|
 |1406|Stone Game 3| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/StoneGame3.java)|Hard|
 |1423|Max Points Obtain from Cards| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/MaxPointsObtain.java)|Medium|
