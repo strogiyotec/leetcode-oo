@@ -256,6 +256,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1462|Course Schedule 4| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/CourseSchedule4.java)|Medium|
 |1466|Reourder Routes| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/ReorderRoutes.java)|Medium|
 |1471|K strongest values| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/KStrongestValues.java)|Medium|
+|1475|Final Prices with a Special Discount| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/FinalPrices.java)|Easy|
 |1480|Running sum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/RunningSum.java)|Easy|
 |1481|Least Number of Unique Integers after K removal| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/LeastNumberUniqueElement.java)|Medium|
 |1482|Min number of days to make bouquets| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/binarysearch/MinNumberDaysBouquets.java)|Medium|
