@@ -262,6 +262,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1481|Least Number of Unique Integers after K removal| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/LeastNumberUniqueElement.java)|Medium|
 |1482|Min number of days to make bouquets| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/binarysearch/MinNumberDaysBouquets.java)|Medium|
 |1488|Avoid Flood in the city| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/AvoidFlood.java)|Medium|
+|1504|Count Submatrices| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/matrix/CountSubmatrices.java)|Medium|
 |1509|Min Diff Between min and max in three moves| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/sort/MinDiffInThreeMoves.java)|Medium|
 |1512|Good Pairs| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/GoodPairs.java)|Easy|
 |1524|Number of Sub arrays with odd sum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/OddSumSubArrays.java)|Medium|
