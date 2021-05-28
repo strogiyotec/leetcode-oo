@@ -6,17 +6,17 @@ import java.util.Arrays;
 final class MinDiffInThreeMoves {
 
     int minDifference(final int[] nums) {
-        if (nums.length < 5) {
+        if (nums.length <= 3) {
             return 0;
         }
         Arrays.sort(nums);
-        int min = Integer.MAX_VALUE;
-        for (int i = 0; i < 4; i++) {
-            min = Math.min(
-                min,
-                nums[nums.length - 4 + i] - nums[i]
-            );
+        int minDiff = Integer.MAX_VALUE;
+        for (int i = 3; i >= 0; i--) {
+            final int removeBiggest = nums[nums.length - 1 - i] - nums[3 - i];
+            final int removeSmallest = nums[nums.length - 1] - nums[i];
+            final int min = Math.min(removeBiggest, removeSmallest);
+            minDiff = Math.min(minDiff, min);
         }
-        return min;
+        return minDiff;
     }
 }
