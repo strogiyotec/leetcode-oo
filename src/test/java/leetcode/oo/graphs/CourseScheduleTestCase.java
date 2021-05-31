@@ -30,6 +30,15 @@ public final class CourseScheduleTestCase {
             ));
         Assert.assertFalse(
             this.alg.canFinish(
+                3,
+                new int[][]{
+                    {1, 0},
+                    {0, 2},
+                    {2, 1}
+                }
+            ));
+        Assert.assertFalse(
+            this.alg.canFinish(
                 2,
                 new int[][]{
                     {1, 0},
