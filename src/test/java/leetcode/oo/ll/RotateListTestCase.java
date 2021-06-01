@@ -20,6 +20,12 @@ public final class RotateListTestCase {
     @Test
     public void test() {
         Assert.assertEquals(
+            "1_2_3_4_5",
+            this.alg.rotateRight(
+                new ListNode(1).withNext(2).withNext(3).withNext(4).withNext(5), 10
+            ).toString()
+        );
+        Assert.assertEquals(
             "4_5_1_2_3",
             this.alg.rotateRight(
                 new ListNode(1).withNext(2).withNext(3).withNext(4).withNext(5), 2
