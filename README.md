@@ -269,6 +269,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1509|Min Diff Between min and max in three moves| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/sort/MinDiffInThreeMoves.java)|Medium|
 |1512|Good Pairs| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/GoodPairs.java)|Easy|
 |1524|Number of Sub arrays with odd sum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/OddSumSubArrays.java)|Medium|
+|1536|Min swap to arrange a binary grid| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/sort/MinSwapArrangeGrid.java)|Medium|
 |1539|Kth missing positive number| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/KthMissingPositive.java)|Easy|
 |1550|Three consecuve odds| [Java](https://github.com/strogiyotec/leetcode-oo/blob/2e200c2530d60390eebbeb7a6a54a6a1d328dac2/src/main/java/leetcode/oo/arrays/ThreeConsecutiveOdds.java)|Easy|
 |1557|Minimum number of vertices to reach all nodes| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/MinVerticesToReachAllNodes.java)|Medium|
