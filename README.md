@@ -125,6 +125,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |307|Range sum query Mutable| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/design/NumArray.java)|Medium|
 |316|Remove duplicate Letters| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/stacks/RemoveDuplicateLetters.java)|Medium|
 |322|Coin Change| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/CoinChange.java)|Medium|
+|328|Odd Even Linked List| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/ll/OddEvenLL.java)|Medium|
 |332|Reconstruct Itinerary| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/ReconstructItinerary.java)|Medium|
 |337|House Robber 3| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/HouseRobber3.java)|Medium|
 |341|Flatten Nested Iterator| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/design/NestedIterator.java)|Medium|
