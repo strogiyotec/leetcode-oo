@@ -250,6 +250,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1297|Maximum Length Of a concatenated string with unique characters| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/MaxLengthConcatStr.java)|Medium|
 |1319|Number of operations to make graph connected| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/NumberOfOperationToMakeNetworkConnected.java)|Medium|
 |1337|Weakest Rows In Matrix| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/WeakestRowsMatrix.java)|Easy|
+|1351|Count negative in a Matrix| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/matrix/CountNegativeNumbers.java)|Easy|
 |1365|How Many Numbers Are Smaller Than the Current Number| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/HowManySmallerNumbers.java)|Easy|
 |1376|Time needed to inform all employees| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/NotifyEmployess.java)|Medium|
 |1377|Frog Position after T seconds| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/FrogPosition.java)|Hard|
