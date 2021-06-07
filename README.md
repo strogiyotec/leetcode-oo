@@ -254,6 +254,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1277|Count Square submatrixes with all ones| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/matrix/CountSqureSubmatrices.java)|Medium|
 |1288|Remove covered intervals| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/greedy/RemoveCovered.java)|Medium|
 |1297|Maximum Length Of a concatenated string with unique characters| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/MaxLengthConcatStr.java)|Medium|
+|1299|Replace element with greatest| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/ReplaceElementWithGreatestElem.java)|Easy|
 |1319|Number of operations to make graph connected| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/NumberOfOperationToMakeNetworkConnected.java)|Medium|
 |1337|Weakest Rows In Matrix| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/WeakestRowsMatrix.java)|Easy|
 |1338|Reduce array size by half| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/ReduceArraySize.java)|Medium|
