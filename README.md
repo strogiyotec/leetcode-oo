@@ -38,6 +38,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |52 |Maximum Subarray| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/sliding/MaxSubArray.java)| Easy|
 |55 |Jump Game| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/greedy/JumpGame.java)| Medium|
 |56 |Merge Intervals| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/MergeIntervals.java)| Medium|
+|57 |Insert interval| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/greedy/InsertInterval.java)| Medium|
 |61 |Rotate List| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/ll/RotateList.java)| Medium|
 |62 |Unique Paths| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/UniquePaths.java)| Medium|
 |63 |Unique Paths 2| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/UniquePathsWithObstacle.java)| Medium|
