@@ -199,6 +199,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |787|Cheapest flight with K stops| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/CheapestFlight.java)|Medium|
 |791|Custom Sort String| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/CustomSortString.java)|Medium|
 |797|All Paths From Source to Target| [Java](https://github.com/strogiyotec/leetcode-oo/blob/26fc9f7df8129f08116fdb26d074779f98d25659/src/main/java/leetcode/oo/graphs/AllPathFromSource.java)|Medium|
+|807|Max Increase city skyline| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/matrix/Skyline.java)|Medium|
 |814|Prune binary tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/PruneTree.java)|Medium|
 |826|Most Profit Assigning Work| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/MaxProfitWorker.java)|Medium|
 |827|Making a large Island| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/dfs/LargeIsland.java)|Hard|
