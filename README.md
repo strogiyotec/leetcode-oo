@@ -136,6 +136,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |349|Intersection of Two Arrays| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/ArraysIntersection.java)|Easy|
 |383|Ransom Note| [Java](https://github.com/strogiyotec/leetcode-oo/blob/30acc74a949222ac9a988d79b3a5daacb4b74668/src/main/java/leetcode/oo/strings/RansomNote.java)|Easy|
 |387|First unique character| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/FirstUniqueCharacter.java)|Easy|
+|392|Is sequence| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/Subsequence.java)|Easy|
 |394|Decode String| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/stacks/DecodeString.java)|Medium|
 |395|Longest Substring with At Least K Repeating Characters| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/LongestStrWithKRepeatedChars.java)|Medium|
 |399|Evaluate Division| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/EvaluateDivision.java)|Medium|
