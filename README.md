@@ -207,6 +207,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |814|Prune binary tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/PruneTree.java)|Medium|
 |826|Most Profit Assigning Work| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/MaxProfitWorker.java)|Medium|
 |827|Making a large Island| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/dfs/LargeIsland.java)|Hard|
+|832|FLipping image| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/matrix/FlippingImage.java)|Easy|
 |834|Sum Of Distances in tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/SumDistanceTree.java)|Hard|
 |844|Backspace String Compare| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/stacks/BackSpaceStrCompare.java)|Easy|
 |856|Deepst Node in Subtree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/DeepestNodesTree.java)|Medium|
