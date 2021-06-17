@@ -215,6 +215,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |856|Deepst Node in Subtree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/DeepestNodesTree.java)|Medium|
 |859|Buddy Strings| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/BuddyStrings.java)|Easy|
 |860|Lemonade Change| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/greedy/LemonadeChange.java)|Easy|
+|863|All Nodes Distance K| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/AllNodesDistanceK.java)|Medium|
 |867|Transpose Matrix| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/matrix/Transpose.java)|Easy|
 |870|Advantage Shuffle| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/AdvantageShuffle.java)|Medium|
 |875|Koko eating bananas| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/binarysearch/KokoEatingBanana.java)|Medium|
