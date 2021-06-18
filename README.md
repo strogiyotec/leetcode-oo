@@ -175,6 +175,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |621|Task Scheduler| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/greedy/TaskScheduler.java)|Medium|
 |637|Average of Levels in Binary Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/dda3e5efe7bddfea2f2b7d4a78a12006ba5cdefb/src/main/java/leetcode/oo/graphs/AverageLevels.java)|Easy|
 |643|Maximum Average SumArray 1| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/MaxAverage1.java)|Easy|
+|646|Max Length of Pair Chain| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/MaxLengthPairChain.java)|Medium|
 |647|Palindrome substrings| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/PalindromeSubs.java)|Medium|
 |648|Replace Words| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/ReplaceWords.java)|Medium|
 |652|Find Duplicate Subtrees| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/DuplicateSubTrees.java)|Medium|
