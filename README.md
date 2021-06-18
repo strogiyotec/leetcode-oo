@@ -155,6 +155,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |448|Find All Numbers Disappeared in an Array| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/DisappearedNumbers.java)|Easy|
 |449|Serialize Binary Search Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/SerializeBST.java)|Medium|
 |453|Minimum moves to Equal Array Elements| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/math/MinMoveEqualArray.java)|Easy|
+|491|Increasing subsequences| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/dfs/IncreasingSubsequence.java)|Medium|
 |501|Find Mode in Binary Search Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/ModeInBst.java)|Easy|
 |508|Most Frequent Subtree Sum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/dfs/MostFrequentSum.java)|Medium|
 |515|Find Largest Value in Each Tree Row| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/LargestRowInTree.java)|Medium|
