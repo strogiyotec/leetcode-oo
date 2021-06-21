@@ -62,6 +62,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |96|Unique Binary Search Trees| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/UniqueTrees.java)|Medium|
 |97|Interleaving String| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/InterleavingStrings.java)|Hard|
 |98|Validate Binary Search Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/ValidBst.java)|Medium|
+|99|Recover Binary tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/RecoverBinaryTree.java)|Medium|
 |101|Symmetric Trees| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/SymmetricTrees.java)|Easy|
 |102|Binary Tree Level Order Traversal| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/LevelOrderTraversal.java)|Medium|
 |104|Maximum Depth of Binary Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/NodeDepth.java)|Easy|
