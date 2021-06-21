@@ -247,6 +247,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1010|Pair of Songs| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/PairOfSongs.java)|Medium|
 |1011|Capacity to Ship D packages| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/binarysearch/CapacityToShipPackages.java)|Medium|
 |1013|Partition array three parts| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/PartitionArrayInThreeParts.java)|Easy|
+|1026|Max diff between node and ancestors| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/MaxDifference.java)|Medium|
 |1031|Max Sum of Two Non-Overlapping subarrays| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/MaxSumOfTwoArrays.java)|Medium|
 |1043|Partition Array for Maximum Sum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/MaxSumArrayPartition.java)|Medium|
 |1047|Remove All Adjacnet Duplicates in String| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/RemoveAdjacentDupl.java)|Easy|
