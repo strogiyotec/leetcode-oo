@@ -286,6 +286,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1395|Count Number Of Teams| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/CountSolders.java)|Medium|
 |1406|Stone Game 3| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/StoneGame3.java)|Hard|
 |1423|Max Points Obtain from Cards| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/MaxPointsObtain.java)|Medium|
+|1431|Kids with greatest candies| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/KidsWithGreatestCandies.java)|Easy|
 |1443|Minimum time to collect apples in a tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/MinCostApples.java)|Medium|
 |1448|Count good nodes in binary tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/GoodNodes.java)|Medium|
 |1462|Course Schedule 4| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/CourseSchedule4.java)|Medium|
