@@ -7,21 +7,22 @@ final class WiggleSortII {
 
     void wiggleSort(int[] nums) {
         Arrays.sort(nums);
-        final int mid;
-        if (nums.length % 2 == 0) {
-            mid = nums.length / 2 - 1;
-        } else {
-            mid = nums.length / 2;
-        }
         final int[] temp = Arrays.copyOf(nums, nums.length);
-        int tempIndex = 0;
-        for (int i = 0; i < nums.length && tempIndex < nums.length; i++) {
-            nums[tempIndex] = temp[mid - i];
-            if (tempIndex + 1 < nums.length) {
-                nums[tempIndex + 1] = temp[nums.length - 1 - i];
+        int middle;
+        if (nums.length % 2 == 0) {
+            middle = nums.length / 2 - 1;
+        } else {
+            middle = nums.length / 2;
+        }
+        int right = nums.length - 1;
+        for (int i = 0; i < nums.length; i += 2) {
+            nums[i] = temp[middle];
+            if (i + 1 >= nums.length) {
+                break;
             }
-            tempIndex += 2;
+            nums[i + 1] = temp[right];
+            middle--;
+            right--;
         }
     }
-
 }

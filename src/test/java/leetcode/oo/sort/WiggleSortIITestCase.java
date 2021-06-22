@@ -25,4 +25,14 @@ public final class WiggleSortIITestCase {
             nums
         );
     }
+
+    @Test
+    public void test2() {
+        final int[] nums = {1, 1, 2, 1, 2, 2, 1};
+        this.alg.wiggleSort(nums);
+        Assert.assertArrayEquals(
+            new int[]{1, 2, 1, 2, 1, 2, 1},
+            nums
+        );
+    }
 }
