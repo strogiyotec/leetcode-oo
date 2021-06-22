@@ -16,6 +16,14 @@ public final class MinCostClimbingTestCase {
     }
 
     @Test
+    public void test2() {
+        Assert.assertEquals(
+            15,
+            this.alg.minCostClimbingStairs(new int[]{10, 15, 20})
+        );
+    }
+
+    @Test
     public void test() {
         Assert.assertEquals(
             6L,

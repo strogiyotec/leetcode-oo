@@ -34,5 +34,13 @@ public final class OnesAndZeroesTestCase {
                 3
             )
         );
+        Assert.assertEquals(
+            2,
+            this.alg.findMaxForm(
+                new String[]{"10", "1", "0"},
+                1,
+                1
+            )
+        );
     }
 }
