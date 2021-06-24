@@ -18,16 +18,24 @@ public final class HouseRoberTestCase {
     @Test
     public void test() {
         Assert.assertEquals(
-                this.alg.rob(new int[]{1, 3, 1}),
-                3
+            this.alg.rob(new int[]{2, 1, 1, 2}),
+            4
         );
         Assert.assertEquals(
-                this.alg.rob(new int[]{2, 7, 9, 3, 1}),
-                12
+            this.alg.rob(new int[]{2, 1}),
+            2
         );
         Assert.assertEquals(
-                this.alg.rob(new int[]{1, 2, 3, 1}),
-                4
+            this.alg.rob(new int[]{1, 3, 1}),
+            3
+        );
+        Assert.assertEquals(
+            this.alg.rob(new int[]{2, 7, 9, 3, 1}),
+            12
+        );
+        Assert.assertEquals(
+            this.alg.rob(new int[]{1, 2, 3, 1}),
+            4
         );
     }
 }
