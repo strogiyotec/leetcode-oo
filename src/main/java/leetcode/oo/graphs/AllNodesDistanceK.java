@@ -23,6 +23,7 @@ public final class AllNodesDistanceK {
     private void dfs(final PlainTree target, final int prev, final Map<PlainTree, Set<PlainTree>> graph, final int distance, final List<Integer> solution) {
         if (distance == 0) {
             solution.add(target.val);
+            return;
         }
         for (final PlainTree vertex : graph.getOrDefault(target, Collections.emptySet())) {
             if (vertex.val != prev) {
