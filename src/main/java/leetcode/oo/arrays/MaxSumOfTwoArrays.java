@@ -9,26 +9,20 @@ final class MaxSumOfTwoArrays {
             prefix[i + 1] = prefix[i] + A[i];
         }
         return Math.max(
-            this.maxSum(prefix, L, M),
-            this.maxSum(prefix, M, L)
+            this.maxSum(prefix, M, L),
+            this.maxSum(prefix, L, M)
         );
     }
 
-    private int maxSum(
-        final int[] prefixSum,
-        final int M,
-        final int L
-    ) {
-        int maxL = 0;
+    private int maxSum(final int[] prefix, final int L, final int M) {
         int max = 0;
-        for (int i = M + L; i < prefixSum.length; i++) {
-            maxL = Math.max(
-                maxL,
-                prefixSum[i - M] - prefixSum[i - M - L]
-            );
-            final int maxM = prefixSum[i] - prefixSum[i - M];
-            max = Math.max(max, maxL + maxM);
+        int maxM = 0;
+        for (int i = L + M; i < prefix.length; i++) {
+            final int maxL = prefix[i] - prefix[i - L];
+            maxM = Math.max(maxM, prefix[i] - maxL - prefix[i - M - L]);
+            max = Math.max(max, maxL+maxM);
         }
         return max;
     }
+
 }
