@@ -109,6 +109,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |208|Trie| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/design/Trie.java)|Medium|
 |209|Minimum Size Subarray Sum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/MinSizeSubArray.java)|Medium|
 |210|Course Schedule 2| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/CourseSchedule2.java)|Hard|
+|211|Design Word Dictiomary| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/design/WordDictionary.java)|Medium|
 |212|Word Search 2| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/WordSearch2.java)|Hard|
 |215|Kth Largest element in the array| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/KthLargest.java)|Medium|
 |221|Maximum Square| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/BiggestSquare.java)|Medium|
