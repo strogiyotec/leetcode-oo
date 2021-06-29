@@ -19,6 +19,16 @@ public final class CountSquareSubmatricesTestCase {
     @Test
     public void test() {
         Assert.assertEquals(
+            7,
+            this.alg.countSquares(
+                new int[][]{
+                    {1, 0, 1},
+                    {1, 1, 0},
+                    {1, 1, 0}
+                }
+            )
+        );
+        Assert.assertEquals(
             15,
             this.alg.countSquares(
                 new int[][]{
