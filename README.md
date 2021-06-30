@@ -153,6 +153,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |438|String Anagrams| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/window/Anagrams.java)|Medium|
 |442|Find Duplicates in the array| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/FindDuplicatesInArray.java)|Medium|
 |443|String Compression| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/CompressString.java)|Easy|
+|562|Min Moves to Equal array elements II| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/MinMoveToEqualArray.java)|Medium|
 |472|Concatenated words| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/ConcatWords.java)|Hard|
 |474|Ones And Zeroes| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/OnesAndZeroes.java)|Medium|
 |448|Find All Numbers Disappeared in an Array| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/DisappearedNumbers.java)|Easy|
