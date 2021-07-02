@@ -294,6 +294,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1376|Time needed to inform all employees| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/NotifyEmployess.java)|Medium|
 |1377|Frog Position after T seconds| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/FrogPosition.java)|Hard|
 |1380|Lucky Number| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/matrix/LuckyNumbers.java)|Easy|
+|1382|Balance Binary Search tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/BalanceBinarySearchTree.java)|Medium|
 |1383|Maximum Performance of a team| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/sort/PerformanceTeam.java)|Hard|
 |1395|Count Number Of Teams| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/CountSolders.java)|Medium|
 |1406|Stone Game 3| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/StoneGame3.java)|Hard|
