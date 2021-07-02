@@ -331,6 +331,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1624|Largest Substring Between Equal Characters| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/LargestSubstring.java)|Easy|
 |1631|Path With Minimum Effort| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/PathWithMinEffort.java)|Medium|
 |1647|Minimum Deletions to Make Character Frequencies Unique| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/MinDeletionToMakeUnique.java)|Medium|
+|1648|Sell Diminishing Colored Balls| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/SellDiminishingValues.java)|Medium|
 |1654|Minimum Jump to Reach Home| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/dfs/MinJumpReachHome.java)|Medium|
 |1658|Minimum Operations to Reduce X to Zero| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/MinOperationsX.java)|Medium|
 |1690|Stone Game 7| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/StoneGame7.java)|Medium|
