@@ -335,6 +335,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1648|Sell Diminishing Colored Balls| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/SellDiminishingValues.java)|Medium|
 |1654|Minimum Jump to Reach Home| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/dfs/MinJumpReachHome.java)|Medium|
 |1658|Minimum Operations to Reduce X to Zero| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/MinOperationsX.java)|Medium|
+|1664|Ways to make a fair array| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/FairArrayWays.java)|Medium|
 |1672|Richest Customer| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/matrix/RichestCustomer.java)|Easy|
 |1690|Stone Game 7| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/StoneGame7.java)|Medium|
 |1691|Maximum Height by Stacking Cuboids| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/Cubes.java)|Hard|
