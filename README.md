@@ -190,6 +190,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |653|Two Sum IV - Input is a BST| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/TwoSum4.java)|Easy|
 |654|Maximum Binary tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/MaxBinaryTree.java)|Medium|
 |657|Robot returns to origin| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/RobotReturnOrigin.java)|Easy|
+|659|Split Array Into consecutive sequences| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/SplitArrayConseqSubseq.java)|Medium|
 |662|Max Width Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/MaxWidth.java)|Medium|
 |669|Trim a binary tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/TrimBinaryTree.java)|Medium|
 |673|Number of Longest Increasing Subsequence| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/IncSequences.java)|Medium|
