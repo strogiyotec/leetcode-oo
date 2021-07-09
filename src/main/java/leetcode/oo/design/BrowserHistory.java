@@ -2,6 +2,7 @@ package leetcode.oo.design;
 
 import java.util.ArrayList;
 
+//https://leetcode.com/problems/design-browser-history/
 public final class BrowserHistory {
 
     private final ArrayList<String> list = new ArrayList<>(16);
