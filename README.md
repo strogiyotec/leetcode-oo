@@ -146,6 +146,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |395|Longest Substring with At Least K Repeating Characters| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/LongestStrWithKRepeatedChars.java)|Medium|
 |399|Evaluate Division| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/EvaluateDivision.java)|Medium|
 |416|Partition Equal Subset Sum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/PartitionEqualSubset.java)|Medium|
+|417|Pacific Atlantic Water Flow| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/matrix/WaterFlow.java)|Medium|
 |424|Longest Repeating Character Replacement| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/window/LongestRepCharRepl.java)|Medium|
 |433|Minimum Genetic Mutation| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/MinGenMutations.java)|Medium|
 |435|Non-overlapping Intervals| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/greedy/NonOverlapInterval.java)|Medium|
@@ -284,6 +285,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1254|Number of Closed Islands| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/dfs/NumberOfClosedIslands.java)|Medium|
 |1277|Count Square submatrixes with all ones| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/matrix/CountSqureSubmatrices.java)|Medium|
 |1288|Remove covered intervals| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/greedy/RemoveCovered.java)|Medium|
+|1296|Divide array into K sets| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/DivideArrayIntoKSequences.java)|Medium|
 |1297|Maximum Length Of a concatenated string with unique characters| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/MaxLengthConcatStr.java)|Medium|
 |1299|Replace element with greatest| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/ReplaceElementWithGreatestElem.java)|Easy|
 |1304|Sum Up to zero| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/math/SumUpToZero.java)|Easy|
