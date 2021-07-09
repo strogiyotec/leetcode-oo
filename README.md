@@ -309,6 +309,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1464|Max product of Two elements in an array| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/MaxProductTwoElements.java)|Easy|
 |1466|Reourder Routes| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/ReorderRoutes.java)|Medium|
 |1471|K strongest values| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/KStrongestValues.java)|Medium|
+|1472|Design Browser History| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/design/BrowserHistory.java)|Medium|
 |1475|Final Prices with a Special Discount| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/FinalPrices.java)|Easy|
 |1480|Running sum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/RunningSum.java)|Easy|
 |1481|Least Number of Unique Integers after K removal| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/LeastNumberUniqueElement.java)|Medium|
