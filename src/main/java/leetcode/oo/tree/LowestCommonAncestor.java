@@ -2,17 +2,25 @@ package leetcode.oo.tree;
 
 public final class LowestCommonAncestor {
 
+    private PlainTree answer;
+
     public PlainTree lowestCommonAncestor(PlainTree root, PlainTree p, PlainTree q) {
-        return this.lowest(root, p, q);
+        this.dfs(root, p, q);
+        return this.answer;
     }
 
-    private PlainTree lowest(final PlainTree root, final PlainTree p, final PlainTree q) {
-        if (p.val > root.val && q.val > root.val) {
-            return this.lowest(root.right, p, q);
-        } else if (p.val < root.val && q.val < root.val) {
-            return this.lowest(root.left, p, q);
-        } else {
-            return root;
+    private boolean dfs(final PlainTree root, final PlainTree p, final PlainTree q) {
+        if (root == null) {
+            return false;
         }
+        final boolean left = this.dfs(root.left, p, q);
+        final boolean right = this.dfs(root.right, p, q);
+        final boolean current = root == p || root == q;
+        if (left && right || current && left || current && right) {
+            this.answer = root;
+            return true;
+        }
+        return left || right || current;
     }
+
 }
