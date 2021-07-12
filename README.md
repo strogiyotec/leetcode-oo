@@ -293,6 +293,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1329|Sort the matrix diagonally| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/matrix/SortDiagonally.java)|Medium|
 |1337|Weakest Rows In Matrix| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/WeakestRowsMatrix.java)|Easy|
 |1338|Reduce array size by half| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/ReduceArraySize.java)|Medium|
+|1346|N and Double exist| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/NAndDoubleExist.java)|Easy|
 |1351|Count negative in a Matrix| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/matrix/CountNegativeNumbers.java)|Easy|
 |1365|How Many Numbers Are Smaller Than the Current Number| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/HowManySmallerNumbers.java)|Easy|
 |1366|Rank Teams| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/sort/RankTeams.java)|Medium|
