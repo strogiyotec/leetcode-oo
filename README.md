@@ -339,6 +339,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1582|Special position matrix| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/SpecialPositionMatrix.java)|Easy|
 |1593|Split a String Into the Max Number of Unique Substrings| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/UniqueSplitString.java)|Medium|
 |1608|Special Array With X Elements| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/SpecialArray.java)|Easy|
+|1619|Mean of Array after removal| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/MeanOfArray.java)|Easy|
 |1624|Largest Substring Between Equal Characters| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/LargestSubstring.java)|Easy|
 |1631|Path With Minimum Effort| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/PathWithMinEffort.java)|Medium|
 |1647|Minimum Deletions to Make Character Frequencies Unique| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/MinDeletionToMakeUnique.java)|Medium|
