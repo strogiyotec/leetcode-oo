@@ -114,6 +114,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |212|Word Search 2| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/WordSearch2.java)|Hard|
 |215|Kth Largest element in the array| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/KthLargest.java)|Medium|
 |221|Maximum Square| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/BiggestSquare.java)|Medium|
+|222|Count Nodes In Complete Binary Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/CountCompleteTreeNodes.java)|Medium|
 |226|Invert Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/InvertTree.java)|Easy|
 |228|Summary ranges| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/SummaryRanges.java)|Easy|
 |230|Kth Smallest Element in a BST| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/KthSmallest.java)|Medium|
