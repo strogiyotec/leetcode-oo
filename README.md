@@ -283,8 +283,9 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1122|Relative order array| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/RelativeOrder.java)|Easy|
 |1143|Longest Common Subsequence| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/LCS.java)|Medium|
 |1145|Binary Tree Coloring Game| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/BinaryTreeColoring.java)|Medium|
-|1161|Maximum Level Sum of a Binary Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/MaxLevelSumOfBinaryTree.java)|Medium|
 |1160|Find Words That Can Be Formed by Characters| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/WordsByCharacters.java)|Easy|
+|1161|Maximum Level Sum of a Binary Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/MaxLevelSumOfBinaryTree.java)|Medium|
+|1162|As Far from land as possible| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/AsFarFromLand.java)|Medium|
 |1208|Get Equals substring length by budget| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/window/StrWithinBudget.java)|Medium|
 |1208|Remove adjacent Duplicates II| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/RemoveAdjacentDupl2.java)|Medium|
 |1249|Minimum Remove to make a valid parenthesis| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/stacks/MinRemoveValidParenthesis.java)|Medium|
