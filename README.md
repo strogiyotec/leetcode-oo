@@ -251,6 +251,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |951|Flip Equivalent Binary Trees| [Java](https://github.com/strogiyotec/leetcode-oo/blob/4a7806b32d377e1ebe90ba815897ab3a29d19226/src/main/java/leetcode/oo/tree/EvenGrandParents.java)|Medium|
 |953|Alien dictionary| [Java](https://github.com/strogiyotec/leetcode-oo/blob/a7bb5b5b88db0dbb9efc9667113948dd41db95a0/src/main/java/leetcode/oo/strings/AlienDictionary.java)|Easy|
 |958|Check binary tree completeness| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/CheckCompletnessOfTree.java)|Medium|
+|967|Number with Same Consecutive Differences| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/dfs/NumberWithSameConsecDiff.java)|Medium|
 |968|Binary Tree Cameras| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/BinaryTreeCameras.java)|Hard|
 |973|K Closest Points to Origin| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/KClosestElements.java)|Medium|
 |977|Squares of a Sorted Array| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/SquaresSortedArray.java)|Easy|
