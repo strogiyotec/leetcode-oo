@@ -352,6 +352,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1658|Minimum Operations to Reduce X to Zero| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/MinOperationsX.java)|Medium|
 |1664|Ways to make a fair array| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/FairArrayWays.java)|Medium|
 |1672|Richest Customer| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/matrix/RichestCustomer.java)|Easy|
+|1685|Sum Of Absolute Differences in a Sorted Array| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/math/SumOfAbsDiff.java)|Medium|
 |1690|Stone Game 7| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/StoneGame7.java)|Medium|
 |1691|Maximum Height by Stacking Cuboids| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/Cubes.java)|Hard|
 |1700|Number of Students unable to eat lunch| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/NumberOfStudentsWithoutLunch.java)|Easy|
