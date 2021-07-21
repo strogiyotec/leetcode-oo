@@ -9,10 +9,14 @@ final class MaxPointsObtain {
             leftScore += cardPoints[i];
         }
         int max = leftScore;
-        for (int right = cardPoints.length - 1, left = k - 1; right >= cardPoints.length - k; right--, left--) {
+        int right = cardPoints.length - 1;
+        int left = k - 1;
+        while (right >= cardPoints.length - k && left >= 0) {
             leftScore -= cardPoints[left];
             leftScore += cardPoints[right];
             max = Math.max(max, leftScore);
+            left--;
+            right--;
         }
         return max;
     }
