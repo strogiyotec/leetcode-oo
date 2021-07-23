@@ -298,6 +298,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1297|Maximum Length Of a concatenated string with unique characters| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/MaxLengthConcatStr.java)|Medium|
 |1299|Replace element with greatest| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/ReplaceElementWithGreatestElem.java)|Easy|
 |1304|Sum Up to zero| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/math/SumUpToZero.java)|Easy|
+|1305|All Elements In Two Binary Search Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/AllElementsInTwoBST.java)|Medium|
 |1319|Number of operations to make graph connected| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/NumberOfOperationToMakeNetworkConnected.java)|Medium|
 |1329|Sort the matrix diagonally| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/matrix/SortDiagonally.java)|Medium|
 |1337|Weakest Rows In Matrix| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/WeakestRowsMatrix.java)|Easy|
