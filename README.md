@@ -157,12 +157,12 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |438|String Anagrams| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/window/Anagrams.java)|Medium|
 |442|Find Duplicates in the array| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/FindDuplicatesInArray.java)|Medium|
 |443|String Compression| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/CompressString.java)|Easy|
-|562|Min Moves to Equal array elements II| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/MinMoveToEqualArray.java)|Medium|
-|472|Concatenated words| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/ConcatWords.java)|Hard|
-|474|Ones And Zeroes| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/OnesAndZeroes.java)|Medium|
 |448|Find All Numbers Disappeared in an Array| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/DisappearedNumbers.java)|Easy|
 |449|Serialize Binary Search Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/SerializeBST.java)|Medium|
 |453|Minimum moves to Equal Array Elements| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/math/MinMoveEqualArray.java)|Easy|
+|472|Concatenated words| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/ConcatWords.java)|Hard|
+|474|Ones And Zeroes| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/OnesAndZeroes.java)|Medium|
+|486|Predict The Winner| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/PredictWinner.java)|Medium|
 |491|Increasing subsequences| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/dfs/IncreasingSubsequence.java)|Medium|
 |501|Find Mode in Binary Search Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/ModeInBst.java)|Easy|
 |508|Most Frequent Subtree Sum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/dfs/MostFrequentSum.java)|Medium|
@@ -176,6 +176,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |559|Maximum Depth of N-ary Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/MaxDepthNTree.java)|Easy|
 |560|Subarray sum equals| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/SubArraySum.java)|Medium|
 |561|Array Partition I| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/ArrayPartition1.java)|Easy|
+|562|Min Moves to Equal array elements II| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/MinMoveToEqualArray.java)|Medium|
 |565|Array Nesting| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/ArrayNesting.java)|Medium|
 |572|Subtree of another Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/SubtreeOfAnotherTree.java)|Easy|
 |575|Distribute Candies| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/DistributeCandies.java)|Easy|
