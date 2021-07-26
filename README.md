@@ -370,6 +370,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1716|Money in bank| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/math/MoneyInBank.java)|Easy|
 |1726|Tuples with same product| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/TuplesWithSameProduct.java)|Medium|
 |1770|Max Score performing operations| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/MaxScore.java)|Medium|
+|1774|Closest Desert Cost| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/DesertCost.java)|Medium|
 |1779|Find Nearest point| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/NearestPoint.java)|Easy|
 |1781|Sum Of beauty of All Substrings| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/SumOfBeautyOfAllStrings.java)|Medium|
 |1786|Number Of Restricted Paths| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/NumberOfRestrictPaths.java)|Medium|
