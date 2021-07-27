@@ -368,6 +368,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1710|Max Units on a track| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/sort/MaxUnitsTrack.java)|Easy|
 |1712|Ways to split array into three| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/SplitArrayIntoThree.java)|Medium|
 |1716|Money in bank| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/math/MoneyInBank.java)|Easy|
+|1721|Swapping Nodes In LinkedList| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/ll/SwappingNodes.java)|Medium|
 |1726|Tuples with same product| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/TuplesWithSameProduct.java)|Medium|
 |1770|Max Score performing operations| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/MaxScore.java)|Medium|
 |1774|Closest Desert Cost| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/DesertCost.java)|Medium|
