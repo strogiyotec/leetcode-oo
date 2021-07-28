@@ -251,6 +251,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |930|Binary Subarray with Sum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/BinarySubArrayWithSum.java)|Medium|
 |934|Shortest Bridge| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/dfs/ShortestBridge.java)|Medium|
 |938|Range sum of Bst| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/RangeSumOfBst.java)|Easy|
+|941|Valid Mountain Array| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/ValidMountain.java)|Easy|
 |951|Flip Equivalent Binary Trees| [Java](https://github.com/strogiyotec/leetcode-oo/blob/4a7806b32d377e1ebe90ba815897ab3a29d19226/src/main/java/leetcode/oo/tree/EvenGrandParents.java)|Medium|
 |953|Alien dictionary| [Java](https://github.com/strogiyotec/leetcode-oo/blob/a7bb5b5b88db0dbb9efc9667113948dd41db95a0/src/main/java/leetcode/oo/strings/AlienDictionary.java)|Easy|
 |958|Check binary tree completeness| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/CheckCompletnessOfTree.java)|Medium|
