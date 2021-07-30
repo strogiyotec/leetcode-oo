@@ -26,6 +26,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |24 |Swap Nodes In Pairs| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/ll/SwapNodesInPairs.java)| Medium| 
 |26 |Remove Duplicates from Sorted Array| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/duplicates/RemoveDuplicatesFromArray.java)| Easy| 
 |27 |Remove element| [Java](https://github.com/strogiyotec/leetcode-oo/blob/cb713a818445362cb0451500c38adf4496eb304d/src/main/java/leetcode/oo/arrays/RemoveElement.java)| Easy| 
+|28 |StrStr| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/StrStr.java)| Easy| 
 |30|Substring with Concatenation of All Words| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/window/AllWordsSubstring.java)| Hard|
 |32|Longest Valid Parentheses| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/stacks/LongestParentheses.java)| Hard|
 |34|Find First and Last Position of Element in Sorted Array| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/FirstAndLast.java)| Medium|
