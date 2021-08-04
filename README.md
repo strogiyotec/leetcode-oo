@@ -215,6 +215,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |710|Black list| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/design/BlackList.java)|Hard|
 |713|Subarray Product Less Than K| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/SubArrayProduct.java)|Medium|
 |718|Maximum Length of Repeated Subarray| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/MaxLengthRepeatedSubArray.java)|Medium|
+|720|Longest Word In Dictionary| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/LongestWordInDict.java)|Medium|
 |721|Merge Accounts| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/MergeAccounts.java)|Medium|
 |725|Split Linked List| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/ll/SplitLinkedList.java)|Medium|
 |735|Asteroids Collision| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/stacks/Asteroids.java)|Medium|
