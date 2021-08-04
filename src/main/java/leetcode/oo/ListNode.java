@@ -10,7 +10,7 @@ public final class ListNode {
     /**
      * Value.
      */
-    public final int val;
+    public int val;
 
     /**
      * Next.
