@@ -286,6 +286,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1043|Partition Array for Maximum Sum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/MaxSumArrayPartition.java)|Medium|
 |1047|Remove All Adjacnet Duplicates in String| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/RemoveAdjacentDupl.java)|Easy|
 |1048|Longest String Chain| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/LongestStringChain.java)|Medium|
+|1054|Distance Barcodes| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/DistantBarcodes.java)|Medium|
 |1079|Letter Tile Possibilities| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/TilePossibilities.java)|Medium|
 |1089|Duplicate Zeros| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/DuplicateZerous.java)|Easy|
 |1091|Shortest Path in Binary Matrix| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/ShortestPathMatrix.java)|Medium|
