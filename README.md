@@ -325,6 +325,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1365|How Many Numbers Are Smaller Than the Current Number| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/HowManySmallerNumbers.java)|Easy|
 |1366|Rank Teams| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/sort/RankTeams.java)|Medium|
 |1367|Linked List In Binary Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/ll/ListInTree.java)|Medium|
+|1372|Longest Zig Zag tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/ZigZag.java)|Medium|
 |1376|Time needed to inform all employees| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/NotifyEmployess.java)|Medium|
 |1377|Frog Position after T seconds| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/FrogPosition.java)|Hard|
 |1380|Lucky Number| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/matrix/LuckyNumbers.java)|Easy|
