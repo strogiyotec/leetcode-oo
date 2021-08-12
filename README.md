@@ -304,7 +304,8 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1162|As Far from land as possible| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/AsFarFromLand.java)|Medium|
 |1202|Smallest string with swaps| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/SmallestStringWithSwaps.java)|Medium|
 |1208|Get Equals substring length by budget| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/window/StrWithinBudget.java)|Medium|
-|1208|Remove adjacent Duplicates II| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/RemoveAdjacentDupl2.java)|Medium|
+|1209|Remove adjacent Duplicates II| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/RemoveAdjacentDupl2.java)|Medium|
+|1218|Longest Arithmetic Sequence| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/LongestArithmetic.java)|Medium|
 |1249|Minimum Remove to make a valid parenthesis| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/stacks/MinRemoveValidParenthesis.java)|Medium|
 |1253|Reconstruct Matrix| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/matrix/ReconstructBinaryMatrix.java)|Medium|
 |1254|Number of Closed Islands| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/dfs/NumberOfClosedIslands.java)|Medium|
