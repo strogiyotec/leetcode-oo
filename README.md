@@ -49,6 +49,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |70 |Climbing Stairs| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/ClimbStairs.java)| Easy|
 |71 |Simplify Path| [Java](https://github.com/strogiyotec/leetcode-oo/blob/942d7ad2c859ee3b9d53aa4ad9cac2292f77a615/src/main/java/leetcode/oo/strings/SimplifyPath.java)| Medium|
 |72 |Edit Distance| [Java](https://github.com/strogiyotec/leetcode-oo/blob/88f17915fc27a01be6ebabd4d6fdc44253bcab10/src/main/java/leetcode/oo/dp/EditDistance.java)| Hard|
+|73 |Set Matrix Zeroes| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/matrix/SetMatrixZeroes.java)| Medium|
 |74 |Search a 2D Matrix| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/SearchMatrix.java)| Medium|
 |75 |Sort colors| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/SortColors.java)| Medium|
 |76 |Minimum Window Substring| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/window/MinWindowSubstring.java)| Hard|
