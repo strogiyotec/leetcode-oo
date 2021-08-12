@@ -403,6 +403,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1812|Square is white| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/SquareIsWhite.java)|Easy|
 |1817|Find users active minutes| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/UsersActiveMinutes.java)|Medium|
 |1823|Winner of cirtular game| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/CircularGame.java)|Medium|
+|1824|Min Sideway Jump| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/MinSidewayJumps.java)|Medium|
 |1827|Make array increasing| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/MakeArrayIncreasing.java)|Easy|
 |1839|Longest Substring of All Vowels| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/LongestSubstringOfAllVowels.java)|Medium|
 |1851|Min Interval to include all queries| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/MinIntervalToIncludeAllQueries.java)|Hard|
