@@ -125,6 +125,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |235|Lowest Common Ancestor of a Binary Search Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/LowestCommonAncestor.java)|Easy|
 |236|Lowest Common Ancestor of a Binary Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/LowestCommonAncestorBinaryTree.java)|Medium|
 |239|Sliding Window Maximum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/window/MaxSlidingWindow.java)|Hard|
+|241|Different Ways to Split Parenthesis| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/dfs/DiffWaysToAddParenthesis.java)|Medium|
 |257|Binary Tree Paths| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/path/BinaryTreePaths.java)|Easy|
 |268|Missing number| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/bits/MissingNumber.java)|Easy|
 |274|H-Index| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/HIndex.java)|Medium|
