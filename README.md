@@ -417,6 +417,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1855|Distance Between two points| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/MaxDistanceBetweenPairs.java)|Medium|
 |1888|Flips String ALteranating| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/StringFlips.java)|Medium|
 |1894|Find student who will replace the Chalk| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/StudentChalk.java)|Medium|
+|1971|Find Path Exists| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/FindPathExists.java)|Easy|
 
 ## Introduction to Algorithms problems
 
