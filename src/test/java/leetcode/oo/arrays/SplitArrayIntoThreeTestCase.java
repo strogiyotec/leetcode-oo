@@ -30,6 +30,12 @@ public final class SplitArrayIntoThreeTestCase {
                 new int[]{1, 2, 2, 2, 5, 0}
             )
         );
+        Assert.assertEquals(
+            0,
+            this.alg.waysToSplit(
+                new int[]{3,2,1}
+            )
+        );
 
     }
 }
