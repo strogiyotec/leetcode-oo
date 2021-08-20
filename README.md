@@ -208,6 +208,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |669|Trim a binary tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/TrimBinaryTree.java)|Medium|
 |671|Second Min Node in Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/SecondMinNode.java)|Easy|
 |673|Number of Longest Increasing Subsequence| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/IncSequences.java)|Medium|
+|676|Magic Dictionary| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/trie/MagicDictionary.java)|Medium|
 |678|Valid Parenthesis in String| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/stacks/ValidParenthesisString.java)|Medium|
 |680|Valid Palindrome II| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/ValidPalindromeII.java)|Easy|
 |684|Redundant Connection| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/ReduntantConnection.java)|Medium|
