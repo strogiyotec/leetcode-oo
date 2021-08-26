@@ -292,6 +292,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1023|Camel Case matching| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/CamelCaseMatching.java)|Medium|
 |1024|Video Stitching| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/VideoStitching.java)|Medium|
 |1026|Max diff between node and ancestors| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/MaxDifference.java)|Medium|
+|1028|Recover tree from Preorder| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/RecoverTree.java)|Hard|
 |1031|Max Sum of Two Non-Overlapping subarrays| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/MaxSumOfTwoArrays.java)|Medium|
 |1043|Partition Array for Maximum Sum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/MaxSumArrayPartition.java)|Medium|
 |1047|Remove All Adjacnet Duplicates in String| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/RemoveAdjacentDupl.java)|Easy|
