@@ -1,9 +1,5 @@
 package leetcode.oo.arrays;
 
-import java.util.Comparator;
-import java.util.PriorityQueue;
-
-
 /**
  * Kth largest element.
  * See {@link <a href ="https://leetcode.com/problems/kth-largest-element-in-an-array/">https://leetcode.com/problems/kth-largest-element-in-an-array/</a>}
@@ -11,15 +7,34 @@ import java.util.PriorityQueue;
 final class KthLargest {
 
     int findKthLargest(final int[] nums, final int position) {
-        final PriorityQueue<Integer> queue = new PriorityQueue<>(nums.length, Comparator.reverseOrder());
-        for (final int num : nums) {
-            queue.offer(num);
+        return this.quickSelect(
+            nums,
+            0,
+            nums.length - 1,
+            nums.length - position
+        );
+    }
+
+    private int quickSelect(final int[] nums, final int left, final int right, final int k) {
+        int pivot = nums[right];
+        int index = left;
+        for (int i = left; i < right; i++) {
+            if (nums[i] <= pivot) {
+                final int temp = nums[index];
+                nums[index] = nums[i];
+                nums[i] = temp;
+                index++;
+            }
         }
-        int index = 0;
-        while (index < position - 1) {
-            queue.poll();
-            index++;
+        final int temp = nums[right];
+        nums[right] = nums[index];
+        nums[index] = temp;
+        if (index > k) {
+            return this.quickSelect(nums, left, index - 1, k);
+        } else if (index < k) {
+            return this.quickSelect(nums, index + 1, right, k);
+        } else {
+            return nums[index];
         }
-        return queue.peek();
     }
 }
