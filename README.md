@@ -155,6 +155,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |395|Longest Substring with At Least K Repeating Characters| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/LongestStrWithKRepeatedChars.java)|Medium|
 |399|Evaluate Division| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/EvaluateDivision.java)|Medium|
 |410|Split Array Largest Sum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/binarysearch/SplitArrayLargestSum.java)|Hard|
+|414|Third Largest| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/ThirdLargest.java)|Easy|
 |416|Partition Equal Subset Sum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/PartitionEqualSubset.java)|Medium|
 |417|Pacific Atlantic Water Flow| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/matrix/WaterFlow.java)|Medium|
 |424|Longest Repeating Character Replacement| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/window/LongestRepCharRepl.java)|Medium|
