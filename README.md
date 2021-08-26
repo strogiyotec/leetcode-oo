@@ -261,6 +261,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |894|All Possible Full Binary Trees| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/PossibleTrees.java)|Medium|
 |899|Orderly queue| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/OrderlyQueue.java)|Hard|
 |917|Reverse Only Letters| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/ReverseLetters.java)|Easy|
+|926|Flip String| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/FlipString.java)|Medium|
 |929|Unique Emails| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/UniqueEmails.java)|Easy|
 |930|Binary Subarray with Sum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/BinarySubArrayWithSum.java)|Medium|
 |934|Shortest Bridge| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/dfs/ShortestBridge.java)|Medium|
