@@ -320,6 +320,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1249|Minimum Remove to make a valid parenthesis| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/stacks/MinRemoveValidParenthesis.java)|Medium|
 |1253|Reconstruct Matrix| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/matrix/ReconstructBinaryMatrix.java)|Medium|
 |1254|Number of Closed Islands| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/dfs/NumberOfClosedIslands.java)|Medium|
+|1262|Greatest Sum Div by Three| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/math/SumDivThree.java)|Medium|
 |1277|Count Square submatrixes with all ones| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/matrix/CountSqureSubmatrices.java)|Medium|
 |1288|Remove covered intervals| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/greedy/RemoveCovered.java)|Medium|
 |1296|Divide array into K sets| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/DivideArrayIntoKSequences.java)|Medium|
