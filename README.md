@@ -245,6 +245,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |827|Making a large Island| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/dfs/LargeIsland.java)|Hard|
 |832|FLipping image| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/matrix/FlippingImage.java)|Easy|
 |834|Sum Of Distances in tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/SumDistanceTree.java)|Hard|
+|841|Keys and Rooms| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/KeysAndRooms.java)|Medium|
 |843|Guess the word| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/FindSecretWord.java)|Hard|
 |844|Backspace String Compare| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/stacks/BackSpaceStrCompare.java)|Easy|
 |856|Deepst Node in Subtree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/DeepestNodesTree.java)|Medium|
