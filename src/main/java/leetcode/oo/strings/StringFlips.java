@@ -5,12 +5,6 @@ import java.util.List;
 //https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/
 public final class StringFlips {
 
-    public static void main(String[] args) {
-        System.out.println(new StringFlips().minFlips(
-            "111000"
-        ));
-    }
-
     public int minFlips(final String word) {
         if (this.isAlt(word)) {
             return 0;
