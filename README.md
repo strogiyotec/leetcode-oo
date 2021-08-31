@@ -373,6 +373,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1530|Number of Good leaf pairs| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/GoodLeafPairs.java)|Medium|
 |1535|Find winner of array game| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/ArrayGame.java)|Medium|
 |1536|Min swap to arrange a binary grid| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/sort/MinSwapArrangeGrid.java)|Medium|
+|1537|Get Max Score| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/greedy/GetMaxScore.java)|Hard|
 |1539|Kth missing positive number| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/KthMissingPositive.java)|Easy|
 |1550|Three consecuve odds| [Java](https://github.com/strogiyotec/leetcode-oo/blob/2e200c2530d60390eebbeb7a6a54a6a1d328dac2/src/main/java/leetcode/oo/arrays/ThreeConsecutiveOdds.java)|Easy|
 |1557|Minimum number of vertices to reach all nodes| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/MinVerticesToReachAllNodes.java)|Medium|
