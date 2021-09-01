@@ -17,11 +17,18 @@ public final class MinDeletionCostTestCase {
     }
 
     @Test
-    public void test(){
+    public void test() {
         Assert.assertEquals(
             2,
             this.alg.minCost(
                 "aabaa", new int[]{1, 2, 3, 4, 1}
+            )
+        );
+        Assert.assertEquals(
+            3,
+            this.alg.minCost(
+                "abaac",
+                new int[]{1, 2, 3, 4, 5}
             )
         );
     }
