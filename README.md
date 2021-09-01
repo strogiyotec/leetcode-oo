@@ -405,6 +405,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1685|Sum Of Absolute Differences in a Sorted Array| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/math/SumOfAbsDiff.java)|Medium|
 |1690|Stone Game 7| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/StoneGame7.java)|Medium|
 |1691|Maximum Height by Stacking Cuboids| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/Cubes.java)|Hard|
+|1695|Max Erasure| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/window/MaxErasure.java)|Medium|
 |1700|Number of Students unable to eat lunch| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/NumberOfStudentsWithoutLunch.java)|Easy|
 |1701|Average waiting time| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/AverageWaitingTime.java)|Medium|
 |1710|Max Units on a track| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/sort/MaxUnitsTrack.java)|Easy|
