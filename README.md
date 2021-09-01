@@ -287,6 +287,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |985|Sum Of Even Numbers After Queries| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/SumOfEvenNumbers.java)|Easy|
 |986|Interval List Intersections| [Java](https://github.com/strogiyotec/leetcode-oo/blob/f8aed4c462598ca9392c7483af6dd263b48db0ff/src/main/java/leetcode/oo/pointers/ListIntersection.java)|Medium|
 |988|Smallest String Starting From Leaf| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/RootToLeafSum.java)|Medium|
+|990|Satisfy Equality| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/SatisfyEquality.java)|Medium|
 |993|Cousins in Binary tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/Cousins.java)|Easy|
 |994|Rotting Oranges| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/RottingOranges.java)|Medium|
 |1002|Find common characters| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/CommonCharacter.java)|Easy|
