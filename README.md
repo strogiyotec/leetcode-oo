@@ -246,6 +246,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |820|Short Encoding of Words| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/ShortEncodingOfWords.java)|Medium|
 |826|Most Profit Assigning Work| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/MaxProfitWorker.java)|Medium|
 |827|Making a large Island| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/dfs/LargeIsland.java)|Hard|
+|830|Positions Of Large Groups| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/PositionsLargeGroup.java)|Easy|
 |832|FLipping image| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/matrix/FlippingImage.java)|Easy|
 |834|Sum Of Distances in tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/SumDistanceTree.java)|Hard|
 |841|Keys and Rooms| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/KeysAndRooms.java)|Medium|
