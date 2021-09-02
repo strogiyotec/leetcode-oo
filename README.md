@@ -181,6 +181,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |524|Longest Word by deleting| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/LongestWordDeleting.java)|Medium|
 |525|Contiguous array| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/ContiguousArray.java)|Medium|
 |538|Convert BST to Greater Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/GreaterTree.java)|Easy|
+|542|Matrix 01| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/matrix/Matrix01.java)|Medium|
 |547|Number of Provinces| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/NumberOfProvinces.java)|Medium|
 |559|Maximum Depth of N-ary Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/MaxDepthNTree.java)|Easy|
 |560|Subarray sum equals| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/SubArraySum.java)|Medium|
