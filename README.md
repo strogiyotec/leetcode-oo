@@ -253,6 +253,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |843|Guess the word| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/FindSecretWord.java)|Hard|
 |844|Backspace String Compare| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/stacks/BackSpaceStrCompare.java)|Easy|
 |856|Deepst Node in Subtree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/DeepestNodesTree.java)|Medium|
+|857|Min Cost to hire Worker| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/MinCostHire.java)|Hard|
 |859|Buddy Strings| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/BuddyStrings.java)|Easy|
 |860|Lemonade Change| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/greedy/LemonadeChange.java)|Easy|
 |863|All Nodes Distance K| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/AllNodesDistanceK.java)|Medium|
