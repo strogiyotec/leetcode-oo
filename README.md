@@ -396,6 +396,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1578|Min deletion cost to avoid repeating characters| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/greedy/MinDeletionCost.java)|Medium|
 |1582|Special position matrix| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/SpecialPositionMatrix.java)|Easy|
 |1593|Split a String Into the Max Number of Unique Substrings| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/UniqueSplitString.java)|Medium|
+|1594|Max Non Negative Product| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/MaxNonNegativeProduct.java)|Medium|
 |1598|Crawler Log| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/stacks/CrawlerLog.java)|Easy|
 |1605|Find Valid Matrix Given Sum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/matrix/FindValidMatrixGivenSum.java)|Medium|
 |1608|Special Array With X Elements| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/SpecialArray.java)|Easy|
