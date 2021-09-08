@@ -237,6 +237,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |767|Reorganize string| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/greedy/ReorganizeString.java)|Medium|
 |769|Max Chunks to make sorted| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/stacks/MaxChunksMakeSorted.java)|Medium|
 |775|Global and Local inversions| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/GlobalAndLocalInversions.java)|Medium|
+|778|Swim In Rising Water| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/SwimInRisingWatter.java)|Hard|
 |784|Letter case permutations| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/LetterCasePermutations.java)|Medium|
 |785|Is Graph Bipart| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/GraphBipart.java)|Medium|
 |787|Cheapest flight with K stops| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/CheapestFlight.java)|Medium|
