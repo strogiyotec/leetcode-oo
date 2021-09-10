@@ -154,6 +154,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |394|Decode String| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/stacks/DecodeString.java)|Medium|
 |395|Longest Substring with At Least K Repeating Characters| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/LongestStrWithKRepeatedChars.java)|Medium|
 |399|Evaluate Division| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/EvaluateDivision.java)|Medium|
+|406|Queue reconstruction| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/stacks/QueueReconstruction.java)|Medium|
 |410|Split Array Largest Sum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/binarysearch/SplitArrayLargestSum.java)|Hard|
 |414|Third Largest| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/ThirdLargest.java)|Easy|
 |416|Partition Equal Subset Sum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/PartitionEqualSubset.java)|Medium|
@@ -235,6 +236,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |740|Delete And Earn| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/DeleteAndEarn.java)|Medium|
 |746|Min cost climbing| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/MinCostClimbing.java)|Easy|
 |763|Partition Labels| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/PartitionLabels.java)|Medium|
+|764|Largest Plus Sign| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/matrix/LargestPlusSign.java)|Medium|
 |767|Reorganize string| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/greedy/ReorganizeString.java)|Medium|
 |769|Max Chunks to make sorted| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/stacks/MaxChunksMakeSorted.java)|Medium|
 |775|Global and Local inversions| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/GlobalAndLocalInversions.java)|Medium|
