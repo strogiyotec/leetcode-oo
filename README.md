@@ -137,6 +137,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |301|Remove Invalid Parentheses| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/RemoveInvalidParentheses.java)|Hard|
 |307|Range sum query Mutable| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/design/NumArray.java)|Medium|
 |316|Remove duplicate Letters| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/stacks/RemoveDuplicateLetters.java)|Medium|
+|318|Max Product Of Word Lengths| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/MaxProdLength.java)|Medium|
 |322|Coin Change| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/CoinChange.java)|Medium|
 |324|Wiggle Sort 2| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/sort/WiggleSortII.java)|Medium|
 |328|Odd Even Linked List| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/ll/OddEvenLL.java)|Medium|
