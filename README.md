@@ -351,6 +351,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1339|Max Product Of Splitted Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/MaxProductSplittedTree.java)|Medium|
 |1346|N and Double exist| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/NAndDoubleExist.java)|Easy|
 |1351|Count negative in a Matrix| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/matrix/CountNegativeNumbers.java)|Easy|
+|1361|Validate Binary Tree Nodes| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/ValidateTreeNodes.java)|Medium|
 |1365|How Many Numbers Are Smaller Than the Current Number| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/HowManySmallerNumbers.java)|Easy|
 |1366|Rank Teams| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/sort/RankTeams.java)|Medium|
 |1367|Linked List In Binary Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/ll/ListInTree.java)|Medium|
