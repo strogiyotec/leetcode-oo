@@ -307,6 +307,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1010|Pair of Songs| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/PairOfSongs.java)|Medium|
 |1011|Capacity to Ship D packages| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/binarysearch/CapacityToShipPackages.java)|Medium|
 |1013|Partition array three parts| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/PartitionArrayInThreeParts.java)|Easy|
+|1020|Number Of Enclaves| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/matrix/NumberOfEnclaves.java)|Medium|
 |1023|Camel Case matching| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/CamelCaseMatching.java)|Medium|
 |1024|Video Stitching| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/VideoStitching.java)|Medium|
 |1026|Max diff between node and ancestors| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/MaxDifference.java)|Medium|
