@@ -235,6 +235,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |739|Daily Temperatures| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/stacks/DailyTemperature.java)|Medium|
 |740|Delete And Earn| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/DeleteAndEarn.java)|Medium|
 |746|Min cost climbing| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/MinCostClimbing.java)|Easy|
+|747|Largest Number At Least Twice Of Others| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/LargestNumberAtLeastTwice.java)|Easy|
 |763|Partition Labels| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/PartitionLabels.java)|Medium|
 |764|Largest Plus Sign| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/matrix/LargestPlusSign.java)|Medium|
 |767|Reorganize string| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/greedy/ReorganizeString.java)|Medium|
