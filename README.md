@@ -222,6 +222,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |687|Longest Univalue Path| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/LongestUnivaluePath.java)|Medium|
 |692|Top K Frequent Words| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/TopKFrequentWords.java)|Medium|
 |695|Max Area Of Islands| [Java](https://github.com/strogiyotec/leetcode-oo/blob/ab0a2e9675d59e1932d26ea9a8be5e1cb7408d5e/src/main/java/leetcode/oo/dp/MaxAreadOfIslands.java)|Medium|
+|698|Partition to K Equal Sum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/PartitionEqualSum.java)|Medium|
 |699|Falling Squares| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/FallingSquares.java)|Hard|
 |703|Kth largest| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/design/KthLargest.java)|Easy|
 |704|Binary Search| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/BinarySearch.java)|Easy|
