@@ -19,6 +19,15 @@ public final class MinCostHireTestCase {
     @Test
     public void test() {
         Assert.assertEquals(
+            30.66667,
+            this.alg.mincostToHireWorkers(
+                new int[]{3, 1, 10, 10, 1},
+                new int[]{4, 8, 2, 2, 7},
+                3
+            ),
+            10
+        );
+        Assert.assertEquals(
             14.0,
             this.alg.mincostToHireWorkers(
                 new int[]{2},

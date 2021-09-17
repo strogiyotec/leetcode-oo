@@ -1,6 +1,5 @@
 package leetcode.oo.arrays;
 
-import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
@@ -12,32 +11,29 @@ final class MinCostHire {
         int[] wage,
         int k
     ) {
-        var sortedWorkers = new ArrayList<Worker>(k + 1);
-        final int length = quality.length;
-        for (int i = 0; i < length; i++) {
-            sortedWorkers.add(new Worker(
-                quality[i],
-                wage[i] * 1.0 / quality[i]
-            ));
-        }
-        sortedWorkers.sort(Comparator.comparingDouble(p -> p.ratio));
-        var queue = new PriorityQueue<Worker>(Comparator.<Worker>comparingInt(p -> p.quality).reversed());
-        int totalQuality = 0;
-        double minCost = Double.MAX_VALUE;
-        for (final Worker worker : sortedWorkers) {
-            totalQuality += worker.quality;
-            queue.offer(worker);
-            if (queue.size() > k) {
-                totalQuality -= queue.poll().quality;
+        double min = Double.MAX_VALUE;
+        for (int i = 0; i < wage.length; i++) {
+            final double ratio = wage[i] * 1.0 / quality[i];
+            final PriorityQueue<Double> nextWagers = new PriorityQueue<>(quality.length, Comparator.reverseOrder());
+            for (int j = 0; j < wage.length; j++) {
+                final double nextWorkerWage = ratio * quality[j];
+                if (nextWorkerWage >= wage[j]) {
+                    nextWagers.offer(nextWorkerWage);
+                }
+                if (nextWagers.size() > k) {
+                    nextWagers.poll();
+                }
             }
-            if (queue.size() == k) {
-                minCost = Math.min(
-                    minCost,
-                    totalQuality * worker.ratio
-                );
+            if (nextWagers.size() < k) {
+                continue;
             }
+            double totalWager = 0.0;
+            while (!nextWagers.isEmpty()) {
+                totalWager += nextWagers.poll();
+            }
+            min = Math.min(min, totalWager);
         }
-        return minCost;
+        return min;
     }
 
     private static class Worker {
