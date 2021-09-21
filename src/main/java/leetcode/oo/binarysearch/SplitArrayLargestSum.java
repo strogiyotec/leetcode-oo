@@ -1,39 +1,39 @@
 package leetcode.oo.binarysearch;
 
-import java.util.stream.IntStream;
+import java.util.Arrays;
 
 //https://leetcode.com/problems/split-array-largest-sum/
 final class SplitArrayLargestSum {
 
-    int splitArray(int[] nums, int m) {
-        var stats = IntStream.of(nums).summaryStatistics();
-        int left = stats.getMax();
-        int right = (int) stats.getSum();
-        while (left <= right) {
-            final int middle = left + (right - left) / 2;
-            if (this.isValid(middle, nums, m)) {
-                right = middle - 1;
-            } else {
-                left = middle + 1;
-            }
+    public int splitArray(int[] nums, int m) {
+        final int[][] dp = new int[nums.length][m + 1];
+
+        for (final int[] ints : dp) {
+            Arrays.fill(ints, -1);
         }
-        return left;
+
+        return this.walk(nums, dp, 0, m);
     }
 
-    private boolean isValid(final int middle, final int[] nums, final int cntLimit) {
-        int currentSum = 0;
-        int cnt = 1;
-        for (final int num : nums) {
-            currentSum += num;
-            if (currentSum > middle) {
-                cnt++;
-                currentSum = num;
-                if (cnt > cntLimit) {
-                    return false;
-                }
-            }
+    private int walk(int[] nums, int[][] memo, int index, int parts) {
+        // base case
+        if (index == nums.length && parts == 0) {
+            return 0;
         }
-        return true;
+        if (index == nums.length || parts == 0) {
+            return Integer.MAX_VALUE;
+        }
+        if (memo[index][parts] != -1) {
+            return memo[index][parts];
+        }
+        int maxSum = Integer.MAX_VALUE;
+        int leftSum = 0;
+        for (int i = index; i < nums.length; i++) {
+            leftSum += nums[i];
+            final int rightSum = this.walk(nums, memo, i + 1, parts - 1);
+            maxSum = Math.min(maxSum, Math.max(leftSum, rightSum));
+        }
+        memo[index][parts] = maxSum;
+        return maxSum;
     }
-
 }
