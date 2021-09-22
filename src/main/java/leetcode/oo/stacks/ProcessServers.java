@@ -1,6 +1,7 @@
 package leetcode.oo.stacks;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.PriorityQueue;
 
 //https://leetcode.com/problems/process-tasks-using-servers/
@@ -14,34 +15,40 @@ public final class ProcessServers {
     }
 
     public int[] assignTasks(final int[] servers, final int[] tasks) {
-        PriorityQueue<int[]> freeServers = new PriorityQueue<>((a, b) -> (a[0] != b[0]) ? (a[0] - b[0]) : (a[1] - b[1]));
-        PriorityQueue<int[]> usedQueue = new PriorityQueue<>((a, b)->(a[2] != b[2]) ? (a[2] - b[2]) : ((a[0] != b[0]) ? (a[0] - b[0]) : (a[1] - b[1])));
-        int n = servers.length;
-        int m = tasks.length;
-        //O(nLogn)
-        for (int i = 0; i < n; i++) {
-            freeServers.add(new int[] {servers[i], i, 0});
+        final PriorityQueue<Server> freeServers = new PriorityQueue<>(Comparator.comparingInt(o -> o.weight));
+        final PriorityQueue<Server> usedServers = new PriorityQueue<>(Comparator.comparingInt(o -> o.availableTime));
+        for (int i = 0; i < servers.length; i++) {
+            freeServers.offer(new Server(i, servers[i], 0));
         }
-        int[] res = new int[m];
-        //O(m * Logn)
-        for (int i = 0; i < m; i++) {
-            int t = tasks[i];
-            while (!usedQueue.isEmpty() && usedQueue.peek()[2] <= i) {
-                freeServers.add(usedQueue.poll());
+        final int[] solution = new int[tasks.length];
+        for (int i = 0; i < tasks.length; i++) {
+            final int task = tasks[i];
+            while (!usedServers.isEmpty() && usedServers.peek().availableTime <= i) {
+                freeServers.offer(usedServers.poll());
             }
-            //If there is no free servers now, we can find the used server with smallest available time
-            if (freeServers.isEmpty()) {
-                int[] cur = usedQueue.poll();
-                res[i] = cur[1];
-                cur[2] += t;
-                usedQueue.add(cur);
-            } else {
-                int[] cur = freeServers.poll();
-                res[i] = cur[1];
-                cur[2] = i + t;
-                usedQueue.add(cur);
-            }
+            final Server poll = freeServers.poll();
+            solution[i] = poll.index;
+            usedServers.add(new Server(
+                    poll.index,
+                    poll.weight,
+                    i + task
+                )
+            );
         }
-        return res;
+        return solution;
+    }
+
+    @SuppressWarnings("ALL")
+    static class Server {
+
+        final int index;
+        final int weight;
+        int availableTime;
+
+        public Server(final int index, final int weight, final int availableTime) {
+            this.index = index;
+            this.weight = weight;
+            this.availableTime = availableTime;
+        }
     }
 }
