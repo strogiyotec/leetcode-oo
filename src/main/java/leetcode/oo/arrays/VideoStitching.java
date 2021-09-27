@@ -1,9 +1,5 @@
 package leetcode.oo.arrays;
 
-import java.util.AbstractMap;
-import java.util.HashSet;
-import java.util.Set;
-
 //https://leetcode.com/problems/video-stitching/
 public final class VideoStitching {
 
@@ -27,22 +23,15 @@ public final class VideoStitching {
     }
 
     public int videoStitching(final int[][] clips, final int time) {
-        Set<AbstractMap.SimpleEntry<Integer, Integer>> pairs = new HashSet<>(clips.length << 1);
-        for (final int[] clip : clips) {
-            pairs.add(new AbstractMap.SimpleEntry<>(clip[0], clip[1]));
-        }
-        int cnt = 0;
-        int max = -1;
         int start = 0;
+        int max = -1;
+        int cnt = 0;
         while (start < time) {
             boolean found = false;
-            final Set<AbstractMap.SimpleEntry<Integer, Integer>> temp = new HashSet<>(clips.length);
-            for (final AbstractMap.SimpleEntry<Integer, Integer> clip : pairs) {
-                if (clip.getKey() <= start && clip.getValue() > start) {
-                    max = Math.max(max, clip.getValue());
+            for (final int[] clip : clips) {
+                if (clip[0] <= start && clip[1] > max) {
                     found = true;
-                } else {
-                    temp.add(clip);
+                    max = clip[1];
                 }
             }
             if (!found) {
@@ -50,7 +39,6 @@ public final class VideoStitching {
             }
             cnt++;
             start = max;
-            pairs = temp;
         }
         return cnt;
     }
