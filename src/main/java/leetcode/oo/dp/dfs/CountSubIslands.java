@@ -3,17 +3,6 @@ package leetcode.oo.dp.dfs;
 //https://leetcode.com/problems/count-sub-islands/
 final class CountSubIslands {
 
-    public static void main(String[] args) {
-        System.out.println(new CountSubIslands().countSubIslands(
-            new int[][]{
-                {1, 1, 1, 0, 0}, {0, 1, 1, 1, 1}, {0, 0, 0, 0, 0}, {1, 0, 0, 0, 0}, {1, 1, 0, 1, 1}
-            },
-            new int[][]{
-                {1, 1, 1, 0, 0}, {0, 0, 1, 1, 1}, {0, 1, 0, 0, 0}, {1, 0, 1, 1, 0}, {0, 1, 0, 1, 0}
-            }
-        ));
-    }
-
     public int countSubIslands(int[][] grid1, int[][] grid2) {
         int cnt = 0;
         for (int i = 0; i < grid2.length; i++) {
