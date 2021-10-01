@@ -270,6 +270,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |843|Guess the word| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/FindSecretWord.java)|Hard|
 |844|Backspace String Compare| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/stacks/BackSpaceStrCompare.java)|Easy|
 |851|Loud And Rich| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/LoudAndRich.java)|Medium|
+|853|Car Fleet| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/CarFlip.java)|Medium|
 |856|Deepst Node in Subtree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/DeepestNodesTree.java)|Medium|
 |857|Min Cost to hire Worker| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/MinCostHire.java)|Hard|
 |859|Buddy Strings| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/BuddyStrings.java)|Easy|
