@@ -466,6 +466,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1968|Array With Elements Not Equal Neighbours| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/sort/ElementNotEqualAverage.java)|Easy|
 |1971|Find Path Exists| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/FindPathExists.java)|Easy|
 |1976|Number of Ways to Arrive as Destination| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/NumberOfWaysToArrive.java)|Medium|
+|1992|Find all Groups FarmLand| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/matrix/GroupsFarmland.java)|Medium|
 
 ## Introduction to Algorithms problems
 
