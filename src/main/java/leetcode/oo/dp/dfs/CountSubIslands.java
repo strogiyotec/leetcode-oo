@@ -16,7 +16,6 @@ final class CountSubIslands {
     }
 
     private boolean dfs(final int[][] grid1, final int[][] grid2, final int row, final int col) {
-        boolean result = true;
         if (row >= 0 && row < grid1.length && col >= 0 && col < grid1[0].length && grid2[row][col] == 1) {
             if (grid1[row][col] != grid2[row][col]) {
                 return false;
@@ -26,10 +25,9 @@ final class CountSubIslands {
             final boolean up = this.dfs(grid1, grid2, row - 1, col);
             final boolean right = this.dfs(grid1, grid2, row, col + 1);
             final boolean left = this.dfs(grid1, grid2, row, col - 1);
-            if (!left || !right || !down || !up) {
-                return false;
-            }
+            return down && up && right && left;
         }
-        return result;
+        return true;
     }
+
 }
