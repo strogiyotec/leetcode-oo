@@ -382,6 +382,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1423|Max Points Obtain from Cards| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/MaxPointsObtain.java)|Medium|
 |1431|Kids with greatest candies| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/KidsWithGreatestCandies.java)|Easy|
 |1433|Check if string can break another| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/BreakString.java)|Medium|
+|1437|Check distance at least K| [Java](https://github.com/strogiyotec/leetcode-oo/blob/c6252cf000c583e90787146995ad7bf52e84ce47/src/main/java/leetcode/oo/arrays/AtLeastAway.java)|Easy|
 |1443|Minimum time to collect apples in a tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/MinCostApples.java)|Medium|
 |1448|Count good nodes in binary tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/GoodNodes.java)|Medium|
 |1462|Course Schedule 4| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/CourseSchedule4.java)|Medium|
