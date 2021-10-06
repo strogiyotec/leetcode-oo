@@ -1,30 +1,28 @@
 package leetcode.oo.tree;
 
 //https://leetcode.com/problems/smallest-subtree-with-all-the-deepest-nodes/
- final class DeepestNodesTree {
+final class DeepestNodesTree {
 
     private int deepestLevel;
 
     private PlainTree res;
 
-     PlainTree subtreeWithAllDeepest(PlainTree root) {
+    PlainTree subtreeWithAllDeepest(PlainTree root) {
         this.dfs(root, 0);
         return this.res;
     }
 
-    private int dfs(final PlainTree root, final int level) {
+    private int dfs(final PlainTree root, final int depth) {
         if (root == null) {
-            return level;
+            return depth;
         }
-        final int left = this.dfs(root.left, level + 1);
-        final int right = this.dfs(root.right, level + 1);
-        final int current = Math.max(left,right);
-        this.deepestLevel = Math.max(this.deepestLevel,current);
-        if(this.deepestLevel == left && this.deepestLevel == right){
+        final int left = this.dfs(root.left, depth + 1);
+        final int right = this.dfs(root.right, depth + 1);
+        if (left >= this.deepestLevel && right >= this.deepestLevel) {
+            this.deepestLevel = left;
             this.res = root;
         }
-        return current;
-
+        return Math.max(left,right);
     }
 
 }

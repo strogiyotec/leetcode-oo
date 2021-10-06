@@ -11,14 +11,14 @@ final class SplitLinkedList {
             size++;
         }
         int biggerSize = size % parts;
-        int lengthPerPart = size / parts;
+        int lengthPerPart = size / parts - 1;
         final ListNode[] nodes = new ListNode[parts];
         int index = 0;
         ListNode current = root;
         while (current != null && index < parts) {
             ListNode next = current;
             final boolean hasRemaining = biggerSize > 0;
-            for (int i = 1; i <= lengthPerPart + (hasRemaining ? 1 : 0); i++) {
+            for (int i = 0; i < lengthPerPart + (hasRemaining ? 1 : 0); i++) {
                 current = current.next;
             }
             biggerSize--;
