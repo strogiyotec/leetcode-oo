@@ -243,6 +243,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |740|Delete And Earn| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/DeleteAndEarn.java)|Medium|
 |746|Min cost climbing| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/MinCostClimbing.java)|Easy|
 |747|Largest Number At Least Twice Of Others| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/LargestNumberAtLeastTwice.java)|Easy|
+|752|Open the Lock| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/dfs/OpenLock.java)|Medium|
 |756|Pyramid Transition Matrix| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/dfs/PyramidTransitionMatrix.java)|Medium|
 |763|Partition Labels| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/PartitionLabels.java)|Medium|
 |764|Largest Plus Sign| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/matrix/LargestPlusSign.java)|Medium|
