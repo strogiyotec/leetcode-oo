@@ -193,6 +193,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |560|Subarray sum equals| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/SubArraySum.java)|Medium|
 |561|Array Partition I| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/ArrayPartition1.java)|Easy|
 |562|Min Moves to Equal array elements II| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/MinMoveToEqualArray.java)|Medium|
+|563|Tree tilt| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/Tilt.java)|Easy|
 |565|Array Nesting| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/ArrayNesting.java)|Medium|
 |572|Subtree of another Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/SubtreeOfAnotherTree.java)|Easy|
 |575|Distribute Candies| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/DistributeCandies.java)|Easy|
