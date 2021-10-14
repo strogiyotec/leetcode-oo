@@ -101,6 +101,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |155|Min Stack| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/stacks/MinStack.java)|Easy|
 |160|Intersection of Two Linked Lists| [Java](https://github.com/strogiyotec/leetcode-oo/blob/02795e7bb2aa4e958d35ffc48944149dd0aaf161/src/main/java/leetcode/oo/ll/Intersection.java)|Easy|
 |167|Two Sum II - Input array is sorted| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/TwoSumSorted.java)|Easy|
+|168|Excel Sheet Column| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/ExcelSheet.java)|Easy|
 |169|Majority element| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/Majority.java)|Easy|
 |173|BST iterator| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/design/BSTIterator.java)|Medium|
 |187|DNA Sequence| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/window/DnaSeq.java)|Medium|
