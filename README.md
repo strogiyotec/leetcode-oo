@@ -24,6 +24,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |22 |Generate Parentheses| [Java](https://github.com/strogiyotec/leetcode-oo/blob/50897dfd15580988ba66c474049377bd7e8e9cbb/src/main/java/leetcode/oo/dp/backtracking/GenerateParentheses.java)| Medium| 
 |23 |Merge k Sorted Lists| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/sort/MergeSortedLists.java)| Hard| 
 |24 |Swap Nodes In Pairs| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/ll/SwapNodesInPairs.java)| Medium| 
+|25 |Reverse K Groups| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/ll/ReverseKGroups.java)| Hard| 
 |26 |Remove Duplicates from Sorted Array| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/duplicates/RemoveDuplicatesFromArray.java)| Easy| 
 |27 |Remove element| [Java](https://github.com/strogiyotec/leetcode-oo/blob/cb713a818445362cb0451500c38adf4496eb304d/src/main/java/leetcode/oo/arrays/RemoveElement.java)| Easy| 
 |28 |StrStr| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/StrStr.java)| Easy| 
