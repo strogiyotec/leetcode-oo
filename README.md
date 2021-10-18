@@ -133,6 +133,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |241|Different Ways to Split Parenthesis| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/dfs/DiffWaysToAddParenthesis.java)|Medium|
 |257|Binary Tree Paths| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/path/BinaryTreePaths.java)|Easy|
 |268|Missing number| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/bits/MissingNumber.java)|Easy|
+|273|Integer to English| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/IntegerToEnglish.java)|Hard|
 |274|H-Index| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/HIndex.java)|Medium|
 |283|Move zeroes| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/MoveZeroes.java)|Easy|
 |290|Word Pattern| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/WordPattern.java)|Easy|
