@@ -306,6 +306,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |937|Reorder Data in Log files| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/ReorderDataInLogFiles.java)|Easy|
 |938|Range sum of Bst| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/RangeSumOfBst.java)|Easy|
 |939|Min Area Rectangle| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/math/MinAreaRectangle.java)|Medium|
+|940|Distinct Subsequences II| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/dfs/DistinctSubSeqII.java)|Hard|
 |941|Valid Mountain Array| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/ValidMountain.java)|Easy|
 |946|Validate Stack| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/stacks/ValidateStack.java)|Medium|
 |947|Most Stones| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/uf/MostStonesRemoved.java)|Medium|
