@@ -81,6 +81,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |112|Path Sum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/path/PathSum1.java)|Easy|
 |113|Path Sum 2| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/path/PathSum2.java)|Medium|
 |114|Flatten Binary Tree to Linked List| [Java](https://github.com/strogiyotec/leetcode-oo/blob/404f0760c0877b7e4e36a79894253bf92a3c5876/src/main/java/leetcode/oo/tree/TraverseTreeToList.java)|Medium|
+|115|Distinct Subsequences| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/dfs/DistinctSubSeq.java)|Hard|
 |116|Populating Next Right Pointers in Each Node| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/PopulateNextRight.java)|Medium|
 |120|Triangle| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/Triangle.java)|Medium|
 |121|Best Time to Buy and Sell Stock| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/BuyAndSell.java)|Easy|
