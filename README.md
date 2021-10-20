@@ -149,6 +149,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |322|Coin Change| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/CoinChange.java)|Medium|
 |324|Wiggle Sort 2| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/sort/WiggleSortII.java)|Medium|
 |328|Odd Even Linked List| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/ll/OddEvenLL.java)|Medium|
+|329|Longest Increasing Sequence| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/matrix/LongestIncreasingPath.java)|Hard|
 |332|Reconstruct Itinerary| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/ReconstructItinerary.java)|Medium|
 |337|House Robber 3| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/HouseRobber3.java)|Medium|
 |341|Flatten Nested Iterator| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/design/NestedIterator.java)|Medium|
