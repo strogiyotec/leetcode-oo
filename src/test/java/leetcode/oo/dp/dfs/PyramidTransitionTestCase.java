@@ -19,6 +19,13 @@ public final class PyramidTransitionTestCase {
 
     @Test
     public void test() {
+        Assert.assertFalse(
+            this.alg.pyramidTransition(
+                "AAAA",
+                List.of("AAB", "AAC", "BCD", "BBE", "DEF")
+
+            )
+        );
         Assert.assertTrue(
             this.alg.pyramidTransition(
                 "BCD",
