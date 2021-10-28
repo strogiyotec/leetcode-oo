@@ -187,6 +187,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |486|Predict The Winner| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/PredictWinner.java)|Medium|
 |491|Increasing subsequences| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/dfs/IncreasingSubsequence.java)|Medium|
 |501|Find Mode in Binary Search Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/ModeInBst.java)|Easy|
+|503|Next Greater Element II| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/amazon/NextGreaterElementII.java)|Medium|
 |508|Most Frequent Subtree Sum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/dfs/MostFrequentSum.java)|Medium|
 |515|Find Largest Value in Each Tree Row| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/LargestRowInTree.java)|Medium|
 |518|Coin Change 2| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/CoinChange2.java)|Medium|
