@@ -394,6 +394,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1383|Maximum Performance of a team| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/sort/PerformanceTeam.java)|Hard|
 |1395|Count Number Of Teams| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/CountSolders.java)|Medium|
 |1406|Stone Game 3| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/StoneGame3.java)|Hard|
+|1409|Queries on a Permutation| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/QueriesOnPermutation.java)|Medium|
 |1419|Croaking| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/Croaking.java)|Medium|
 |1423|Max Points Obtain from Cards| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/MaxPointsObtain.java)|Medium|
 |1431|Kids with greatest candies| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/KidsWithGreatestCandies.java)|Easy|
