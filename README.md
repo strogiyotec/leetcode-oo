@@ -486,6 +486,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1888|Flips String ALteranating| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/StringFlips.java)|Medium|
 |1894|Find student who will replace the Chalk| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/StudentChalk.java)|Medium|
 |1905|Count sub islands| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/dfs/CountSubIslands.java)|Medium|
+|1962|Remove Stones| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/RemoveStones.java)|Medium|
 |1968|Array With Elements Not Equal Neighbours| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/sort/ElementNotEqualAverage.java)|Easy|
 |1971|Find Path Exists| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/FindPathExists.java)|Easy|
 |1976|Number of Ways to Arrive as Destination| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/NumberOfWaysToArrive.java)|Medium|
