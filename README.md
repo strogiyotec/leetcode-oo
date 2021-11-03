@@ -157,6 +157,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |347|Top k elements| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/TopKElements.java)|Medium|
 |349|Intersection of Two Arrays| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/ArraysIntersection.java)|Easy|
 |350|Intersection of Two Arrays II| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/IntersectionOfTwoArraysII.java)|Easy|
+|368|Largest Divisible subset| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/LargestDivisibleSubset.java)|Medium|
 |378|Kth smallest elem in sorted matrix| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/matrix/SmallestElementInMatrix.java)|Medium|
 |383|Ransom Note| [Java](https://github.com/strogiyotec/leetcode-oo/blob/30acc74a949222ac9a988d79b3a5daacb4b74668/src/main/java/leetcode/oo/strings/RansomNote.java)|Easy|
 |386|Lexigraphical Numbers| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/LexNumber.java)|Medium|
