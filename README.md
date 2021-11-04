@@ -102,6 +102,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |148|Sort list| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/ll/SortList.java)|Medium|
 |155|Min Stack| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/stacks/MinStack.java)|Easy|
 |160|Intersection of Two Linked Lists| [Java](https://github.com/strogiyotec/leetcode-oo/blob/02795e7bb2aa4e958d35ffc48944149dd0aaf161/src/main/java/leetcode/oo/ll/Intersection.java)|Easy|
+|165|Compare Revision Number| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/RevisionCompare.java)|Medium|
 |167|Two Sum II - Input array is sorted| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/TwoSumSorted.java)|Easy|
 |168|Excel Sheet Column| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/ExcelSheet.java)|Easy|
 |169|Majority element| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/Majority.java)|Easy|
@@ -157,7 +158,8 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |347|Top k elements| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/TopKElements.java)|Medium|
 |349|Intersection of Two Arrays| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/ArraysIntersection.java)|Easy|
 |350|Intersection of Two Arrays II| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/IntersectionOfTwoArraysII.java)|Easy|
-|368|Largest Divisible subset| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/LargestDivisibleSubset.java)|Medium|
+|368|Largest Divisible subset| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/LargestDivisibleSubset.java)|Mediu
+|
 |378|Kth smallest elem in sorted matrix| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/matrix/SmallestElementInMatrix.java)|Medium|
 |383|Ransom Note| [Java](https://github.com/strogiyotec/leetcode-oo/blob/30acc74a949222ac9a988d79b3a5daacb4b74668/src/main/java/leetcode/oo/strings/RansomNote.java)|Easy|
 |386|Lexigraphical Numbers| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/LexNumber.java)|Medium|
