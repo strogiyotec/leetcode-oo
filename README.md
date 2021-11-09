@@ -158,8 +158,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |347|Top k elements| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/TopKElements.java)|Medium|
 |349|Intersection of Two Arrays| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/ArraysIntersection.java)|Easy|
 |350|Intersection of Two Arrays II| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/IntersectionOfTwoArraysII.java)|Easy|
-|368|Largest Divisible subset| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/LargestDivisibleSubset.java)|Mediu
-|
+|368|Largest Divisible subset| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/LargestDivisibleSubset.java)|Medium|
 |378|Kth smallest elem in sorted matrix| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/matrix/SmallestElementInMatrix.java)|Medium|
 |383|Ransom Note| [Java](https://github.com/strogiyotec/leetcode-oo/blob/30acc74a949222ac9a988d79b3a5daacb4b74668/src/main/java/leetcode/oo/strings/RansomNote.java)|Easy|
 |386|Lexigraphical Numbers| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/LexNumber.java)|Medium|
@@ -193,6 +192,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |503|Next Greater Element II| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/amazon/NextGreaterElementII.java)|Medium|
 |508|Most Frequent Subtree Sum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/dfs/MostFrequentSum.java)|Medium|
 |515|Find Largest Value in Each Tree Row| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/LargestRowInTree.java)|Medium|
+|516|Longest Palindrome Subsequence| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/LongestPalindromeSubseq.java)|Medium|
 |518|Coin Change 2| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/CoinChange2.java)|Medium|
 |520|Detect Capital| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/DetectCapital.java)|Easy|
 |524|Longest Word by deleting| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/LongestWordDeleting.java)|Medium|
