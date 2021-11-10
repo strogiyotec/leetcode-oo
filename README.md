@@ -256,6 +256,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |735|Asteroids Collision| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/stacks/Asteroids.java)|Medium|
 |739|Daily Temperatures| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/stacks/DailyTemperature.java)|Medium|
 |740|Delete And Earn| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/DeleteAndEarn.java)|Medium|
+|741|Pickup Cherry| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/PickupCherry.java)|Hard|
 |746|Min cost climbing| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/MinCostClimbing.java)|Easy|
 |747|Largest Number At Least Twice Of Others| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/LargestNumberAtLeastTwice.java)|Easy|
 |752|Open the Lock| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/dfs/OpenLock.java)|Medium|
