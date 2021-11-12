@@ -107,6 +107,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |168|Excel Sheet Column| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/ExcelSheet.java)|Easy|
 |169|Majority element| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/Majority.java)|Easy|
 |173|BST iterator| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/design/BSTIterator.java)|Medium|
+|178|Graph Valid Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/GraphValidTree.java)|Medium|
 |187|DNA Sequence| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/window/DnaSeq.java)|Medium|
 |188|Best Time to Buy and Sell Stock IV| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/BuyAndSell4.java)|Hard|
 |189|Rotate Array| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/RotateArray.java)|Medium|
