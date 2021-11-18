@@ -87,6 +87,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |121|Best Time to Buy and Sell Stock| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/BuyAndSell.java)|Easy|
 |123|Best Time to Buy and Sell Stock 3 | [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/BuyAndSell3.java)|Hard|
 |124|Binary Tree Maximum Path Sum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/MaxPathSum.java)|Hard|
+|125|Valid Palindrome| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/ValidPalindrome.java)|Easy|
 |127|Word Ladder| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/WordLadder.java)|Medium|
 |128|Longest Consecutive sequence| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/LongestConsSeq.java)|Hard|
 |129|Sum Root to Leaf Numbers| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/RootToLeafSum.java)|Medium|
