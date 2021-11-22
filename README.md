@@ -199,6 +199,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |520|Detect Capital| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/DetectCapital.java)|Easy|
 |524|Longest Word by deleting| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/LongestWordDeleting.java)|Medium|
 |525|Contiguous array| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/ContiguousArray.java)|Medium|
+|528|Random Pick with Height| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/math/RandomPickWithHeight.java)|Medium|
 |538|Convert BST to Greater Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/GreaterTree.java)|Easy|
 |542|Matrix 01| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/matrix/Matrix01.java)|Medium|
 |543|Tree Diameter| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/Diameter.java)|Easy|
