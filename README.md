@@ -214,6 +214,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |581|Shortest Unsorted Continuous Array| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/ShortestUnSortedContArray.java)|Medium|
 |583|Delete Operation for Two Strings| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/StrDeleteSteps.java)|Medium|
 |590|N-ary Tree Postorder traversal| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/traversal/PostOrderTraversal.java)|Easy|
+|599|Min Index Sum of Two Lists| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/MinIndexSum.java)|Easy|
 |606|Construct string from binary tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/StringFromBinaryTree.java)|Easy|
 |609|Find Duplicate Files| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/DuplicateFiles.java)|Medium|
 |617|Merge Two Binary Trees| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/MergeTrees.java)|Easy|
