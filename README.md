@@ -188,6 +188,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |459|Repeated Substring Pattern| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/RepeatSubPattern.java)|Easy|
 |472|Concatenated words| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/ConcatWords.java)|Hard|
 |474|Ones And Zeroes| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/OnesAndZeroes.java)|Medium|
+|475|Heaters| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/Heaters.java)|Medium|
 |486|Predict The Winner| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/PredictWinner.java)|Medium|
 |491|Increasing subsequences| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/dfs/IncreasingSubsequence.java)|Medium|
 |501|Find Mode in Binary Search Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/ModeInBst.java)|Easy|
