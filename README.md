@@ -74,6 +74,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |104|Maximum Depth of Binary Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/NodeDepth.java)|Easy|
 |105|From Preorder and InOrder tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/FromPreAndIn.java)|Medium|
 |106|Tree from Inorder and Post order| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/FromInorderPostOrder.java)|Medium|
+|107|Binary Tree Level Order Traversal| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/BinaryTreeLevelOrderTraversal.java)|Medium|
 |108|Sorted Array to Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/ArrayToTree.java)|Easy|
 |109|Convert sorted list to Binary Search tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/ll/ConvertLLToTree.java)|Medium|
 |110|Balanced binary tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/BalancedBinaryTree.java)|Easy|
