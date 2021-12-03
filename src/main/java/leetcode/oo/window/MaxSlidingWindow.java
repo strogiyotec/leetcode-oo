@@ -1,6 +1,9 @@
 package leetcode.oo.window;
 
-import java.util.PriorityQueue;
+import java.util.ArrayList;
+import java.util.Deque;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * Maximum sliding window.
@@ -16,21 +19,26 @@ final class MaxSlidingWindow {
      * @return Array with max sliding values
      */
     int[] maxSlidingWindow(final int[] nums, final int limit) {
-        if (nums.length == 0) {
-            return new int[0];
-        }
-        int index = 0;
-        int[] answer = new int[nums.length - limit + 1];
-        int position = 0;
-        final PriorityQueue<Integer> queue = new PriorityQueue<>((a, b) -> b - a);
-        while (position < answer.length) {
-            while (queue.size() != limit) {
-                queue.offer(nums[index++]);
+        final Deque<Integer> queue = new LinkedList<>();
+        int right = 0;
+        int left = 0;
+        final List<Integer> output = new ArrayList<>(nums.length);
+        while (right < nums.length) {
+            while (!queue.isEmpty() && nums[queue.peekLast()] < nums[right]) {
+                queue.pollLast();
             }
-            answer[position] = queue.peek();
-            queue.remove(nums[position++]);
+            queue.add(right);
+            if (left > queue.peekFirst()) {
+                queue.removeFirst();
+            }
+            if (right - left >= limit - 1) {
+                output.add(nums[queue.peekFirst()]);
+                left++;
+            }
+            right++;
         }
-        return answer;
+        return output.stream().mapToInt(f -> f).toArray();
     }
+
 }
 
