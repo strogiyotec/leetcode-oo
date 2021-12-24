@@ -31,6 +31,22 @@ public final class RedundantConnectionTestCase {
     }
 
     @Test
+    public void test3() {
+        Assert.assertArrayEquals(
+            new int[]{1, 3},
+            this.alg.findRedundantConnection(
+                new int[][]{
+                    {1, 4},
+                    {3, 4},
+                    {1, 3},
+                    {1, 2},
+                    {4, 5},
+                }
+            )
+        );
+    }
+
+    @Test
     public void test2() {
         Assert.assertArrayEquals(
             new int[]{1, 4},
