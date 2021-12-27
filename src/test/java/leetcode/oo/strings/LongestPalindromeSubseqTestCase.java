@@ -30,6 +30,10 @@ public final class LongestPalindromeSubseqTestCase {
                 "cbbd"
             )
         );
+        Assert.assertEquals(
+            1,
+            this.alg.longestPalindromeSubseq("a")
+        );
     }
 
 }

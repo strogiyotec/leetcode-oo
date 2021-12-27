@@ -14,25 +14,27 @@ final class LongestPalindromeSubseq {
     }
 
     private int longest(final int left, final int right, final int[][] dp, final String word) {
-        if (dp[left][right] != -1) {
-            return dp[left][right];
-        }
-        if (left == right) {
-            return 1;
-        }
         if (left > right) {
             return 0;
         }
-        if (word.charAt(left) == word.charAt(right)) {
-            final int longest = 2 + this.longest(left + 1, right - 1, dp, word);
-            dp[left][right] = longest;
-            return longest;
+        if (dp[left][right] != -1) {
+            return dp[left][right];
         }
-        final int longest = Math.max(
-            this.longest(left + 1, right, dp, word),
-            this.longest(left, right - 1, dp, word)
-        );
+        final int longest;
+        if (word.charAt(left) == word.charAt(right)) {
+            if (left == right) {
+                longest = 1 + this.longest(left + 1, right - 1, dp, word);
+            } else {
+                longest = 2 + this.longest(left + 1, right - 1, dp, word);
+            }
+        } else {
+            longest = Math.max(
+                this.longest(left + 1, right, dp, word),
+                this.longest(left, right - 1, dp, word)
+            );
+        }
         dp[left][right] = longest;
         return longest;
     }
+
 }
