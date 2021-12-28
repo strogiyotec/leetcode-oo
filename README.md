@@ -30,6 +30,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |28 |StrStr| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/StrStr.java)| Easy| 
 |30|Substring with Concatenation of All Words| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/window/AllWordsSubstring.java)| Hard|
 |32|Longest Valid Parentheses| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/stacks/LongestParentheses.java)| Hard|
+|32|Search In rotated Array| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/binarysearch/SearchInRotated.java)| Medium|
 |34|Find First and Last Position of Element in Sorted Array| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/FirstAndLast.java)| Medium|
 |40|Combination Sum 2| [Java](https://github.com/strogiyotec/leetcode-oo/blob/a1082efd44b06deeea6f60c66c7b0d4dc6c5c4d4/src/main/java/leetcode/oo/dp/backtracking/CombinationSum2.java)| Medium|
 |41|First Missing positive| [Java](https://github.com/strogiyotec/leetcode-oo/blob/39fb6d02acb6420c0f8c25a6f976d138f61e3905/src/main/java/leetcode/oo/arrays/MissingPositive.java)| Hard|
