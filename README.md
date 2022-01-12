@@ -449,6 +449,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1577|Number of Ways Square Equals to Product| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/SquareEqualToProduct.java)|Medium|
 |1578|Min deletion cost to avoid repeating characters| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/greedy/MinDeletionCost.java)|Medium|
 |1582|Special position matrix| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/SpecialPositionMatrix.java)|Easy|
+|1584|Min Cost connect points| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/MinCostConnectPoints.java)|Medium|
 |1588|Sum Of All Odd Length Array| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/SumOfAllOdd.java)|Easy|
 |1593|Split a String Into the Max Number of Unique Substrings| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/UniqueSplitString.java)|Medium|
 |1594|Max Non Negative Product| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/MaxNonNegativeProduct.java)|Medium|
