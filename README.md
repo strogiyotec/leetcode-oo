@@ -478,6 +478,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1716|Money in bank| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/math/MoneyInBank.java)|Easy|
 |1721|Swapping Nodes In LinkedList| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/ll/SwappingNodes.java)|Medium|
 |1723|Find Min Time to Finish All Jobs| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/MinTimeToFinishJobs.java)|Hard|
+|1725|Find All Rectangle Squares| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/NumberOfRectangles.java)|Easy|
 |1726|Tuples with same product| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/TuplesWithSameProduct.java)|Medium|
 |1765|Map Highest Tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/dfs/MapHighestPeek.java)|Medium|
 |1770|Max Score performing operations| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/MaxScore.java)|Medium|
