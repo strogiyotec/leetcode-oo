@@ -353,6 +353,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |1028|Recover tree from Preorder| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/RecoverTree.java)|Hard|
 |1031|Max Sum of Two Non-Overlapping subarrays| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/MaxSumOfTwoArrays.java)|Medium|
 |1041|Robot Bounded In Circle| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/amazon/RobotBoundedCircle.java)|Medium|
+|1042|Flower Planting| [Java](https://github.com/strogiyotec/leetcode-oo/blob/9afe1284bf368de646efb2097479eb2c4837f5d2/src/main/java/leetcode/oo/dp/dfs/FlowerPlanting.java)|Medium|
 |1043|Partition Array for Maximum Sum| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/MaxSumArrayPartition.java)|Medium|
 |1047|Remove All Adjacnet Duplicates in String| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/RemoveAdjacentDupl.java)|Easy|
 |1048|Longest String Chain| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/LongestStringChain.java)|Medium|
