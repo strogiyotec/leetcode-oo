@@ -290,6 +290,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |830|Positions Of Large Groups| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/PositionsLargeGroup.java)|Easy|
 |832|FLipping image| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/matrix/FlippingImage.java)|Easy|
 |834|Sum Of Distances in tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/SumDistanceTree.java)|Hard|
+|839|Similar String Groups| [Java](https://github.com/strogiyotec/leetcode-oo/blob/9e9887e699bfb4df33c253e8d44d257518b2c7ce/src/main/java/leetcode/oo/dp/SimilarStringGroups.java)|Hard|
 |841|Keys and Rooms| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/graphs/KeysAndRooms.java)|Medium|
 |843|Guess the word| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/FindSecretWord.java)|Hard|
 |844|Backspace String Compare| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/stacks/BackSpaceStrCompare.java)|Easy|
