@@ -63,6 +63,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |86|Partition List| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/ll/PartitionList.java)| Medium|
 |90|Subsets2| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/Subsets2.java)|Medium|
 |91|Decode Ways| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/DecodingWays.java)|Medium|
+|92|Reverse Linked List 2| [Java](https://github.com/strogiyotec/leetcode-oo/blob/ab26bdad738a4ec814d85c8f72eb5483fae7b85d/src/main/java/leetcode/oo/ll/ReverseList2.java)|Medium|
 |93|Restore IP Address| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/backtracking/RestoreIpAddress.java)|Medium|
 |94|Binary Tree Inorder Traversal| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/traversal/InOrderTraversal.java)|Medium|
 |95|Unique Binary Search Trees II| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/UniqueTreeII.java)|Medium|
