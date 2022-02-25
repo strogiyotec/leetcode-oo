@@ -335,6 +335,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 |973|K Closest Points to Origin| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/KClosestElements.java)|Medium|
 |977|Squares of a Sorted Array| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/SquaresSortedArray.java)|Easy|
 |979|Distribute coins in binary tree| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/tree/DistributeCoins.java)|Medium|
+|980|Unique Path 3| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/dfs/UniquePath3.java)|Hard|
 |983|Minimum Cost for Tickets| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/MinCostForTicket.java)|Medium|
 |984|String Without AAA or BBB| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/greedy/StringWithoutAAA.java)|Medium|
 |985|Sum Of Even Numbers After Queries| [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/SumOfEvenNumbers.java)|Easy|
