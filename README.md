@@ -519,6 +519,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 | 2008 | Max profit Taxi                                                | [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/Taxi.java)                                                               | Medium     |
 | 2009 | Min number of operations to make array contiguous              | [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/MakeArrayContiguous.java)                                            | Hard       |
 | 2014 | Longest subsequence reapeated k times                          | [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/greedy/LongestSubseqRepeated.java)                                       | Hard       |
+| 2076 | Process restricted friends                                     | [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/dfs/FriendRequest.java)                                                  | Hard       |     
 
 ## Introduction to Algorithms problems
 
