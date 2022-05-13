@@ -508,7 +508,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 | 1851 | Min Interval to include all queries                            | [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/map/MinIntervalToIncludeAllQueries.java)                                    | Hard       |
 | 1854 | Max population year                                            | [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/MaxPopulation.java)                                                  | Easy       |
 | 1855 | Distance Between two points                                    | [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/pointers/MaxDistanceBetweenPairs.java)                                      | Medium     |
-| 1887 | Reducation Operation                                           | [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/sort/ReductionOperation.java)                                               | Medium     |
+| 1887 | Reducation Operation     01                                    | [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/sort/ReductionOperation.java)                                               | Medium     |
 | 1888 | Flips String ALteranating                                      | [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/strings/StringFlips.java)                                                   | Medium     |
 | 1894 | Find student who will replace the Chalk                        | [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/StudentChalk.java)                                                   | Medium     |
 | 1905 | Count sub islands                                              | [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/dfs/CountSubIslands.java)                                                | Medium     |
@@ -521,6 +521,7 @@ This repository contains a list of [leetcode](https://leetcode.com) solutions.
 | 2009 | Min number of operations to make array contiguous              | [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/arrays/MakeArrayContiguous.java)                                            | Hard       |
 | 2014 | Longest subsequence reapeated k times                          | [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/greedy/LongestSubseqRepeated.java)                                       | Hard       |
 | 2076 | Process restricted friends                                     | [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/dfs/FriendRequest.java)                                                  | Hard       |     
+| 2101 | Detonate the Max Bombs                                         | [Java](https://github.com/strogiyotec/leetcode-oo/blob/master/src/main/java/leetcode/oo/dp/dfs/DetonateBombs.java)                                                  | Medium     |     
 
 ## Introduction to Algorithms problems
 
