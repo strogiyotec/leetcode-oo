@@ -22,4 +22,18 @@ public final class ValidParenthesisStringTestCase {
             this.alg.checkValidString("(*))")
         );
     }
+
+    @Test
+    public void test2(){
+        Assert.assertTrue(
+            this.alg.checkValidString("(*)")
+        );
+    }
+
+    @Test
+    public void test3(){
+        Assert.assertFalse(
+            this.alg.checkValidString("*(")
+        );
+    }
 }
