@@ -12,11 +12,13 @@ class MaxScoreRemovingSubstr {
         int minScore = Math.min(x, y);
         int maxGain = 0;
         final ArrayDeque<Character> queue = new ArrayDeque<>(s.length());
+        //first calculate score when removing substr with highest score
         maxGain += this.calculateScore(s, maxStr, maxScore, queue);
         final StringBuilder remaining = new StringBuilder(queue.size());
         while (!queue.isEmpty()) {
             remaining.append(queue.pollFirst());
         }
+        //then calculate the score of the remaining string
         maxGain += this.calculateScore(remaining.toString(), minStr, minScore, queue);
         return maxGain;
     }
