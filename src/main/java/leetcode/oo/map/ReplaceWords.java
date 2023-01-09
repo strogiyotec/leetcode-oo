@@ -9,39 +9,43 @@ final class ReplaceWords {
 
     String replaceWords(List<String> dictionary, String sentence) {
         dictionary.forEach(this::addWord);
-        final StringBuilder builder = new StringBuilder(sentence.length());
+        final StringBuilder shortSentence = new StringBuilder();
         final String[] words = sentence.split(" ");
         for (int i = 0; i < words.length; i++) {
-            final String word = words[i];
-            builder.append(this.findWord(word));
-            if (i < words.length - 1){
-                builder.append(' ');
+            final String shortened = this.find(words[i]);
+            shortSentence.append(shortened);
+            if (i != words.length - 1) {
+                shortSentence.append(' ');
             }
         }
-        return builder.toString();
+        return shortSentence.toString();
     }
 
-    private String findWord(final String word) {
+    private String find(final String word) {
+        final StringBuilder shortened = new StringBuilder();
         Trie current = this.root;
         for (int i = 0; i < word.length(); i++) {
-            if (current.nodes[word.charAt(i) - 'a'] == null) {
+            final int index = word.charAt(i) - 'a';
+            if (current.nodes[index] == null) {
                 return word;
             }
-            if (current.nodes[word.charAt(i) - 'a'].isEnd) {
-                return word.substring(0, i + 1);
+            current = current.nodes[index];
+            shortened.append(word.charAt(i));
+            if (current.isEnd) {
+                return shortened.toString();
             }
-            current = current.nodes[word.charAt(i) - 'a'];
         }
         return word;
     }
 
     private void addWord(final String word) {
         Trie current = this.root;
-        for (final char c : word.toCharArray()) {
-            if (current.nodes[c - 'a'] == null) {
-                current.nodes[c - 'a'] = new Trie();
+        for (int i = 0; i < word.length(); i++) {
+            final int index = word.charAt(i) - 'a';
+            if (current.nodes[index] == null) {
+                current.nodes[index] = new Trie();
             }
-            current = current.nodes[c - 'a'];
+            current = current.nodes[index];
         }
         current.isEnd = true;
     }

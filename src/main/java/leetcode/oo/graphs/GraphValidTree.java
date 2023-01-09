@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-//https://leetcode.com/problems/graph-valid-tree/
+//https://leetcode.com/problems/graph-valid-tree
 public final class GraphValidTree {
 
     public static void main(String[] args) {

@@ -10,24 +10,25 @@ final class SplitLinkedList {
         for (ListNode temp = root; temp != null; temp = temp.next) {
             size++;
         }
-        int biggerSize = size % parts;
-        int lengthPerPart = size / parts - 1;
-        final ListNode[] nodes = new ListNode[parts];
+        int biggerParts = size % parts;
+        int partsSize = size / parts -1;
         int index = 0;
-        ListNode current = root;
-        while (current != null && index < parts) {
-            ListNode next = current;
-            final boolean hasRemaining = biggerSize > 0;
-            for (int i = 0; i < lengthPerPart + (hasRemaining ? 1 : 0); i++) {
-                current = current.next;
+        final ListNode[] splitted = new ListNode[parts];
+        ListNode head = root;
+        while (head != null) {
+            ListNode tail = head;
+            final int addOne = biggerParts > 0 ? 1 : 0;
+            for (int i = 0; i < partsSize + addOne && tail != null; i++) {
+                tail = tail.next;
             }
-            biggerSize--;
-            nodes[index] = next;
-            final ListNode temp = current.next;
-            current.next = null;
-            current = temp;
-            index++;
+            if (tail != null) {
+                final ListNode nextHead = tail.next;
+                tail.next = null;
+                splitted[index++] = head;
+                head = nextHead;
+                biggerParts--;
+            }
         }
-        return nodes;
+        return splitted;
     }
 }

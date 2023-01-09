@@ -13,17 +13,18 @@ final class MaxScore {
         return this.dp(dp, nums, multipliers, 0, 0, nums.length - 1);
     }
 
-    private int dp(final int[][] dp, final int[] nums, final int[] multipliers, final int left, final int cnt, final int right) {
-        if (cnt >= multipliers.length) {
+    private int dp(final int[][] dp, final int[] nums, final int[] multipliers, final int numStartIndex, final int mIndex, final int numEndIndex) {
+        if (mIndex >= multipliers.length) {
             return 0;
         }
-        if (dp[left][cnt] != -1) {
-            return dp[left][cnt];
+        if (dp[mIndex][numStartIndex] != -1) {
+            return dp[mIndex][numStartIndex];
         }
-        int leftScore = multipliers[cnt] * nums[left] + this.dp(dp, nums, multipliers, left + 1, cnt + 1, right);
-        int rightScore = multipliers[cnt] * nums[right] + this.dp(dp, nums, multipliers, left, cnt + 1, right - 1);
-        dp[left][cnt] = Math.max(leftScore,rightScore);
-        return dp[left][cnt];
+        final int left = nums[numStartIndex] * multipliers[mIndex] + this.dp(dp, nums, multipliers, numStartIndex + 1, mIndex + 1, numEndIndex);
+        final int right = nums[numEndIndex] * multipliers[mIndex] + this.dp(dp, nums, multipliers, numStartIndex, mIndex + 1, numEndIndex - 1);
+        final int max = Math.max(left, right);
+        dp[mIndex][numStartIndex] = max;
+        return max;
     }
 
 }

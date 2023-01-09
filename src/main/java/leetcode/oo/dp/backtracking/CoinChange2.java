@@ -1,5 +1,7 @@
 package leetcode.oo.dp.backtracking;
 
+import java.util.Arrays;
+
 /**
  * Coin Change 2.
  * See {@link <a href ="https://leetcode.com/problems/coin-change-2/">https://leetcode.com/problems/coin-change-2/</a>}
@@ -7,19 +9,28 @@ package leetcode.oo.dp.backtracking;
 final class CoinChange2 {
 
     int change(final int amount, final int[] coins) {
-        final int[][] dp = new int[coins.length + 1][amount + 1];
-        dp[0][0] = 1;
-        for (int i = 1; i <= coins.length; i++) {
-            dp[i][0] = 1;
-            for (int j = 1; j <= amount; j++) {
-                dp[i][j] += dp[i - 1][j];
-                final int diff = j - coins[i - 1];
-                if (diff >= 0) {
-                    dp[i][j] += dp[i][diff];
-                }
+        final int[][] dp = new int[amount + 1][coins.length + 1];
+        for (final int[] ints : dp) {
+            Arrays.fill(ints, -1);
+        }
+        return helper(coins, amount, dp, 0);
+    }
+
+    private int helper(final int[] coins, final int amount, int[][] dp, final int index) {
+        if (dp[amount][index] != -1) {
+            return dp[amount][index];
+        }
+        if (amount == 0) {
+            return 1;
+        }
+        int cnt = 0;
+        for (int i = index; i < coins.length; i++) {
+            if (coins[i] <= amount) {
+                cnt += this.helper(coins, amount - coins[i], dp, i);
             }
         }
-        return dp[coins.length][amount];
+        dp[amount][index] = cnt;
+        return cnt;
     }
 
 }

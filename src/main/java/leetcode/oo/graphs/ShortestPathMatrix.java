@@ -1,36 +1,36 @@
 package leetcode.oo.graphs;
 
-import java.util.ArrayDeque;
+import java.util.LinkedList;
 import java.util.Queue;
 
-    
 final class ShortestPathMatrix {
 
-    private final int[][] dir = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}, {1, -1}, {-1, 1}, {-1, -1}, {1, 1}};
+    private static final int[][] dir = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}, {1, -1}, {-1, 1}, {-1, -1}, {1, 1}};
 
     int shortestPathBinaryMatrix(final int[][] grid) {
         if (grid[0][0] != 0) {
             return -1;
         }
-        final int rowLength = grid.length;
-        final int colLength = grid[0].length;
-        final Queue<int[]> queue = new ArrayDeque<>();
+        final Queue<int[]> queue = new LinkedList<>();
         queue.add(new int[]{0, 0});
         int steps = 1;
         while (!queue.isEmpty()) {
             final int size = queue.size();
             for (int i = 0; i < size; i++) {
                 final int[] poll = queue.poll();
-                if (poll[0] == rowLength - 1 && poll[1] == colLength - 1) {
+                final int currentX = poll[0];
+                final int currentY = poll[1];
+                if (currentX == grid.length - 1 && currentY == grid[0].length - 1) {
                     return steps;
                 }
-                for (int j = 0; j < this.dir.length; j++) {
-                    final int nextR = this.dir[j][0] + poll[0];
-                    final int nextC = this.dir[j][1] + poll[1];
-                    if (nextR >= 0 && nextR < rowLength && nextC >= 0 && nextC < colLength && grid[nextR][nextC] == 0) {
-                        queue.add(new int[]{nextR, nextC});
-                        grid[nextR][nextC] = 1;
+                for (final int[] dirs : dir) {
+                    final int nextX = currentX + dirs[0];
+                    final int nextY = currentY + dirs[1];
+                    if (nextX < 0 || nextX >= grid.length || nextY < 0 || nextY >= grid.length || grid[nextX][nextY] == 1) {
+                        continue;
                     }
+                    grid[nextX][nextY] = 1;
+                    queue.add(new int[]{nextX, nextY});
                 }
             }
             steps++;

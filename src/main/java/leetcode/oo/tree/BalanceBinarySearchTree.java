@@ -9,18 +9,18 @@ public final class BalanceBinarySearchTree {
     public PlainTree balanceBST(final PlainTree root) {
         final List<PlainTree> inOrder = new ArrayList<>(16);
         this.inOrder(inOrder, root);
-        return this.balance(0, inOrder.size() - 1, inOrder);
+        return this.balance(inOrder, 0, inOrder.size() - 1);
     }
 
-    private PlainTree balance(final int left, final int right, final List<PlainTree> inOrder) {
+    private PlainTree balance(final List<PlainTree> inOrder, final int left, final int right) {
         if (left > right) {
             return null;
         }
-        final int middle = (right - left) / 2 + left;
-        final PlainTree tree = inOrder.get(middle);
-        tree.left = this.balance(left, middle - 1, inOrder);
-        tree.right = this.balance(middle + 1, right, inOrder);
-        return tree;
+        int middle = (right + left) / 2;
+        final PlainTree plainTree = inOrder.get(middle);
+        plainTree.right = this.balance(inOrder, middle + 1, right);
+        plainTree.left = this.balance(inOrder, left, middle - 1);
+        return plainTree;
     }
 
     private void inOrder(final List<PlainTree> inOrder, final PlainTree root) {
@@ -30,4 +30,5 @@ public final class BalanceBinarySearchTree {
             this.inOrder(inOrder, root.right);
         }
     }
+
 }

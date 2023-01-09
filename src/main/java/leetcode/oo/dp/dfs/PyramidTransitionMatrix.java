@@ -13,6 +13,10 @@ final class PyramidTransitionMatrix {
         for (final String s : allowed) {
             map.computeIfAbsent(s.substring(0, 2), s1 -> new ArrayList<>()).add(s.charAt(2));
         }
+        final List<Character> level = new ArrayList<>(bottom.length() + 1);
+        for (int i = 0; i < bottom.length(); i++) {
+            level.add(bottom.charAt(i));
+        }
         return this.dfs(map, bottom, "", 1);
     }
 
@@ -20,15 +24,15 @@ final class PyramidTransitionMatrix {
         if (from.length() == 1) {
             return true;
         }
-        if (from.length() == to.length() + 1) {
-            return this.dfs(map, to, "", 1);
+        if (from.length() - 1 == to.length()){
+            return this.dfs(map,to,"",1);
         }
-        final String prefix = from.substring(index - 1, index + 1);
-        if (!map.containsKey(prefix)) {
+        final String prefix = from.substring(index-1,index+1);
+        if(!map.containsKey(prefix)){
             return false;
         }
-        for (final Character character : map.get(prefix)) {
-            if (this.dfs(map, from, to + character, index + 1)) {
+        for (final Character c : map.get(prefix)) {
+            if(this.dfs(map,from,to+c,index+1)){
                 return true;
             }
         }

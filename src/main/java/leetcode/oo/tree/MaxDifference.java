@@ -3,34 +3,25 @@ package leetcode.oo.tree;
 //https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/
 final class MaxDifference {
 
+    private int max = 0;
+
     int maxAncestorDiff(final PlainTree root) {
-        return this.maxDIff(root, root.val, root.val, 0);
+        this.maxDiff(root, root.val, root.val);
+        return this.max;
     }
 
-    private int maxDIff(final PlainTree root, final int min, final int max, final int maxSoFar) {
-        if (root == null) {
-            return maxSoFar;
+    private void maxDiff(final PlainTree root, final int min, final int max) {
+        if (root != null) {
+            final int nextMin = Math.min(min, root.val);
+            final int nextMax = Math.min(max, root.val);
+            final int nextDiff = Math.max(
+                Math.abs(root.val - nextMin),
+                Math.abs(root.val - nextMax)
+            );
+            this.max = Math.max(this.max,nextDiff);
+            this.maxDiff(root.left, min, max);
+            this.maxDiff(root.right, min, max);
         }
-        final int nextMin = Math.min(min, root.val);
-        final int nextMax = Math.max(max, root.val);
-        final int nextMaxDiff = Math.max(
-            Math.abs(root.val - nextMin),
-            Math.abs(root.val - nextMax)
-        );
-        return Math.max(
-            this.maxDIff(
-                root.left,
-                nextMin,
-                nextMax,
-                Math.max(maxSoFar,nextMaxDiff)
-            ),
-            this.maxDIff(
-                root.right,
-                nextMin,
-                nextMax,
-                Math.max(maxSoFar,nextMaxDiff)
-            )
-        );
     }
 
 }

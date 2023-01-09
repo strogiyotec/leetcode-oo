@@ -6,17 +6,17 @@ import leetcode.oo.ListNode;
 public final class SwapNodesInPairs {
 
     public ListNode swapPairs(ListNode head) {
-        final ListNode dummy = new ListNode(-1);
-        dummy.next = head;
-        ListNode current = dummy;
-        while (current.next != null && current.next.next != null) {
-            ListNode first = current.next;
-            ListNode second = current.next.next;
+        final ListNode temp = new ListNode(-1);
+        temp.next = head;
+        ListNode current = temp;
+        while (current != null && current.next != null) {
+            final ListNode first = current.next;
+            final ListNode second = current.next.next;
+            current.next = second;
             first.next = second.next;
             second.next = first;
-            current.next = second;
-            current = current.next.next;
+            current = first;
         }
-        return dummy.next;
+        return temp.next;
     }
 }

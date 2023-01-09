@@ -18,15 +18,12 @@ final class DesertCost {
     }
 
     private void dfs(final int current, final int target, final int[] toppingCosts, final int topIndex) {
-        final int diffCurrent = Math.abs(current - target);
-        final int diffResult = Math.abs(this.result - target);
-        if (diffCurrent < diffResult || diffCurrent == diffResult && current < target) {
+        final int currentDiff = Math.abs(current - target);
+        final int prevDiff = Math.abs(this.result - target);
+        if (currentDiff < prevDiff || currentDiff == prevDiff && current < target) {
             this.result = current;
         }
-        if (topIndex >= toppingCosts.length) {
-            return;
-        }
-        if (current > target) {
+        if (topIndex >= toppingCosts.length || current >= target) {
             return;
         }
         this.dfs(current, target, toppingCosts, topIndex + 1);

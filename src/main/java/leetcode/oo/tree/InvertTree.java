@@ -1,6 +1,6 @@
 package leetcode.oo.tree;
 
-import java.util.ArrayDeque;
+import java.util.LinkedList;
 import java.util.Queue;
 
 /**
@@ -10,17 +10,21 @@ import java.util.Queue;
 final class InvertTree {
 
     PlainTree invertTree(final PlainTree root) {
-        final Queue<PlainTree> queue = new ArrayDeque<>();
+        if (root == null) {
+            return null;
+        }
+        final Queue<PlainTree> queue = new LinkedList<>();
         queue.add(root);
         while (!queue.isEmpty()) {
             final PlainTree current = queue.poll();
-            final PlainTree temp = current.left;
-            current.left = current.right;
-            current.right = temp;
-            if (current.left != null) {
+            final PlainTree left = current.left;
+            final PlainTree right = current.right;
+            current.right = left;
+            current.left = right;
+            if(current.left != null){
                 queue.add(current.left);
             }
-            if (current.right != null) {
+            if(current.right != null){
                 queue.add(current.right);
             }
         }

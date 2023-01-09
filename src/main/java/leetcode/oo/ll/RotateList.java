@@ -6,27 +6,30 @@ import leetcode.oo.ListNode;
 final class RotateList {
 
     ListNode rotateRight(ListNode head, int k) {
-        if (head == null || k == 0) {
-            return head;
-        }
-        int size = 1;
-        ListNode dummy = head;
-        while (dummy.next != null) {
-            dummy = dummy.next;
-            size++;
-        }
-        k %= size;
         if (k == 0) {
             return head;
         }
-        ListNode current = head;
-        for (int i = 0; i < size - k - 1; i++) {
-            current = current.next;
+        int size = 0;
+        ListNode dummy = head;
+        while (dummy != null) {
+            dummy = dummy.next;
+            size++;
         }
-        final ListNode solution = current.next;
-        current.next = null;
-        dummy.next = head;
-        return solution;
-
+        int mod = k % size;
+        if (mod == 0) {
+            return head;
+        }
+        ListNode temp = head;
+        for (int i = 1; i < size - mod; i++) {
+            temp = temp.next;
+        }
+        ListNode rotatedHead = temp.next;
+        temp.next = null;
+        ListNode last = rotatedHead;
+        while (last.next != null) {
+            last = last.next;
+        }
+        last.next = head;
+        return rotatedHead;
     }
 }

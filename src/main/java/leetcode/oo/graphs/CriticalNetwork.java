@@ -1,7 +1,6 @@
 package leetcode.oo.graphs;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -13,34 +12,35 @@ import java.util.concurrent.atomic.AtomicInteger;
 final class CriticalNetwork {
 
     List<List<Integer>> criticalConnections(int n, List<List<Integer>> connections) {
-        final Map<Integer, Set<Integer>> adjacent = new HashMap<>();
+        final Map<Integer, Set<Integer>> graph = new HashMap<>();
         for (int i = 0; i < n; i++) {
-            adjacent.put(i, new HashSet<>());
+            graph.put(i, new HashSet<>());
         }
         for (final List<Integer> connection : connections) {
-            adjacent.get(connection.get(0)).add(connection.get(1));
-            adjacent.get(connection.get(1)).add(connection.get(0));
+            graph.get(connection.get(0)).add(connection.get(1));
+            graph.get(connection.get(1)).add(connection.get(0));
         }
-        final Set<Integer> cache = new HashSet<>();
         final int[] indexes = new int[n + 1];
+        final AtomicInteger index = new AtomicInteger(0);
         final List<List<Integer>> solution = new ArrayList<>();
-        this.dfs(0, cache, indexes, solution, adjacent, new AtomicInteger(0));
+        final HashSet<Integer> cache = new HashSet<>();
+        this.dfs(0, cache, indexes, solution, graph, index);
         return solution;
     }
 
-    private void dfs(final int node, final Set<Integer> cache, final int[] indexes, final List<List<Integer>> solution, Map<Integer, Set<Integer>> adjacent,final AtomicInteger cnt) {
+    private void dfs(final int node, final Set<Integer> cache, final int[] indexes, final List<List<Integer>> solution, final Map<Integer, Set<Integer>> graph, final AtomicInteger cnt) {
         indexes[node] = cnt.getAndIncrement();
-        final int before = indexes[node];
+        int before = indexes[node];
         cache.add(node);
-        for (final Integer vertx : adjacent.get(node)) {
-            if (cache.contains(vertx)) {
-                indexes[node] = Math.min(indexes[vertx], indexes[node]);
+        for (final Integer vertex : graph.get(node)) {
+            if (cache.contains(vertex)) {
+                indexes[node] = Math.min(indexes[vertex], indexes[node]);
             } else {
-                adjacent.get(vertx).remove(node);
-                this.dfs(vertx, cache, indexes, solution, adjacent,cnt);
-                indexes[node] = Math.min(indexes[node], indexes[vertx]);
-                if (before < indexes[vertx]) {
-                    solution.add(Arrays.asList(node,vertx));
+                graph.get(vertex).remove(node);
+                this.dfs(vertex, cache, indexes, solution, graph, cnt);
+                indexes[node] = Math.min(indexes[node], indexes[vertex]);
+                if(before < indexes[vertex]){
+                    solution.add(List.of(node,vertex));
                 }
             }
         }

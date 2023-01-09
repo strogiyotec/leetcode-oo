@@ -6,34 +6,33 @@ import java.util.Stack;
 final class MinRemoveValidParenthesis {
 
     String minRemoveToMakeValid(final String line) {
+        final Stack<Integer> stack = new Stack<>();
         final StringBuilder builder = new StringBuilder(line.length());
-        final Stack<Integer> leftPosition = new Stack<>();
         for (int i = 0; i < line.length(); i++) {
-            final char c = line.charAt(i);
-            if (c != '(' && c != ')') {
-                builder.append(c);
+            final char currentChar = line.charAt(i);
+            if (Character.isLetter(currentChar)) {
+                builder.append(currentChar);
             } else {
-                if (c == '(') {
+                if (currentChar == '(') {
+                    stack.push(i);
                     builder.append('(');
-                    leftPosition.push(i);
                 } else {
-                    if (!leftPosition.isEmpty()) {
-                        leftPosition.pop();
-                        builder.append(c);
-                    } else {
+                    if (stack.isEmpty()) {
                         builder.append('*');
+                    } else {
+                        stack.pop();
+                        builder.append(')');
                     }
                 }
             }
         }
-        while (!leftPosition.isEmpty()) {
-            builder.setCharAt(leftPosition.pop(), '*');
+        while (!stack.isEmpty()) {
+            builder.setCharAt(stack.pop(), '*');
         }
         final StringBuilder solution = new StringBuilder(builder.length());
         for (int i = 0; i < builder.length(); i++) {
-            final char c = builder.charAt(i);
-            if (c != '*') {
-                solution.append(c);
+            if(builder.charAt(i) !='*'){
+                solution.append(builder.charAt(i));
             }
         }
         return solution.toString();

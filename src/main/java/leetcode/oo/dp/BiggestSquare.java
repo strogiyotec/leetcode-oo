@@ -1,6 +1,7 @@
 package leetcode.oo.dp;
 
 import java.util.Arrays;
+import java.util.stream.IntStream;
 
 //https://leetcode.com/problems/maximal-square/
 final class BiggestSquare {
@@ -17,24 +18,19 @@ final class BiggestSquare {
     }
 
     private int fillCache(final char[][] matrix, final int[][] cache, final int row, final int column) {
-        if (row >= matrix.length || column >= matrix[0].length) {
+        if (row < 0 || row >= matrix.length || column < 0 || column >= matrix[0].length) {
             return 0;
         }
         if (cache[row][column] == -1) {
             final int down = this.fillCache(matrix, cache, row + 1, column);
-            final int left = this.fillCache(matrix, cache, row, column + 1);
+            final int right = this.fillCache(matrix, cache, row, column + 1);
             final int diag = this.fillCache(matrix, cache, row + 1, column + 1);
-            if (matrix[row][column] == '1') {
-                cache[row][column] = 1 + Math.min(
-                    down,
-                    Math.min(
-                        left, diag
-                    )
-                );
-            } else {
+            if (matrix[row][column] == '0') {
                 cache[row][column] = 0;
+            } else {
+                cache[row][column] = IntStream.of(down, right, diag).min().getAsInt() + 1;
+                this.max = Math.max(cache[row][column] * cache[row][column], this.max);
             }
-            this.max = Math.max(this.max, cache[row][column] * cache[row][column]);
         }
         return cache[row][column];
     }

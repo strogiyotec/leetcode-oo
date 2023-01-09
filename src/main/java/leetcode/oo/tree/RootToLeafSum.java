@@ -19,19 +19,16 @@ final class RootToLeafSum {
     }
 
     private void toLeaf(final PlainTree root, final List<String> list, final StringBuilder builder) {
-        if (root != null) {
-            builder.append(root.val);
-            if (root.left == null && root.right == null) {
-                list.add(builder.toString());
-                builder.deleteCharAt(builder.length() - 1);
-                return;
-            }
-            if(root.left != null){
-                this.toLeaf(root.left,list,builder);
-            }
-            if(root.right != null){
-                this.toLeaf(root.right,list,builder);
-            }
+        builder.append(root.val);
+        if(root.left == null && root.right == null){
+            list.add(builder.toString());
+        }
+        if (root.left != null) {
+            this.toLeaf(root.left, list, builder);
+            builder.deleteCharAt(builder.length() - 1);
+        }
+        if (root.right != null) {
+            this.toLeaf(root.right, list, builder);
             builder.deleteCharAt(builder.length() - 1);
         }
     }

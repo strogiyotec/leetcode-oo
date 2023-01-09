@@ -8,33 +8,33 @@ import java.util.TreeSet;
 final class AvoidFlood {
 
     int[] avoidFlood(final int[] rains) {
-        final TreeSet<Integer> empty = new TreeSet<>();
-        final Map<Integer, Integer> fulled = new HashMap<>();
-        final int[] answer = new int[rains.length];
+        final TreeSet<Integer> zeros = new TreeSet<>();
+        final Map<Integer, Integer> map = new HashMap<>();
+        final int[] solution = new int[rains.length];
         for (int i = 0; i < rains.length; i++) {
             if (rains[i] == 0) {
-                empty.add(i);
+                zeros.add(i);
             } else {
-                if (fulled.containsKey(rains[i])) {
-                    if (empty.isEmpty()) {
+                if (map.containsKey(rains[i])) {
+                    if (zeros.isEmpty()) {
+                        return new int[]{};
+                    }
+                    int rainIndex = map.get(rains[i]);
+                    final Integer higher = zeros.higher(rainIndex);
+                    if (higher == null) {
                         return new int[]{};
                     } else {
-                        final Integer higher = empty.higher(fulled.get(rains[i]));
-                        if (higher == null) {
-                            return new int[]{};
-                        } else {
-                            answer[higher] = rains[i];
-                            empty.remove(higher);
-                        }
+                        solution[higher] = rains[i];
+                        zeros.remove(higher);
                     }
                 }
-                answer[i] = -1;
-                fulled.put(rains[i], i);
+                solution[i] = -1;
+                map.put(rains[i], i);
             }
         }
-        for (final Integer index : empty) {
-            answer[index] = 1;
+        for (final Integer zero : zeros) {
+            solution[zero] = 1;
         }
-        return answer;
+        return solution;
     }
 }

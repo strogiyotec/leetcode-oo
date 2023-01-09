@@ -24,25 +24,25 @@ final class CourseSchedule {
             );
         }
         for (int i = 0; i < numCourses; i++) {
-            if (this.dfs(i, adjacent, new HashSet<>())) {
+            if (!this.dfs(i, new boolean[numCourses + 1], adjacent)) {
                 return false;
             }
         }
         return true;
     }
 
-    private boolean dfs(final int course, final Map<Integer, Set<Integer>> adjacent, final HashSet<Integer> cache) {
-        if (cache.contains(course)) {
-            return true;
+    private boolean dfs(final int node, final boolean[] visited, final Map<Integer, Set<Integer>> adjacent) {
+        if (visited[node]) {
+            return false;
         }
-        cache.add(course);
-        for (final Integer requisite : adjacent.getOrDefault(course,Collections.emptySet())) {
-            if (this.dfs(requisite, adjacent, cache)) {
-                return true;
+        visited[node] = true;
+        for (final Integer vertex : adjacent.getOrDefault(node, Collections.emptySet())) {
+            if(!this.dfs(vertex,visited,adjacent)){
+                return false;
             }
         }
-        cache.remove(course);
-        return false;
+        visited[node] = false;
+        return true;
     }
 
 }

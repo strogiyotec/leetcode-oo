@@ -8,6 +8,8 @@ import leetcode.oo.ListNode;
  */
 final class ReversedList {
 
+    private ListNode reversed;
+
     /**
      * Reverse given list.
      *
@@ -15,12 +17,21 @@ final class ReversedList {
      * @return Reversed list
      */
     ListNode reverseList(final ListNode head) {
+        this.doReverse(head);
+        return this.reversed;
+    }
+
+    private ListNode doReverse(final ListNode head) {
         if (head.next == null) {
+            if (this.reversed == null) {
+                this.reversed = head;
+            }
             return head;
         }
-        final ListNode reversed = this.reverseList(head.next);
-        head.next.next = head;
+        final ListNode next = this.doReverse(head.next);
         head.next = null;
-        return reversed;
+        next.next = head;
+        return head;
     }
+
 }

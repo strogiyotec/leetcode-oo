@@ -1,6 +1,7 @@
 package leetcode.oo.dp.greedy;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -13,31 +14,34 @@ import java.util.PriorityQueue;
 final class TaskScheduler {
 
     int leastInterval(final char[] tasks, final int limit) {
-        final Map<Character, Integer> map = new HashMap<>(tasks.length);
-        for (int i = 0; i < tasks.length; i++) {
-            map.merge(tasks[i], 1, Integer::sum);
+        final Map<Character, Integer> cnt = new HashMap<>();
+        for (final char task : tasks) {
+            cnt.merge(task, 1, Integer::sum);
         }
-        final PriorityQueue<Character> queue = new PriorityQueue<>((o1, o2) -> map.get(o2) - map.get(o1));
-        queue.addAll(map.keySet());
-        int answer = 0;
+        final PriorityQueue<Character> queue = new PriorityQueue<>(Comparator.<Character>comparingInt(cnt::get).reversed());
+        queue.addAll(cnt.keySet());
+        int tasksCnt = 0;
         while (!queue.isEmpty()) {
-            final List<Character> temp = new ArrayList<>();
+            final List<Character> next = new ArrayList<>();
             for (int i = 0; i <= limit; i++) {
-                if (queue.isEmpty() && temp.isEmpty()) {
-                    return answer;
-                }
                 if (queue.isEmpty()) {
-                    answer += limit - i+1;
-                    break;
+                    if (next.isEmpty()) {
+                        return tasksCnt;
+                    } else {
+                        tasksCnt += limit - i + 1;
+                        break;
+                    }
                 }
-                final Character character = queue.poll();
-                if (map.computeIfPresent(character, (key, oldValue) -> oldValue - 1) != 0) {
-                    temp.add(character);
+                tasksCnt++;
+                final Character highest = queue.poll();
+                if (cnt.computeIfPresent(highest, (character, value) -> value - 1) == 0) {
+                    cnt.remove(highest);
+                } else {
+                    next.add(highest);
                 }
-                answer++;
             }
-            queue.addAll(temp);
+            queue.addAll(next);
         }
-        return answer;
+        return tasksCnt;
     }
 }

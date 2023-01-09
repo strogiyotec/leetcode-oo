@@ -9,13 +9,13 @@ final class SmallestRange {
 
     public int[] smallestRange(final List<List<Integer>> nums) {
         final PriorityQueue<int[]> queue = new PriorityQueue<>(Comparator.comparingInt(value -> nums.get(value[0]).get(value[1])));
-        int max = Integer.MIN_VALUE;
+        int max = 0;
         for (int i = 0; i < nums.size(); i++) {
             queue.add(new int[]{i, 0});
             max = Math.max(max, nums.get(i).get(0));
         }
-        int start = 0;
         int end = Integer.MAX_VALUE;
+        int start = 0;
         while (queue.size() == nums.size()) {
             final int[] poll = queue.poll();
             final int row = poll[0];
@@ -25,11 +25,11 @@ final class SmallestRange {
                 end = max;
                 start = min;
             }
-            if (col + 1 < nums.get(row).size()) {
-                queue.offer(new int[]{row, col + 1});
+            if (nums.get(row).size() > col + 1) {
+                queue.add(new int[]{row, col + 1});
                 max = Math.max(max, nums.get(row).get(col + 1));
             }
         }
-        return new int[]{start, end};
+        return new int[]{start,end};
     }
 }

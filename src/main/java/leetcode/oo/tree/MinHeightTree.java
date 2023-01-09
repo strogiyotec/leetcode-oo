@@ -11,29 +11,29 @@ import java.util.Set;
 final class MinHeightTree {
 
     List<Integer> findMinHeightTrees(int n, int[][] edges) {
-        final Map<Integer, Set<Integer>> adjacent = new HashMap<>();
+        final Map<Integer, Set<Integer>> graph = new HashMap<>(edges.length << 1);
         for (int i = 0; i < n; i++) {
-            adjacent.put(i, new HashSet<>());
+            graph.put(i, new HashSet<>());
         }
         for (final int[] edge : edges) {
-            adjacent.get(edge[0]).add(edge[1]);
-            adjacent.get(edge[1]).add(edge[0]);
+            graph.get(edge[0]).add(edge[1]);
+            graph.get(edge[1]).add(edge[0]);
         }
-        final List<Integer> leaves = new ArrayList<>();
+        final List<Integer> leaves = new ArrayList<>(n);
         for (int i = 0; i < n; i++) {
-            if (adjacent.get(i).size() == 1) {
+            if (graph.get(i).size() == 1) {
                 leaves.add(i);
             }
         }
         int size = n;
         while (size > 2) {
-            final List<Integer> nextLevel = new ArrayList<>();
             size -= leaves.size();
+            final List<Integer> nextLevel = new ArrayList<>();
             for (final Integer leaf : leaves) {
-                final Integer leafVerticle = adjacent.get(leaf).iterator().next();
-                adjacent.get(leafVerticle).remove(leaf);
-                if (adjacent.get(leafVerticle).size() == 1) {
-                    nextLevel.add(leafVerticle);
+                final Integer next = graph.get(leaf).iterator().next();
+                graph.get(next).remove(leaf);
+                if (graph.get(next).size() == 1) {
+                    nextLevel.add(next);
                 }
             }
             leaves.clear();

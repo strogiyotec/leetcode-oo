@@ -18,19 +18,20 @@ public final class UniqueTreeII {
         if (left > right) {
             return Collections.singletonList(null);
         }
-        final List<PlainTree> generated = new ArrayList<>(16);
+        final List<PlainTree> solution = new ArrayList<>();
         for (int i = left; i <= right; i++) {
             final List<PlainTree> leftTrees = this.generate(left, i - 1);
             final List<PlainTree> rightTrees = this.generate(i + 1, right);
             for (final PlainTree rightTree : rightTrees) {
                 for (final PlainTree leftTree : leftTrees) {
-                    final PlainTree tree = new PlainTree(i);
-                    tree.right = rightTree;
-                    tree.left = leftTree;
-                    generated.add(tree);
+                    final PlainTree plainTree = new PlainTree(i);
+                    plainTree.left = leftTree;
+                    plainTree.right = rightTree;
+                    solution.add(plainTree);
                 }
             }
         }
-        return generated;
+        return solution;
     }
+
 }

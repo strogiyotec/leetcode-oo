@@ -12,19 +12,19 @@ import java.util.Map;
 final class DuplicateSubTrees {
 
     List<PlainTree> findDuplicateSubtrees(final PlainTree root) {
-        final Map<String, Integer> cnt = new HashMap<>(16);
-        final List<PlainTree> storage = new ArrayList<>(16);
-        this.dfs(cnt, storage, root);
-        return storage;
+        final Map<String, Integer> cnt = new HashMap<>();
+        final List<PlainTree> trees = new ArrayList<>();
+        this.preOrder(cnt, trees, root);
+        return trees;
     }
 
-    private String dfs(final Map<String, Integer> cnt, final List<PlainTree> storage, final PlainTree root) {
-        if (root == null) {
+    private String preOrder(final Map<String, Integer> cnt, final List<PlainTree> trees, final PlainTree node) {
+        if (node == null) {
             return "#";
         }
-        final String path = root.val + ',' + this.dfs(cnt, storage, root.left) + ',' + this.dfs(cnt, storage, root.right);
-        if (cnt.merge(path, 1, Integer::sum) == 2) {
-            storage.add(root);
+        final String path = node.val + "," + this.preOrder(cnt, trees, node.left) + "," + this.preOrder(cnt, trees, node.right);
+        if(cnt.merge(path,1,Integer::sum)==2){
+            trees.add(node);
         }
         return path;
     }

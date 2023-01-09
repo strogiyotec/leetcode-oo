@@ -8,45 +8,36 @@ import java.util.Map;
 
 //https://leetcode.com/problems/get-the-maximum-score/
 final class GetMaxScore {
-    private final int mode = (int) 1.0e9 + 7;
 
     public int maxSum(int[] nums1, int[] nums2) {
-        final Map<Integer, List<Integer>> graph = new HashMap<>(nums1.length);
+        final Map<Integer, List<Integer>> paths = new HashMap<>(nums1.length);
         for (int i = 0; i < nums1.length - 1; i++) {
-            graph.computeIfAbsent(nums1[i], integer -> new ArrayList<>()).add(nums1[i + 1]);
+            paths.computeIfAbsent(nums1[i], integer -> new ArrayList<>()).add(nums1[i + 1]);
         }
         for (int i = 0; i < nums2.length - 1; i++) {
-            graph.computeIfAbsent(nums2[i], integer -> new ArrayList<>()).add(nums2[i + 1]);
+            paths.computeIfAbsent(nums2[i], integer -> new ArrayList<>()).add(nums2[i + 1]);
         }
-        final Map<Integer, Long> cache = new HashMap<>(nums1.length);
-        return (int) Math.max(
-            this.greedy(cache, graph, nums1[0]) % this.mode,
-            this.greedy(cache, graph, nums2[0]) % this.mode
+        final Map<Integer, Integer> cache = new HashMap<>(nums1.length);
+        return Math.max(
+            this.dfs(paths, cache, nums1[0]),
+            this.dfs(paths, cache, nums2[0])
         );
     }
 
-    private long greedy(
-        final Map<Integer, Long> cache,
-        final Map<Integer, List<Integer>> graph,
-        final int current
-    ) {
-        if (cache.containsKey(current)) {
-            return cache.get(current);
+    private int dfs(final Map<Integer, List<Integer>> paths, final Map<Integer, Integer> cache, final int currentNode) {
+        if (cache.containsKey(currentNode)) {
+            return cache.get(currentNode);
         }
-        //last node
-        if (!graph.containsKey(current)) {
-            return current;
-        }
-        long max = 0L;
-        for (final Integer vertex : graph.getOrDefault(current, Collections.emptyList())) {
-            max = Math.max(
-                max,
-                this.greedy(cache, graph, vertex)
+        int maxScore = 0;
+        for (final Integer vertex : paths.getOrDefault(currentNode, Collections.emptyList())) {
+            maxScore = Math.max(
+                maxScore,
+                this.dfs(paths, cache, vertex)
             );
         }
-        max += current;
-        cache.put(current, max);
-        return max;
+        maxScore += currentNode;
+        cache.put(currentNode, maxScore);
+        return maxScore;
     }
 
 }

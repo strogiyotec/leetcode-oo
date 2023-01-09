@@ -13,31 +13,26 @@ final class Anagrams {
         if (line.length() < word.length()) {
             return Collections.emptyList();
         }
-        final Map<Character, Integer> cnt = new HashMap<>();
+        final Map<Character, Integer> wordCnt = new HashMap<>(word.length() << 1);
         for (int i = 0; i < word.length(); i++) {
-            cnt.merge(word.charAt(i), 1, Integer::sum);
+            wordCnt.merge(word.charAt(i), 1, Integer::sum);
         }
-        final Map<Character, Integer> lineCnt = new HashMap<>();
-        int index = 0;
-        int length = 0;
+        int right = 0;
+        int left = 0;
         final List<Integer> solution = new ArrayList<>();
-        while (index <= line.length()) {
-            if (length == word.length()) {
-                if (lineCnt.equals(cnt)) {
-                    solution.add(index - word.length());
+        final Map<Character, Integer> lineCnt = new HashMap<>();
+        while (right < line.length()) {
+            lineCnt.merge(line.charAt(right), 1, Integer::sum);
+            if (right - left == word.length() - 1) {
+                if (lineCnt.equals(wordCnt)) {
+                    solution.add(left);
                 }
-                length--;
-                final char key = line.charAt(index - word.length());
-                if (lineCnt.computeIfPresent(key, (character, integer) -> integer - 1).equals(0)) {
-                    lineCnt.remove(key);
+                if (lineCnt.computeIfPresent(line.charAt(left), (key, value) -> value - 1) == 0) {
+                    lineCnt.remove(line.charAt(left));
                 }
-            } else {
-                if (index < line.length()) {
-                    lineCnt.merge(line.charAt(index), 1, Integer::sum);
-                    length++;
-                }
-                index++;
+                left++;
             }
+            right++;
         }
         return solution;
     }

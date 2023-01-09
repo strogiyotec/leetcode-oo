@@ -1,45 +1,47 @@
 package leetcode.oo.dp.dfs;
 
-import java.util.ArrayDeque;
+import java.util.LinkedList;
 import java.util.Queue;
 
 //https://leetcode.com/problems/shortest-bridge/
 final class ShortestBridge {
 
     int shortestBridge(final int[][] bridges) {
-        final boolean[][] visited = new boolean[bridges.length][bridges[0].length];
+        final Queue<int[]> queue = new LinkedList<>();
         boolean found = false;
-        final Queue<int[]> queue = new ArrayDeque<>();
         for (int i = 0; i < bridges.length && !found; i++) {
-            for (int j = 0; j < bridges[0].length; j++) {
+            for (int j = 0; j < bridges[i].length; j++) {
                 if (bridges[i][j] == 1) {
-                    this.dfs(i, j, bridges, visited, queue);
                     found = true;
+                    this.dfs(i, j, queue, bridges);
                     break;
                 }
             }
         }
-        int steps = 0;
         final int[][] directions = {
             {0, 1},
             {0, -1},
             {1, 0},
             {-1, 0},
         };
+        int steps = 0;
         while (!queue.isEmpty()) {
             final int size = queue.size();
             for (int i = 0; i < size; i++) {
                 final int[] poll = queue.poll();
+                final int row = poll[0];
+                final int column = poll[1];
                 for (final int[] direction : directions) {
-                    final int row = poll[0] + direction[0];
-                    final int column = poll[1] + direction[1];
-                    if (row >= 0 && row < bridges.length && column >= 0 && column < bridges[0].length && !visited[row][column]) {
-                        visited[row][column] = true;
-                        if (bridges[row][column] == 1) {
-                            return steps;
-                        }
-                        queue.add(new int[]{row, column});
+                    final int nextRow = row + direction[0];
+                    final int nextCol = column + direction[1];
+                    if (nextRow < 0 || nextRow >= bridges.length || nextCol < 0 || nextCol >= bridges[0].length || bridges[nextRow][nextCol] == -1) {
+                        continue;
                     }
+                    if (bridges[nextRow][nextCol] == 1) {
+                        return steps;
+                    }
+                    bridges[nextRow][nextCol] = -1;
+                    queue.add(new int[]{nextRow,nextCol});
                 }
             }
             steps++;
@@ -47,17 +49,16 @@ final class ShortestBridge {
         return -1;
     }
 
-    private void dfs(final int row, final int column, final int[][] bridges, final boolean[][] visited, final Queue<int[]> queue) {
-        if (row < 0 || row >= bridges.length || column < 0 || column >= bridges[0].length || visited[row][column] || bridges[row][column] != 1) {
+    private void dfs(final int row, final int column, final Queue<int[]> queue, final int[][] bridges) {
+        if (row < 0 || row >= bridges.length || column < 0 || column >= bridges[0].length || bridges[row][column] != 1) {
             return;
         }
-        visited[row][column] = true;
         queue.add(new int[]{row, column});
-        this.dfs(row + 1, column, bridges, visited, queue);
-        this.dfs(row - 1, column, bridges, visited, queue);
-        this.dfs(row, column + 1, bridges, visited, queue);
-        this.dfs(row, column - 1, bridges, visited, queue);
-
+        bridges[row][column] = -1;
+        this.dfs(row + 1, column, queue, bridges);
+        this.dfs(row - 1, column, queue, bridges);
+        this.dfs(row, column - 1, queue, bridges);
+        this.dfs(row, column + 1, queue, bridges);
     }
 
 }

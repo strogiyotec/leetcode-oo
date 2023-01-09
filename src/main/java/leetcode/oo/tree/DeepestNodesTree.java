@@ -13,16 +13,16 @@ final class DeepestNodesTree {
     }
 
     private int dfs(final PlainTree root, final int depth) {
-        if (root == null) {
-            return depth;
+        if (root != null) {
+            final int left = this.dfs(root.left, depth + 1);
+            final int right = this.dfs(root.right, depth + 1);
+            if (left >= this.deepestLevel && right >= this.deepestLevel) {
+                this.res = root;
+                this.deepestLevel = left;
+            }
+            return Math.max(left,right);
         }
-        final int left = this.dfs(root.left, depth + 1);
-        final int right = this.dfs(root.right, depth + 1);
-        if (left >= this.deepestLevel && right >= this.deepestLevel) {
-            this.deepestLevel = left;
-            this.res = root;
-        }
-        return Math.max(left,right);
+        return depth;
     }
 
 }

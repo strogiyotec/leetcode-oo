@@ -15,19 +15,23 @@ final class StoneGame7 {
         return this.dfs(memo, 0, stones.length - 1, sum, stones);
     }
 
-    private int dfs(final int[][] memo, final int i, final int j, final int sum, final int[] stones) {
-        if (i == j) {
+    private int dfs(final int[][] memo, final int left, final int right, final int sum, final int[] stones) {
+        if (left == right) {
             return 0;
         }
-        if (memo[i][j] != -1) {
-            return memo[i][j];
+        if (left > right) {
+            return -1;
         }
-        final int left = this.dfs(memo, i + 1, j, sum - stones[i], stones);
-        final int right = this.dfs(memo, i, j - 1, sum - stones[j], stones);
-        memo[i][j] = Math.max(
-            sum - stones[i] - left,
-            sum - stones[j] - right
+        if (memo[left][right] != -1) {
+            return memo[left][right];
+        }
+        final int fromLeft = this.dfs(memo, left + 1, right, sum-stones[left], stones);
+        final int fromRight = this.dfs(memo, left, right - 1, sum-stones[right], stones);
+        int max = Math.max(
+            sum - stones[left] -fromLeft,
+            sum - stones[right] -fromRight
         );
-        return memo[i][j];
+        memo[left][right]= max;
+        return max;
     }
 }

@@ -29,36 +29,22 @@ public final class OpenLock {
         while (!queue.isEmpty()) {
             final int size = queue.size();
             for (int i = 0; i < size; i++) {
-                final String next = queue.poll();
-                if(blocked.contains(next)){
-                    continue;
-                }
-                if (next.equals(target)) {
+                final String poll = queue.poll();
+                if (poll.equals(target)) {
                     return steps;
                 }
-                for (int index = 0; index < 4; index++) {
-                    final char c = next.charAt(index);
-                    boolean isLast = c == '9';
-                    final boolean isFirst = c == '0';
-                    final String forward;
-                    final String backward;
-                    if (isLast) {
-                        forward = next.substring(0, index) + '0' + next.substring(index + 1);
-                    } else {
-                        forward = next.substring(0, index) + (Character.getNumericValue(c) + 1) + next.substring(index + 1);
-                    }
-                    if (isFirst) {
-                        backward = next.substring(0, index) + '9' + next.substring(index + 1);
-                    } else {
-                        backward = next.substring(0, index) + (Character.getNumericValue(c) - 1) + next.substring(index + 1);
-                    }
-                    if (!visited.contains(backward) && !blocked.contains(backward)) {
-                        queue.offer(backward);
-                        visited.add(backward);
-                    }
-                    if (!visited.contains(forward) && !blocked.contains(forward)) {
-                        queue.offer(forward);
+                for (int j = 0; j < 4; j++) {
+                    final boolean isFirst = poll.charAt(j) == '0';
+                    final boolean isLast = poll.charAt(j) == '9';
+                    final String forward = this.forward(poll, isLast, j);
+                    final String backword = this.backword(poll, isFirst, j);
+                    if (!blocked.contains(forward) && !visited.contains(forward)) {
                         visited.add(forward);
+                        queue.add(forward);
+                    }
+                    if (!blocked.contains(backword) && !visited.contains(backword)) {
+                        visited.add(backword);
+                        queue.add(backword);
                     }
                 }
             }
@@ -66,4 +52,21 @@ public final class OpenLock {
         }
         return -1;
     }
+
+    private String backword(final String lock, final boolean isFirst, final int index) {
+        if (isFirst) {
+            return lock.substring(0, index) + '9' + lock.substring(index + 1);
+        } else {
+            return lock.substring(0, index) + (Character.getNumericValue(lock.charAt(index)) - 1) + lock.substring(index + 1);
+        }
+    }
+
+    private String forward(final String lock, final boolean isLast, final int index) {
+        if (isLast) {
+            return lock.substring(0, index) + '0' + lock.substring(index + 1);
+        } else {
+            return lock.substring(0, index) + (Character.getNumericValue(lock.charAt(index)) + 1) + lock.substring(index + 1);
+        }
+    }
+
 }

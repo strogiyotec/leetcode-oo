@@ -1,28 +1,26 @@
 package leetcode.oo.dp.greedy;
 
-import java.util.Stack;
+import java.util.ArrayDeque;
 
 //https://leetcode.com/problems/minimum-deletion-cost-to-avoid-repeating-letters/
 final class MinDeletionCost {
 
     int minCost(final String line, final int[] cost) {
-        final Stack<Integer> stack = new Stack<>();
-        int min = 0;
+        final ArrayDeque<Integer> queue = new ArrayDeque<>(cost.length);
+        int minCost = 0;
         for (int i = 0; i < line.length(); i++) {
-            if (!stack.isEmpty() && line.charAt(stack.peek()) == line.charAt(i)) {
-                final int prev = cost[stack.peek()];
-                final int next = cost[i];
-                if (prev < next) {
-                    min += prev;
-                    stack.pop();
-                    stack.push(i);
-                } else {
-                    min += next;
-                }
+            if (queue.isEmpty() || line.charAt(queue.peekLast()) != line.charAt(i)) {
+                queue.addLast(i);
             } else {
-                stack.push(i);
+                if (cost[queue.peekLast()] < cost[i]) {
+                    minCost += cost[queue.peekLast()];
+                    queue.removeLast();
+                    queue.addLast(i);
+                } else {
+                    minCost += cost[i];
+                }
             }
         }
-        return min;
+        return minCost;
     }
 }

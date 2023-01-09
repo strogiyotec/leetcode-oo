@@ -9,19 +9,19 @@ final class StringWithoutAAA {
             final int length = builder.length();
             if (length >= 2 && builder.charAt(length - 1) == builder.charAt(length - 2)) {
                 if (builder.charAt(length - 1) == 'a') {
-                    b--;
                     builder.append('b');
+                    b--;
                 } else {
-                    a--;
                     builder.append('a');
+                    a--;
                 }
             } else {
                 if (a > b) {
-                    a--;
                     builder.append('a');
+                    a--;
                 } else {
-                    b--;
                     builder.append('b');
+                    b--;
                 }
             }
         }

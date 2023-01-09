@@ -1,5 +1,7 @@
 package leetcode.oo.window;
 
+import java.util.Arrays;
+
 /**
  * Longest prefix for array of words.
  * See {@link <a href ="https://leetcode.com/problems/longest-common-prefix/">https://leetcode.com/problems/longest-common-prefix/</a>}
@@ -22,14 +24,17 @@ public final class LongestPrefix {
         if (words.length == 0) {
             return "";
         }
-        for (int i = 0; i < words[0].length(); i++) {
-            final char firstChar = words[0].charAt(i);
-            for (int j = 1; j < words.length; j++) {
-                if (i == words[j].length() || words[j].charAt(i) != firstChar) {
-                    return words[0].substring(0, i);
-                }
+        Arrays.sort(words);
+        final String first = words[0];
+        final String last = words[words.length - 1];
+        int matched = 0;
+        while (matched < first.length()) {
+            if (first.charAt(matched) == last.charAt(matched)) {
+                matched++;
+            } else {
+                break;
             }
         }
-        return words[0];
+        return matched == 0 ? "" : first.substring(0, matched);
     }
 }

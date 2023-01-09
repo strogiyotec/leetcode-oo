@@ -1,6 +1,5 @@
 package leetcode.oo.dp.dfs;
 
-import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -10,54 +9,54 @@ import java.util.Set;
 final class LargeIsland {
 
     int largestIsland(final int[][] grid) {
-        final Map<Integer, Integer> idToCnt = new HashMap<>(grid.length);
+        final Map<Integer, Integer> idToCnt = new HashMap<>(grid.length << 1);
         int id = 2;
         for (int i = 0; i < grid.length; i++) {
             for (int j = 0; j < grid[0].length; j++) {
                 if (grid[i][j] == 1) {
-                    this.dfs(idToCnt, id, grid, i, j);
+                    this.dfs(i, j, idToCnt, grid, id);
                     id++;
                 }
             }
         }
-        int max = idToCnt.values().stream().max(Comparator.comparingInt(o -> o)).orElse(0);
+        int max = idToCnt.values().stream().max(Integer::compare).orElse(0);
         for (int i = 0; i < grid.length; i++) {
-            for (int j = 0; j < grid[0].length; j++) {
+            for (int j = 0; j < grid.length; j++) {
                 if (grid[i][j] == 0) {
-                    int sum = 0;
-                    final Set<Integer> cache = new HashSet<>(idToCnt.size());
-                    sum += this.cntNeighbours(cache, idToCnt, i + 1, j, grid);
-                    sum += this.cntNeighbours(cache, idToCnt, i - 1, j, grid);
-                    sum += this.cntNeighbours(cache, idToCnt, i, j - 1, grid);
-                    sum += this.cntNeighbours(cache, idToCnt, i, j + 1, grid);
-                    sum += 1;
-                    max = Math.max(max, sum);
+                    final Set<Integer> set = new HashSet<>(4);
+                    int cnt = 0;
+                    cnt += this.search(i + 1, j, set, idToCnt, grid);
+                    cnt += this.search(i - 1, j, set, idToCnt, grid);
+                    cnt += this.search(i, j + 1, set, idToCnt, grid);
+                    cnt += this.search(i, j - 1, set, idToCnt, grid);
+                    cnt++;
+                    max = Math.max(cnt, max);
                 }
             }
         }
         return max;
     }
 
-    private int cntNeighbours(final Set<Integer> cache, final Map<Integer, Integer> idToCnt, final int row, final int column, final int[][] grid) {
-        if (row < 0 || row >= grid.length || column < 0 || column >= grid[0].length || grid[row][column] == 0) {
+    private int search(final int row, final int col, final Set<Integer> set, final Map<Integer, Integer> idToCnt, final int[][] grid) {
+        if (row < 0 || row >= grid.length || col < 0 || col >= grid[0].length || grid[row][col] == 0) {
             return 0;
         }
-        if (!cache.contains(grid[row][column])) {
-            cache.add(grid[row][column]);
-            return idToCnt.get(grid[row][column]);
+        if (!set.add(grid[row][col])) {
+            return 0;
         }
-        return 0;
+        return idToCnt.get(grid[row][col]);
     }
 
-    private void dfs(final Map<Integer, Integer> idToCnt, final int id, final int[][] grid, final int row, final int column) {
-        if (row < 0 || row >= grid.length || column < 0 || column >= grid[0].length || grid[row][column] == 0 || grid[row][column] == id) {
+    private void dfs(final int row, final int col, final Map<Integer, Integer> idToCnt, final int[][] grid, final int id) {
+        if (row < 0 || row >= grid.length || col < 0 || col >= grid[0].length || grid[row][col] == id || grid[row][col] == 0) {
             return;
         }
-        grid[row][column] = id;
+        grid[row][col] = id;
         idToCnt.merge(id, 1, Integer::sum);
-        this.dfs(idToCnt, id, grid, row - 1, column);
-        this.dfs(idToCnt, id, grid, row + 1, column);
-        this.dfs(idToCnt, id, grid, row, column - 1);
-        this.dfs(idToCnt, id, grid, row, column + 1);
+        this.dfs(row + 1, col, idToCnt, grid, id);
+        this.dfs(row - 1, col, idToCnt, grid, id);
+        this.dfs(row, col - 1, idToCnt, grid, id);
+        this.dfs(row, col + 1, idToCnt, grid, id);
     }
+
 }

@@ -33,10 +33,10 @@ final class PartitionEqualSum {
                 for (int i = index; i < nums.length; i++) {
                     if (!visited[i]) {
                         visited[i] = true;
-                        if (this.dfs(visited, nums, parts, i + 1, currentSum + nums[i])) {
+                        if (this.dfs(visited, nums, parts, i + 1, currentSum + nums[i])){
                             return true;
                         }
-                        visited[i] = false;
+                        visited[i]= false;
                     }
                 }
                 return false;

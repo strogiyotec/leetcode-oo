@@ -22,9 +22,9 @@ public final class MergeTrees {
         if (second == null) {
             return first;
         }
-        first.val += second.val;
-        first.left = this.merge(first.left, second.left);
-        first.right = this.merge(first.right, second.right);
-        return first;
+        final PlainTree tree = new PlainTree(first.val + second.val);
+        tree.left = this.merge(first.left,second.left);
+        tree.right = this.merge(first.right,second.right);
+        return tree;
     }
 }

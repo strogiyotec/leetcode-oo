@@ -22,32 +22,29 @@ final class NumberOfWaysToArrive {
     }
 
     public int dfs(final List<List<Node>> adj, int n) {
-        final int mod = 1_000_000_007;
-        final Queue<Node> queue = new PriorityQueue<>(n);
         final long[] costs = new long[n];
-        final long[] ways = new long[n];
-        final boolean[] cache = new boolean[n];
-        queue.add(new Node(0, 0));
+        final int[] ways = new int[n];
         Arrays.fill(costs, Long.MAX_VALUE);
         costs[0] = 0;
-        //one way to visit first node
         ways[0] = 1;
+        final Queue<Node> queue = new PriorityQueue<>();
+        queue.add(new Node(0, 0));
         while (!queue.isEmpty()) {
-            final Node currentNode = queue.poll();
-            if (currentNode.cost > costs[currentNode.position] || cache[currentNode.position]) {
+            final Node current = queue.poll();
+            if (current.cost > costs[current.position]) {
                 continue;
             }
-            for (final Node vertex : adj.get(currentNode.position)) {
-                if (costs[currentNode.position] + vertex.cost < costs[vertex.position]) {
-                    costs[vertex.position] = costs[currentNode.position] + vertex.cost;
-                    ways[vertex.position] = ways[currentNode.position] % mod;
-                    queue.add(new Node(vertex.position,costs[vertex.position]));
-                } else if(costs[currentNode.position]+ vertex.cost == costs[vertex.position]){
-                    ways[vertex.position] = (ways[vertex.position] + ways[currentNode.position]) % mod;
+            for (final Node vertex : adj.get(current.position)) {
+                if (current.cost + vertex.cost < costs[vertex.position]) {
+                    costs[vertex.position] = current.cost + vertex.cost;
+                    ways[vertex.position] = ways[current.position];
+                    queue.add(new Node(vertex.position, costs[vertex.position]));
+                } else if (current.cost + vertex.cost == costs[vertex.position]) {
+                    ways[vertex.position] += ways[current.position];
                 }
             }
         }
-        return (int) ways[n-1];
+        return ways[n-1];
     }
 
     @SuppressWarnings("ALL")
@@ -55,13 +52,9 @@ final class NumberOfWaysToArrive {
         int position;
         long cost;
 
-        public Node(int dis, long val) {
-            this.position = dis;
-            this.cost = val;
-        }
-
-        public int compare(Node node1, Node node2) {
-            return Long.compare(node1.cost, node2.cost);
+        public Node(int pos, long cost) {
+            this.position = pos;
+            this.cost = cost;
         }
 
         @Override

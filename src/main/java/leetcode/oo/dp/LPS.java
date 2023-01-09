@@ -7,26 +7,26 @@ package leetcode.oo.dp;
 final class LPS {
 
     String longestPalindrome(final String input) {
-        Range range = new Range(0, 0);
+        Range biggest = new Range(0,0);
         for (int i = 0; i < input.length(); i++) {
-            final Range include = this.expand(input, i, i);
-            final Range exclude = this.expand(input, i, i + 1);
-            if (include.isBigger(range)) {
-                range = include;
+            final Range shrink = this.expand(i, i, input);
+            final Range expand = this.expand(i, i + 1, input);
+            if(shrink.isBigger(biggest)){
+                biggest = shrink;
             }
-            if (exclude.isBigger(range)) {
-                range = exclude;
+            if(expand.isBigger(biggest)){
+                biggest = expand;
             }
         }
-        return range.substring(input);
+        return biggest.substring(input);
     }
 
-    private Range expand(final String input, int left, int right) {
-        while (left >= 0 && right < input.length() && input.charAt(left) == input.charAt(right)) {
-            left--;
-            right++;
+    private Range expand(int from, int to, final String input) {
+        while (from >= 0 && to < input.length() && input.charAt(from) == input.charAt(to)) {
+            from--;
+            to++;
         }
-        return new Range(left, right);
+        return new Range(from,to);
     }
 
     private static class Range {
@@ -45,7 +45,7 @@ final class LPS {
         }
 
         public String substring(final String input) {
-            return input.substring(this.left+1, this.right);
+            return input.substring(this.left + 1, this.right);
         }
     }
 

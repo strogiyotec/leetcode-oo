@@ -19,12 +19,12 @@ public final class ValidateStack {
         final int[] popped
     ) {
         final Stack<Integer> stack = new Stack<>();
-        int index = 0;
-        for (final int number : pushed) {
-            stack.push(number);
-            while (!stack.isEmpty() && index < popped.length && stack.peek() == popped[index]) {
+        int popIndex = 0;
+        for (final int j : pushed) {
+            stack.push(j);
+            while (!stack.isEmpty() && popIndex < popped.length && stack.peek() == popped[popIndex]) {
                 stack.pop();
-                index++;
+                popIndex++;
             }
         }
         return stack.isEmpty();

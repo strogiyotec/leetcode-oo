@@ -4,16 +4,16 @@ package leetcode.oo.math;
 final class SumDivThree {
 
     public int maxSumDivThree(final int[] nums) {
-        int[] dp = new int[3];
+        int[] cache = new int[3];
         for (final int num : nums) {
-            final int[] next = dp.clone();
-            for (final int maxSum : dp) {
-                final int currentMax = maxSum + num;
-                final int index = currentMax % 3;
-                next[index] = Math.max(next[index], currentMax);
+            final int[] nextCache = cache.clone();
+            for (final int maxValue : cache) {
+                final int nextMax = maxValue + num;
+                final int index = nextMax % 3;
+                nextCache[index] = Math.max(nextCache[index],nextMax);
             }
-            dp = next;
+            cache = nextCache;
         }
-        return dp[0];
+        return cache[0];
     }
 }

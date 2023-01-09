@@ -1,5 +1,6 @@
 package leetcode.oo.graphs;
 
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
@@ -15,20 +16,18 @@ final class CheapestFlight {
             adjacent.get(flight[0]).put(flight[1], flight[2]);
         }
         final PriorityQueue<int[]> queue = new PriorityQueue<>(Comparator.comparingInt(o -> o[1]));
-        queue.add(new int[]{src, 0, stops + 1});
+        queue.add(new int[]{src, 0, stops+1});
         while (!queue.isEmpty()) {
             final int[] poll = queue.poll();
-            final int city = poll[0];
-            final int price = poll[1];
+            final int source = poll[0];
+            final int cost = poll[1];
             final int stop = poll[2];
-            if (city == dst) {
-                return price;
+            if (source == dst) {
+                return cost;
             }
             if (stop != 0) {
-                if (adjacent.containsKey(city)) {
-                    for (final Integer key : adjacent.get(city).keySet()) {
-                        queue.add(new int[]{key, adjacent.get(city).get(key) + price, stop - 1});
-                    }
+                for (var entry : adjacent.getOrDefault(source, Collections.emptyMap()).entrySet()) {
+                    queue.add(new int[]{entry.getKey(), cost + entry.getValue(), stop - 1});
                 }
             }
         }

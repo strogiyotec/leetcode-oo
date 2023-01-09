@@ -9,36 +9,54 @@ import leetcode.oo.ListNode;
 final class MergeTwoLinkedList {
 
     ListNode mergeTwoLists(ListNode first, ListNode second) {
-        ListNode node;
-        ListNode answer;
-        if ((first != null && second != null && first.val < second.val) || (first != null && second == null)) {
-            node = new ListNode(first.val);
-            answer = node;
-            first = first.next;
-        } else {
-            node = new ListNode(second.val);
-            answer = node;
-            second = second.next;
-        }
+        ListNode current = null;
+        ListNode answer = null;
         while (first != null || second != null) {
+            //still some elements in both lists
             if (first != null && second != null) {
-                final int leftV = first.val;
-                final int rightV = second.val;
-                if (leftV <= rightV) {
-                    node.next = new ListNode(leftV);
+                final int firstVal = first.val;
+                final int secondVal = second.val;
+                if (firstVal <= secondVal) {
+                    //first iteration
+                    if (answer == null) {
+                        answer = new ListNode(firstVal);
+                        current = answer;
+                    } else {
+                        current.next = new ListNode(firstVal);
+                        current = current.next;
+                    }
                     first = first.next;
-                } else {
-                    node.next = new ListNode(rightV);
+                } else{
+                    //first iteration
+                    if (answer == null) {
+                        answer = new ListNode(secondVal);
+                        current = answer;
+                    } else {
+                        current.next = new ListNode(secondVal);
+                        current = current.next;
+                    }
                     second = second.next;
                 }
-            } else if (first != null) {
-                node.next = new ListNode(first.val);
+            }  else if(first != null){
+                //first iteration
+                if (answer == null) {
+                    answer = new ListNode(first.val);
+                    current = answer;
+                } else {
+                    current.next = new ListNode(first.val);
+                    current = current.next;
+                }
                 first = first.next;
-            } else {
-                node.next = new ListNode(second.val);
+            } else{
+                if (answer == null) {
+                    answer = new ListNode(second.val);
+                    current = answer;
+                } else {
+                    current.next = new ListNode(second.val);
+                    current = current.next;
+                }
                 second = second.next;
             }
-            node = node.next;
         }
         return answer;
     }

@@ -27,7 +27,7 @@ final class ReconstructItinerary {
         final String currentFlight
     ) {
         while (adjacent.containsKey(currentFlight) && !adjacent.get(currentFlight).isEmpty()) {
-            this.dfs(solution, adjacent, adjacent.get(currentFlight).poll());
+            this.dfs(solution,adjacent,adjacent.get(currentFlight).poll());
         }
         solution.addFirst(currentFlight);
     }

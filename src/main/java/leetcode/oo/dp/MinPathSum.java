@@ -1,5 +1,8 @@
 package leetcode.oo.dp;
 
+import java.util.Comparator;
+import java.util.PriorityQueue;
+import java.util.Queue;
 
 /**
  * Minimum Path Sum.
@@ -8,20 +11,26 @@ package leetcode.oo.dp;
 final class MinPathSum {
 
     int minPathSum(int[][] grid) {
-        final int[][] dp = new int[grid.length][grid[0].length];
-        dp[0][0] = grid[0][0];
-        for (int i = 1; i < dp.length; i++) {
-            dp[i][0] = grid[i][0] + dp[i - 1][0];
-        }
-        for (int j = 1; j < dp[0].length; j++) {
-            dp[0][j] = grid[0][j] + dp[0][j - 1];
-        }
-        for (int i = 1; i < dp.length; i++) {
-            for (int j = 1; j < dp[0].length; j++) {
-                dp[i][j] = grid[i][j];
-                dp[i][j] += Math.min(dp[i - 1][j], dp[i][j - 1]);
+        final Queue<int[]> queue = new PriorityQueue<>(Comparator.comparingInt(value -> value[2]));
+        queue.add(new int[]{0, 0, grid[0][0]});
+        final boolean[][] cache = new boolean[grid.length][grid[0].length];
+        while (!queue.isEmpty()) {
+            final int[] poll = queue.poll();
+            final int row = poll[0];
+            final int col = poll[1];
+            final int cost = poll[2];
+            if (row == grid.length - 1 && col == grid[0].length - 1) {
+                return cost;
+            }
+            if (row + 1 < grid.length && !cache[row + 1][col]) {
+                queue.add(new int[]{row + 1, col, cost + grid[row + 1][col]});
+                cache[row+1][col] = true;
+            }
+            if (col + 1 < grid[0].length && !cache[row][col + 1]) {
+                cache[row][col+1] = true;
+                queue.add(new int[]{row, col + 1, cost + grid[row][col + 1]});
             }
         }
-        return dp[dp.length - 1][dp[0].length - 1];
+        return -1;
     }
 }

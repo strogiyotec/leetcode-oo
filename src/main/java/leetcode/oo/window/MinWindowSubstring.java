@@ -18,35 +18,34 @@ public final class MinWindowSubstring {
      */
     @SuppressWarnings({"LineLength", "ExecutableStatementCount"})
     public String minWindow(final String text, final String pattern) {
-        final Map<Character, Integer> cache = new HashMap<>(pattern.length() + 2, 1);
+        final Map<Character, Integer> patternCnt = new HashMap<>(pattern.length() << 1);
         for (int i = 0; i < pattern.length(); i++) {
-            cache.merge(pattern.charAt(i), 1, Integer::sum);
+            patternCnt.merge(pattern.charAt(i), 1, Integer::sum);
         }
-        String minWindow = null;
-        final Map<Character, Integer> window = new HashMap<>(text.length() + 2, 1);
-        int windowPos = 0;
-        int minSize = Integer.MAX_VALUE;
-        int windowSize = 0;
+        int left = 0;
+        int minLeft = -1;
+        int minRight = -1;
+        int result = Integer.MAX_VALUE;
         int matchedCnt = 0;
-        for (int i = 0; i < text.length(); i++) {
-            final Character c = text.charAt(i);
-            if (cache.getOrDefault(c, 0).equals(window.merge(c, 1, Integer::sum))) {
+        final Map<Character, Integer> textCnt = new HashMap<>(text.length() << 1);
+        for (int right = 0; right < text.length(); right++) {
+            final Integer cnt = textCnt.merge(text.charAt(right), 1, Integer::sum);
+            if (cnt.equals(patternCnt.getOrDefault(text.charAt(right), 0))) {
                 matchedCnt++;
             }
-            windowSize++;
-            while (matchedCnt == cache.size()) {
-                if (minSize >= windowSize) {
-                    minSize = windowSize;
-                    minWindow = text.substring(windowPos, i + 1);
+            while (matchedCnt == patternCnt.size() && left <= right) {
+                if (right - left + 1 < result) {
+                    minRight = right;
+                    minLeft = left;
+                    result = right - left + 1;
                 }
-                final Character leftChar = text.charAt(windowPos++);
-                final Integer cacheValue = cache.getOrDefault(leftChar, -1);
-                if (cacheValue != -1 && window.computeIfPresent(leftChar, (key, val) -> val - 1) < cacheValue) {
+                final Integer leftCnt = textCnt.computeIfPresent(text.charAt(left), (character, integer) -> integer - 1);
+                if (leftCnt < patternCnt.getOrDefault(text.charAt(left), 0)) {
                     matchedCnt--;
                 }
-                windowSize--;
+                left++;
             }
         }
-        return minWindow == null ? "" : minWindow;
+        return result == Integer.MAX_VALUE ? "" : text.substring(minLeft, minRight+1);
     }
 }

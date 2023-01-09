@@ -25,12 +25,12 @@ public final class LongestWordInDict {
                 return Integer.compare(o1.length(), o2.length());
             }
         );
-        final Set<String> wordsSet = new HashSet<>();
+        final Set<String> set = new HashSet<>(words.length << 2, 1.0f);
         String longest = "";
         for (final String word : words) {
-            if (word.length() == 1 || wordsSet.contains(word.substring(0, word.length() - 1))) {
-                wordsSet.add(word);
-                if (word.length() > longest.length()) {
+            if (word.length() == 1 || set.contains(word.substring(0, word.length() - 1))) {
+                set.add(word);
+                if (longest.length() < word.length()) {
                     longest = word;
                 }
             }

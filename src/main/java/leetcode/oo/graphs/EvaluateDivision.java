@@ -13,47 +13,42 @@ final class EvaluateDivision {
         final double[] values,
         final List<List<String>> queries
     ) {
-        final Map<String, Map<String, Double>> graph = new HashMap<>(queries.size());
-        for (final List<String> equation : equations) {
-            graph.put(equation.get(0), new HashMap<>());
-            graph.put(equation.get(1), new HashMap<>());
+        final Map<String, Map<String, Double>> graph = new HashMap<>();
+        for (int i = 0; i < equations.size(); i++) {
+            final List<String> equation = equations.get(i);
+            graph.putIfAbsent(equation.get(0), new HashMap<>());
+            graph.putIfAbsent(equation.get(1), new HashMap<>());
+            graph.get(equation.get(0)).put(equation.get(1), values[i]);
+            graph.get(equation.get(1)).put(equation.get(0), 1 / values[i]);
         }
-        this.fill(graph, equations, values);
-        final double[] answers = new double[queries.size()];
+        final double[] solution = new double[queries.size()];
         for (int i = 0; i < queries.size(); i++) {
-            answers[i] = this.dfs(graph, queries.get(i).get(0), queries.get(i).get(1), new HashSet<>());
+            solution[i] = this.dfs(graph, queries.get(i).get(0), queries.get(i).get(1), new HashSet<>());
         }
-        return answers;
+        return solution;
     }
 
-    private double dfs(
-        final Map<String, Map<String, Double>> graph,
-        final String dividend,
-        final String divisor,
-        final HashSet<String> cache
-    ) {
-        if (!graph.containsKey(dividend)) {
+    private double dfs(final Map<String, Map<String, Double>> graph, final String top, final String bottom, final HashSet<String> cache) {
+        if (!graph.containsKey(top) || !graph.containsKey(bottom)) {
             return -1.0;
         }
-        if (graph.get(dividend).containsKey(divisor)) {
-            return graph.get(dividend).get(divisor);
+        if (top.equals(bottom)) {
+            return 1.0;
         }
-        cache.add(dividend);
-        for (final String vertex : graph.get(dividend).keySet()) {
-            if (!cache.contains(vertex)) {
-                final double answer = this.dfs(graph, vertex, divisor, cache);
-                if (answer != -1.0) {
-                    return answer * graph.get(dividend).get(vertex);
-                }
+        cache.add(top);
+        for (final String key : graph.get(top).keySet()) {
+            if (cache.contains(key)) {
+                continue;
+            }
+            if (key.equals(bottom)) {
+                return graph.get(top).get(key);
+            }
+            final double res = this.dfs(graph, key, bottom, cache);
+            if (res != -1.0) {
+                return graph.get(top).get(key) * res;
             }
         }
         return -1.0;
     }
 
-    private void fill(final Map<String, Map<String, Double>> graph, final List<List<String>> equations, final double[] values) {
-        for (int i = 0; i < equations.size(); i++) {
-            graph.get(equations.get(i).get(0)).put(equations.get(i).get(1), values[i]);
-            graph.get(equations.get(i).get(1)).put(equations.get(i).get(0), 1 / values[i]);
-        }
-    }
 }

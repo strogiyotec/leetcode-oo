@@ -4,27 +4,28 @@ package leetcode.oo.strings;
 public final class Croaking {
 
     public int minNumberOfFrogs(String croakOfFrogs) {
-        final int[] indexes = new int[5];
         final String croak = "croak";
-        int max = 0;
-        int current = 0;
+        final int[] cnt = new int[croak.length()];
+        int currentFrog = 0;
+        int maxFrogs = 0;
         for (final char c : croakOfFrogs.toCharArray()) {
             final int index = croak.indexOf(c);
-            indexes[index]++;
+            cnt[index]++;
+            maxFrogs = Math.max(maxFrogs, currentFrog);
             if (index == 0) {
-                current++;
-                max = Math.max(max, current);
+                currentFrog++;
             } else {
-                indexes[index - 1]--;
-                if (indexes[index - 1] < 0) {
+                cnt[index - 1]--;
+                if (cnt[index - 1] < 0) {
                     return -1;
-                } else if (index == 4) {
-                    current--;
+                }
+                if (index == 4) {
+                    currentFrog--;
                 }
             }
         }
-        if (current == 0) {
-            return max;
+        if(currentFrog == 0){
+            return maxFrogs;
         } else{
             return -1;
         }

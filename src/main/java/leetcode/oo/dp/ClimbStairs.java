@@ -10,12 +10,12 @@ final class ClimbStairs {
         if (amount == 1 || amount == 2) {
             return amount;
         }
-        final int[] memo = new int[amount];
+        int[] memo = new int[amount];
         memo[0] = 1;
         memo[1] = 2;
         for (int i = 2; i < amount; i++) {
             memo[i] = memo[i - 1] + memo[i - 2];
         }
-        return memo[amount-1];
+        return memo[amount - 1];
     }
 }

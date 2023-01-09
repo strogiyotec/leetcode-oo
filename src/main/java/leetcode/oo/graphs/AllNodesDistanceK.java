@@ -2,8 +2,8 @@ package leetcode.oo.graphs;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.HashSet;
-import java.util.IdentityHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -13,40 +13,40 @@ import leetcode.oo.tree.PlainTree;
 public final class AllNodesDistanceK {
 
     public List<Integer> distanceK(PlainTree root, PlainTree target, int K) {
-        final IdentityHashMap<PlainTree, Set<PlainTree>> graph = new IdentityHashMap<>(16);
-        this.buildGraph(root, graph);
-        final List<Integer> solution = new ArrayList<>(16);
-        this.dfs(target, -1, graph, K, solution);
-        return solution;
+        final Map<Integer, Set<Integer>> graph = new HashMap<>();
+        this.buildGraph(graph, root);
+        final List<Integer> list = new ArrayList<>();
+        this.dfs(-1, target.val, graph, list, K);
+        return list;
     }
 
-    private void dfs(final PlainTree target, final int prev, final Map<PlainTree, Set<PlainTree>> graph, final int distance, final List<Integer> solution) {
-        if (distance == 0) {
-            solution.add(target.val);
-            return;
+    private void dfs(final int prev, final int current, final Map<Integer, Set<Integer>> graph, final List<Integer> list, int steps) {
+        if (steps == 0) {
+            list.add(current);
         }
-        for (final PlainTree vertex : graph.getOrDefault(target, Collections.emptySet())) {
-            if (vertex.val != prev) {
-                this.dfs(vertex, target.val, graph, distance - 1, solution);
+        for (final Integer vertex : graph.getOrDefault(current, Collections.emptySet())) {
+            if (vertex != prev) {
+                this.dfs(current, vertex, graph, list, steps - 1);
             }
         }
     }
 
-    private void buildGraph(final PlainTree root, final Map<PlainTree, Set<PlainTree>> graph) {
+    private void buildGraph(final Map<Integer, Set<Integer>> graph, final PlainTree root) {
         if (root != null) {
-            graph.putIfAbsent(root, new HashSet<>());
+            graph.putIfAbsent(root.val, new HashSet<>());
             if (root.left != null) {
-                graph.putIfAbsent(root.left, new HashSet<>());
-                graph.get(root).add(root.left);
-                graph.get(root.left).add(root);
+                graph.putIfAbsent(root.left.val, new HashSet<>());
+                graph.get(root.val).add(root.left.val);
+                graph.get(root.left.val).add(root.val);
+                this.buildGraph(graph, root.left);
             }
             if (root.right != null) {
-                graph.putIfAbsent(root.right, new HashSet<>());
-                graph.get(root).add(root.right);
-                graph.get(root.right).add(root);
+                graph.putIfAbsent(root.right.val, new HashSet<>());
+                graph.get(root.val).add(root.right.val);
+                graph.get(root.right.val).add(root.val);
+                this.buildGraph(graph, root.right);
             }
-            this.buildGraph(root.left, graph);
-            this.buildGraph(root.right, graph);
         }
     }
+
 }

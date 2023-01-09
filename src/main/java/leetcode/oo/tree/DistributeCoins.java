@@ -3,19 +3,25 @@ package leetcode.oo.tree;
 //https://leetcode.com/problems/distribute-coins-in-binary-tree/
 final class DistributeCoins {
 
+    private int cnt;
+
     int distributeCoins(final PlainTree root) {
-        final int[] cnt = new int[1];
-        this.postOrder(root, cnt);
-        return cnt[0];
+        this.postOrder(root);
+        return this.cnt;
     }
 
-    private int postOrder(final PlainTree root, final int[] cnt) {
-        if (root == null) {
-            return 0;
+    private int postOrder(final PlainTree node) {
+        if (node != null) {
+            int prevCoins = this.postOrder(node.left) + this.postOrder(node.right);
+            if (node.val == 0) {
+                prevCoins -= 1;
+            } else {
+                prevCoins += node.val-1;
+            }
+            this.cnt += Math.abs(prevCoins);
+            return prevCoins;
         }
-        final int left = this.postOrder(root.left, cnt);
-        final int right = this.postOrder(root.right, cnt);
-        cnt[0] += Math.abs(left) + Math.abs(right);
-        return root.val + left + right - 1;
+        return 0;
     }
+
 }

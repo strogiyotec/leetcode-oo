@@ -49,12 +49,14 @@ public final class LongestWordDeleting {
 
     private boolean match(final String word, final String line) {
         int wordIndex = 0;
-        int lineIndex = 0;
-        while (lineIndex < line.length() && wordIndex < word.length()) {
-            if (word.charAt(wordIndex) == line.charAt(lineIndex)) {
+        int lineIndex =0;
+        while(wordIndex < word.length() && lineIndex < line.length()){
+            if(word.charAt(wordIndex) == line.charAt(lineIndex)){
+                lineIndex++;
                 wordIndex++;
+            } else{
+                lineIndex++;
             }
-            lineIndex++;
         }
         return wordIndex == word.length();
     }

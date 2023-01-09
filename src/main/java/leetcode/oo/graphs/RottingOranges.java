@@ -26,22 +26,23 @@ final class RottingOranges {
         final int[][] rotations = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
         int min = 0;
         while (!fresh.isEmpty()) {
-            final Set<IntPair> infected = new HashSet<>();
-            for (final IntPair sp : spoiled) {
+            final Set<IntPair> nextLevel = new HashSet<>();
+            for (final IntPair orange : spoiled) {
                 for (final int[] rotation : rotations) {
-                    final int nextI = rotation[0] + sp.getFirst();
-                    final int nextJ = rotation[1] + sp.getSecond();
-                    final IntPair infectedCoord = new IntPair(nextI, nextJ);
-                    if (fresh.remove(infectedCoord)) {
-                        infected.add(infectedCoord);
+                    final int row = rotation[0] + orange.getFirst();
+                    final int col = rotation[1] + orange.getSecond();
+                    final IntPair pair = new IntPair(row, col);
+                    if (fresh.contains(pair)) {
+                        fresh.remove(pair);
+                        nextLevel.add(pair);
                     }
                 }
             }
-            if (infected.isEmpty()) {
+            if (nextLevel.isEmpty()) {
                 return -1;
             }
             spoiled.clear();
-            spoiled.addAll(infected);
+            spoiled.addAll(nextLevel);
             min++;
         }
         return min;

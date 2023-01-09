@@ -15,11 +15,11 @@ final class PermutationString {
         int left = 0;
         int right = 0;
         while (right <= s2.length()) {
-            if (right-left == s1.length()) {
-                if (permutationCnt.equals(originalCnt)) {
+            if (right - left == s1.length()) {
+                if (originalCnt.equals(permutationCnt)) {
                     return true;
                 } else {
-                    if (permutationCnt.computeIfPresent(s2.charAt(left), (oldKey, oldValue) -> oldValue - 1) == 0) {
+                    if (permutationCnt.computeIfPresent(s2.charAt(left), (key, val) -> val - 1) == 0) {
                         permutationCnt.remove(s2.charAt(left));
                     }
                     left++;

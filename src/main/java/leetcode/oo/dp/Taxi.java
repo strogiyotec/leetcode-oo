@@ -15,22 +15,22 @@ final class Taxi {
 
     private long dfs(int[][] rides, int start, final long[] dp) {
         if (start >= rides.length) {
-            return 0;
+            return 0L;
         }
         if (dp[start] != -1) {
             return dp[start];
         }
-        long profit = rides[start][1] - rides[start][0] + rides[start][2];
+        final int[] current = rides[start];
+        long profit = current[1] - current[0] + current[2];
         for (int i = start + 1; i < rides.length; i++) {
-            final int currentEnd = rides[start][1];
-            final int nextStart = rides[i][0];
-            if (nextStart >= currentEnd) {
+            if (rides[i][0] >= current[1]) {
                 profit += this.dfs(rides, i, dp);
                 break;
             }
         }
-        final long skip = this.dfs(rides, start + 1, dp);
-        dp[start] = Math.max(skip, profit);
-        return dp[start];
+        final long nonInclude = this.dfs(rides, start + 1, dp);
+        final long max = Math.max(nonInclude, profit);
+        dp[start] = max;
+        return max;
     }
 }

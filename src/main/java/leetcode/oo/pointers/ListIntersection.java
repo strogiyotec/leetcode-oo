@@ -11,18 +11,29 @@ final class ListIntersection {
         int firstIndex = 0;
         int secondIndex = 0;
         while (firstIndex < firstList.length && secondIndex < secondList.length) {
-            final int[] second = secondList[secondIndex];
             final int[] first = firstList[firstIndex];
-            if (second[0] > first[1]) {
+            final int[] second = secondList[secondIndex];
+            if (first[1] >= second[0] && first[1] <= second[1]) {
+                solution.add(
+                    new int[]{
+                        Math.max(first[0], second[0]),
+                        Math.min(first[1], second[1])
+                    }
+                );
                 firstIndex++;
-            } else if (first[0] > second[1]) {
+            } else if(second[1] >=first[0] && second[1]<=first[1]){
+                solution.add(
+                    new int[]{
+                        Math.max(first[0], second[0]),
+                        Math.min(first[1], second[1])
+                    }
+                );
                 secondIndex++;
-            } else {
-                solution.add(new int[]{Math.max(second[0], first[0]), Math.min(first[1], second[1])});
-                if (first[1] < second[1]) {
-                    firstIndex++;
-                } else {
+            } else{
+                if(second[1] <first[1]){
                     secondIndex++;
+                } else{
+                    firstIndex++;
                 }
             }
         }

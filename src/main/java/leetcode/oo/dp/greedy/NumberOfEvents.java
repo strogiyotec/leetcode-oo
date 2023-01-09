@@ -10,23 +10,23 @@ public final class NumberOfEvents {
     public int maxEvents(int[][] events) {
         final PriorityQueue<Integer> queue = new PriorityQueue<>();
         Arrays.sort(events, Comparator.comparingInt(value -> value[0]));
-        int eventCnt = 0;
         int day = 1;
+        int eventsAttended = 0;
         int index = 0;
         while (index < events.length || !queue.isEmpty()) {
             while (!queue.isEmpty() && queue.peek() < day) {
                 queue.poll();
             }
             while (index < events.length && events[index][0] == day) {
-                queue.offer(events[index][1]);
+                queue.add(events[index][1]);
                 index++;
             }
-            if (!queue.isEmpty()) {
+            if(!queue.isEmpty()){
                 queue.poll();
-                eventCnt++;
+                eventsAttended++;
             }
             day++;
         }
-        return eventCnt;
+        return eventsAttended;
     }
 }

@@ -11,44 +11,41 @@ import java.util.Set;
  */
 final class PossibleBiPart {
 
-    private static final int RED = 1;
-
-    private static final int BLUE = 2;
-
     boolean possibleBipartition(final int nodes, final int[][] dislikes) {
-        final Map<Integer, Set<Integer>> adjacent = new HashMap<>();
+        final Map<Integer, Set<Integer>> graph = new HashMap<>(nodes << 1);
         for (int i = 1; i <= nodes; i++) {
-            adjacent.put(i, new HashSet<>());
+            graph.put(i, new HashSet<>());
         }
         for (final int[] dislike : dislikes) {
-            adjacent.get(dislike[0]).add(dislike[1]);
-            adjacent.get(dislike[1]).add(dislike[0]);
+            graph.get(dislike[0]).add(dislike[1]);
+            graph.get(dislike[1]).add(dislike[0]);
         }
         final int[] colors = new int[nodes + 1];
         for (int i = 1; i <= nodes; i++) {
-            if (colors[i] == 0) {
-                if (this.dfs(adjacent, i, 1, colors)) {
-                    return false;
-                }
+            if (colors[i] == 0 && !this.dfs(i, -1, graph, colors, 1)) {
+                return false;
             }
         }
         return true;
     }
 
-    private boolean dfs(final Map<Integer, Set<Integer>> adjacent, final int node, final int color, final int[] colors) {
+    private boolean dfs(final int node, final int prev, final Map<Integer, Set<Integer>> graph, final int[] colors, final int color) {
         colors[node] = color;
-        for (final Integer verticle : adjacent.get(node)) {
-            if (colors[verticle] == color) {
-                return true;
-            }
-            if (colors[verticle] != 0) {
-                continue;
-            }
-            if (this.dfs(adjacent, verticle, -1 * color, colors)) {
-                return true;
+        for (final Integer vertex : graph.get(node)) {
+            if (vertex != prev) {
+                if (colors[vertex] != 0) {
+                    if(colors[vertex] == colors[node]){
+                        return false;
+                    } else{
+                        continue;
+                    }
+                }
+                if (!this.dfs(vertex, node, graph, colors, color * -1)) {
+                    return false;
+                }
             }
         }
-        return false;
+        return true;
     }
 
 }

@@ -6,25 +6,22 @@ package leetcode.oo.tree;
  */
 final class BalancedBinaryTree {
 
+    private boolean isBalanced = true;
+
     boolean isBalanced(final PlainTree root) {
-        return this.height(root) != -1;
+        this.height(root);
+        return this.isBalanced;
     }
 
-    private int height(final PlainTree root) {
-        if (root == null) {
+    private int height(final PlainTree node) {
+        if (node == null || !this.isBalanced) {
             return 0;
         }
-        final int left = this.height(root.left);
-        if (left == -1) {
-            return -1;
-        }
-        final int right = this.height(root.right);
-        if (right == -1) {
-            return -1;
-        }
+        final int left = this.height(node.left);
+        final int right = this.height(node.right);
         if (Math.abs(left - right) > 1) {
-            return -1;
+            this.isBalanced = false;
         }
-        return Math.max(left, right) + 1;
+        return Math.max(left,right)+1;
     }
 }

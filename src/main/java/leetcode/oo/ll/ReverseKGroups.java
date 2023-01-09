@@ -9,12 +9,10 @@ final class ReverseKGroups {
         if (head == null || head.next == null || k < 2) {
             return head;
         }
-
-        final ListNode dummy = new ListNode(0);
+        final ListNode dummy = new ListNode(-1);
         dummy.next = head;
-
-        ListNode tail = dummy;
         ListNode prev = dummy;
+        ListNode tail = dummy;
         while (true) {
             int cnt = k;
             while (cnt > 0 && tail != null) {
@@ -31,8 +29,8 @@ final class ReverseKGroups {
                 temp.next = tail.next;
                 tail.next = temp;
             }
-            tail = listNode;
             prev = listNode;
+            tail = listNode;
         }
         return dummy.next;
     }

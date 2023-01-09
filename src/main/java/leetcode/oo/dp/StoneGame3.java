@@ -1,44 +1,44 @@
 package leetcode.oo.dp;
 
 import java.util.Arrays;
-import java.util.stream.IntStream;
 
 //https://leetcode.com/problems/stone-game-iii/
 final class StoneGame3 {
 
     String stoneGameIII(final int[] stoneValue) {
-        final int sum = IntStream.of(stoneValue).sum();
         final int[] dp = new int[stoneValue.length];
-        Arrays.fill(dp, Integer.MIN_VALUE);
-        this.search(sum, stoneValue, dp, 0);
-        final int alice = dp[0];
-        final int bob = sum - alice;
-        if (alice > bob) {
+        Arrays.fill(dp, -1);
+        int result = this.search(stoneValue, 0, dp);
+        if (result > 0) {
             return "Alice";
-        }
-        if (bob > alice) {
+        } else if (result < 0) {
             return "Bob";
         }
         return "Tie";
     }
 
-    private int search(final int sum, final int[] stoneValue, final int[] dp, final int index) {
+    private int search(final int[] stoneValue, final int index, final int[] dp) {
         if (index >= stoneValue.length) {
             return 0;
         }
-        if (dp[index] != Integer.MIN_VALUE) {
+        if (dp[index] != -1) {
             return dp[index];
         }
-        int max = Integer.MIN_VALUE;
-        max = Math.max(max, sum - this.search(sum - stoneValue[index], stoneValue, dp, index + 1));
+        int result = stoneValue[index] - this.search(stoneValue, index + 1, dp);
         if (index + 1 < stoneValue.length) {
-            max = Math.max(max, sum - this.search(sum - stoneValue[index] - stoneValue[index + 1], stoneValue, dp, index + 2));
+            result = Math.max(
+                result,
+                stoneValue[index] + stoneValue[index + 1] - this.search(stoneValue, index + 2, dp)
+            );
         }
         if (index + 2 < stoneValue.length) {
-            max = Math.max(max, sum - this.search(sum - stoneValue[index] - stoneValue[index + 1] - stoneValue[index + 2], stoneValue, dp, index + 3));
+            result = Math.max(
+                result,
+                stoneValue[index] + stoneValue[index + 1] + stoneValue[index + 2] - this.search(stoneValue, index + 3, dp)
+            );
         }
-        dp[index] = max == Integer.MIN_VALUE ? 0 : max;
-        return dp[index];
+        dp[index] = result;
+        return result;
     }
 
 }

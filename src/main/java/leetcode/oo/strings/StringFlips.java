@@ -1,42 +1,39 @@
 package leetcode.oo.strings;
 
-import java.util.List;
-
 //https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/
 public final class StringFlips {
 
     public int minFlips(final String word) {
-        if (this.isAlt(word)) {
+        if (this.alternating(word)) {
             return 0;
         }
-        final String multWord = word.repeat(2);
-        final List<String> alternates = this.valids(multWord);
+        final String expended = word.repeat(2);
+        final String[] options = this.fillOptions(expended.length());
+        int diffZero = 0;
+        int diffOne = 0;
         int min = Integer.MAX_VALUE;
-        int firstDiff = 0;
-        int secDiff = 0;
-        int left = 0;
-        for (int i = 0; i < multWord.length(); i++) {
-            if (multWord.charAt(i) != alternates.get(0).charAt(i)) {
-                firstDiff++;
+        for (int i = 0; i < expended.length(); i++) {
+            if (options[0].charAt(i) != expended.charAt(i)) {
+                diffZero++;
             }
-            if (multWord.charAt(i) != alternates.get(1).charAt(i)) {
-                secDiff++;
+            if (options[1].charAt(i) != expended.charAt(i)) {
+                diffOne++;
             }
             if (i >= word.length()) {
-                if (multWord.charAt(left) != alternates.get(0).charAt(left)) {
-                    firstDiff--;
+                final char left = expended.charAt(i - word.length());
+                if (left != options[0].charAt(i-word.length())) {
+                    diffZero--;
                 }
-                if (multWord.charAt(left) != alternates.get(1).charAt(left)) {
-                    secDiff--;
+                if (left != options[1].charAt(i-word.length())) {
+                    diffOne--;
                 }
-                left++;
             }
-            if (i >= word.length() - 1) {
+            if(i>=word.length()-1){
                 min = Math.min(
                     min,
                     Math.min(
-                        firstDiff,
-                        secDiff
+                        diffOne,
+                        diffZero
                     )
                 );
             }
@@ -44,34 +41,38 @@ public final class StringFlips {
         return min;
     }
 
-    private boolean isAlt(final String word) {
-        boolean firstZero = word.charAt(0) == '0';
+    private String[] fillOptions(final int length) {
+        final StringBuilder startZero = new StringBuilder(length);
+        final StringBuilder startOne = new StringBuilder(length);
+        boolean appendZero = true;
+        for (int i = 0; i < length; i++) {
+            if (appendZero) {
+                startZero.append('0');
+                startOne.append('1');
+            } else {
+                startZero.append('1');
+                startOne.append('0');
+            }
+            appendZero = !appendZero;
+        }
+        final String[] options = new String[2];
+        options[0] = startZero.toString();
+        options[1] = startOne.toString();
+        return options;
+    }
+
+    private boolean alternating(final String word) {
+        boolean startZero = word.charAt(0) == '0';
         for (int i = 1; i < word.length(); i++) {
-            if (firstZero && word.charAt(i) == '0') {
+            if (startZero && word.charAt(i) == '0') {
                 return false;
             }
-            if (!firstZero && word.charAt(i) == '1') {
+            if (!startZero && word.charAt(i) == '1') {
                 return false;
             }
-            firstZero = !firstZero;
+            startZero = !startZero;
         }
         return true;
     }
 
-    private List<String> valids(final String multWord) {
-        boolean flag = true;
-        final StringBuilder startZero = new StringBuilder(multWord.length());
-        final StringBuilder startOne = new StringBuilder(multWord.length());
-        for (int i = 0; i < multWord.length(); i++) {
-            if (flag) {
-                startOne.append('1');
-                startZero.append('0');
-            } else {
-                startOne.append('0');
-                startZero.append('1');
-            }
-            flag = !flag;
-        }
-        return List.of(startZero.toString(), startOne.toString());
-    }
 }

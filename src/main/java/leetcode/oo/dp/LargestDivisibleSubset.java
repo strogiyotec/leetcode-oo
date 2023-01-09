@@ -23,10 +23,10 @@ final class LargestDivisibleSubset {
         for (int i = 0; i < nums.length; i++) {
             for (int j = 0; j < i; j++) {
                 if (nums[i] % nums[j] == 0 && lists.get(i).size() < lists.get(j).size() + 1) {
-                    final List<Integer> next = lists.get(i);
-                    next.clear();
-                    next.addAll(lists.get(j));
-                    next.add(nums[i]);
+                    final List<Integer> current = lists.get(i);
+                    current.clear();
+                    current.addAll(lists.get(j));
+                    current.add(nums[i]);
                 }
             }
         }

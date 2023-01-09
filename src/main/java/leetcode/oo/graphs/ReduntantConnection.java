@@ -4,31 +4,31 @@ package leetcode.oo.graphs;
 final class ReduntantConnection {
 
     int[] findRedundantConnection(final int[][] edges) {
-        final int[] graph = new int[edges.length + 1];
+        final int[] grid = new int[edges.length+1];
         for (int i = 1; i <= edges.length; i++) {
-            graph[i] = i;
+            grid[i] = i;
         }
         int[] redundant = null;
         for (final int[] edge : edges) {
-            final int firstParent = this.find(graph, edge[0]);
-            final int secondParent = this.find(graph, edge[1]);
+            final int firstParent = this.find(grid, edge[0]);
+            final int secondParent = this.find(grid, edge[1]);
             if (firstParent == secondParent) {
                 redundant = edge;
             } else {
                 if (firstParent < secondParent) {
-                    graph[secondParent] = firstParent;
+                    grid[secondParent] = firstParent;
                 } else {
-                    graph[firstParent] = secondParent;
+                    grid[firstParent] = secondParent;
                 }
             }
         }
         return redundant;
     }
 
-    private int find(final int[] graph, final int node) {
-        int parent = graph[node];
-        while (parent != graph[parent]) {
-            parent = graph[parent];
+    private int find(final int[] grid, final int node) {
+        int parent = grid[node];
+        while (grid[parent] != parent) {
+            parent = grid[node];
         }
         return parent;
     }

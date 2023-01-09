@@ -8,29 +8,30 @@ final class IntegerToEnglish {
     private static final String[] belowHundred = {"", "Ten", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"};
 
     public String numberToWords(int num) {
-        if (num == 0) {
+        if (num == 0){
             return "0";
         }
         return this.convert(num);
     }
 
     private String convert(final int num) {
-        final String output;
+        final String english;
         if (num < 10) {
-            output = belowTen[num];
+            english = belowTen[num];
         } else if (num < 20) {
-            output = belowTwenty[num - 10];
+            english = belowTwenty[num];
         } else if (num < 100) {
-            output = belowHundred[num / 10] + ' ' + this.convert(num % 10);
+            english = belowHundred[num / 10] + ' ' + belowTen[num % 10];
         } else if (num < 1000) {
-            output = this.convert(num / 100) + " Hundred " + this.convert(num % 100);
+            english = convert(num / 100) + " Hundred " + this.convert(num % 100);
+        } else if (num < 10_000) {
+            english = convert(num / 1000) + " Thousands " + this.convert(num % 1000);
         } else if (num < 1000_000) {
-            output = this.convert(num / 1000) + " Thousand " + this.convert(num % 1000);
-        } else if (num < 1000_000_000) {
-            output = this.convert(num / 1000_000) + " Million " + this.convert(num % 1000_000);
+            english = convert(num / 100_000) + " Million " + this.convert(num % 100_000);
         } else {
-            output = this.convert(num / 1000_000_000) + " Billion " + this.convert(num % 1000_000_000);
+            english = convert(num / 1000_000) + " Billion " + this.convert(num % 1000_000);
         }
-        return output.trim();
+        return english.trim();
     }
+
 }

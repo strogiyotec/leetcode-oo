@@ -6,25 +6,26 @@ import java.util.Arrays;
 final class WiggleSortII {
 
     void wiggleSort(int[] nums) {
+        boolean isEven = nums.length % 2 == 0;
         Arrays.sort(nums);
         int middle = nums.length / 2;
-        if (nums.length % 2 == 0) {
+        if (isEven) {
             middle--;
         }
-        final int[] tmp = new int[nums.length];
         int left = middle;
         int right = nums.length - 1;
         int index = 0;
+        final int[] temp = new int[nums.length];
         while (index < nums.length && left >= 0 && right != middle) {
-            tmp[index] = nums[left];
-            tmp[index + 1] = nums[right];
-            index += 2;
+            temp[index] = nums[left];
+            temp[index + 1] = nums[right];
             left--;
             right--;
+            index += 2;
         }
-        if (nums.length % 2 != 0) {
-            tmp[index] = nums[0];
+        if (!isEven) {
+            temp[index] = nums[left];
         }
-        System.arraycopy(tmp, 0, nums, 0, nums.length);
+        System.arraycopy(temp, 0, nums, 0, nums.length);
     }
 }

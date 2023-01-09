@@ -1,6 +1,6 @@
 package leetcode.oo.dp.dfs;
 
-import java.util.Arrays;
+import java.util.stream.IntStream;
 
 //https://leetcode.com/problems/distinct-subsequences-ii/
 public final class DistinctSubSeqII {
@@ -12,11 +12,10 @@ public final class DistinctSubSeqII {
     }
 
     public int distinctSubseqII(String s) {
-        long mod = (long) (1.0e9 + 7);
-        final long[] sequences = new long[26];
+        final int[] sums = new int[s.length()];
         for (int i = 0; i < s.length(); i++) {
-            sequences[s.charAt(i) - 'a'] = 1 + Arrays.stream(sequences).sum() % mod;
+            sums[i] = 1 + IntStream.of(sums).sum();
         }
-        return (int) (Arrays.stream(sequences).sum() % mod);
+        return IntStream.of(sums).sum();
     }
 }

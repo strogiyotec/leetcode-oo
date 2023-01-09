@@ -10,7 +10,7 @@ final class NumberOfOperationToMakeNetworkConnected {
         if (connections.length + 1 < n) {
             return -1;
         }
-        final List<List<Integer>> graph = new ArrayList<>();
+        final List<List<Integer>> graph = new ArrayList<>(connections.length + 1);
         for (int i = 0; i < n; i++) {
             graph.add(new ArrayList<>());
         }
@@ -21,19 +21,20 @@ final class NumberOfOperationToMakeNetworkConnected {
         int connectedComponents = 0;
         final boolean[] cache = new boolean[n];
         for (int i = 0; i < n; i++) {
-            connectedComponents += this.dfs(graph, i, cache);
+            connectedComponents += this.dfs(i, cache, graph);
         }
         return connectedComponents - 1;
     }
 
-    private int dfs(final List<List<Integer>> graph, final int current, final boolean[] cache) {
-        if (cache[current]) {
+    private int dfs(final int node, final boolean[] cache, final List<List<Integer>> graph) {
+        if (cache[node]) {
             return 0;
         }
-        cache[current] = true;
-        for (final Integer vertical : graph.get(current)) {
-            this.dfs(graph, vertical, cache);
+        cache[node] = true;
+        for (final Integer vertex : graph.get(node)) {
+            this.dfs(vertex, cache, graph);
         }
         return 1;
     }
+
 }

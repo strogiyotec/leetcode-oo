@@ -8,29 +8,33 @@ public final class ZigZag {
     }
 
     public String convert(final String s, final int numRows) {
-        if (numRows == 1) {
+        if(numRows == 1){
             return s;
         }
         final StringBuilder[] builders = new StringBuilder[numRows];
         for (int i = 0; i < numRows; i++) {
-            builders[i] = new StringBuilder(s.length() / numRows + 1);
+            builders[i] = new StringBuilder();
         }
-        int step = 1;
-        int index = 0;
+        int builderIndex = 0;
+        boolean forward = true;
         for (int i = 0; i < s.length(); i++) {
-            builders[index].append(s.charAt(i));
-            if (index == 0) {
-                step = 1;
+            builders[builderIndex].append(s.charAt(i));
+            if (builderIndex == 0) {
+                forward = true;
             }
-            if (index == numRows - 1) {
-                step = -1;
+            if (builderIndex == numRows - 1) {
+                forward = false;
             }
-            index += step;
+            if (forward) {
+                builderIndex++;
+            } else {
+                builderIndex--;
+            }
         }
-        final StringBuilder builder = new StringBuilder(s.length() + 1);
-        for (final StringBuilder current : builders) {
-            builder.append(current);
+        final StringBuilder solution = new StringBuilder(s.length());
+        for (int i = 0; i < numRows; i++) {
+            solution.append(builders[i]);
         }
-        return builder.toString();
+        return solution.toString();
     }
 }

@@ -20,7 +20,7 @@ final class WordBreak {
     }
 
     private boolean found(final String line, final Set<String> set, final Map<String, Boolean> memo) {
-        if(line.isEmpty()){
+        if (line.isEmpty()) {
             return true;
         }
         if (memo.containsKey(line)) {
@@ -28,13 +28,11 @@ final class WordBreak {
         }
         for (int i = 0; i <= line.length(); i++) {
             final String sub = line.substring(0, i);
-            if (set.contains(sub)) {
-                if (this.found(line.substring(sub.length()), set, memo)) {
-                    return true;
-                }
+            if (set.contains(sub) && this.found(line.substring(i), set, memo)) {
+                return true;
             }
         }
-        memo.put(line, false);
+        memo.put(line,false);
         return false;
     }
 

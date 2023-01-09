@@ -1,6 +1,6 @@
 package leetcode.oo.graphs;
 
-import java.util.ArrayDeque;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
@@ -12,22 +12,22 @@ final class MaxDepthNTree {
 
     @SuppressWarnings("ALL")
     int maxDepth(final Node root) {
-        int depth = 0;
-        final Queue<Node> queue = new ArrayDeque<>();
+        final Queue<Node> queue = new LinkedList<>();
         queue.add(root);
+        int max = 0;
         while (!queue.isEmpty()) {
-            int size = queue.size();
+            max++;
+            final int size = queue.size();
             for (int i = 0; i < size; i++) {
-                final Node poll = queue.poll();
-                if (poll.children != null && !poll.children.isEmpty()) {
-                    for (final Node child : poll.children) {
-                        queue.offer(child);
+                final Node node = queue.poll();
+                if (node.children != null) {
+                    for (final Node child : node.children) {
+                        queue.add(child);
                     }
                 }
             }
-            depth++;
         }
-        return depth;
+        return max;
     }
 
     @SuppressWarnings("ALL")

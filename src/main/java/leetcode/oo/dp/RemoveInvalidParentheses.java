@@ -1,8 +1,8 @@
 package leetcode.oo.dp;
 
-import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 import java.util.Set;
@@ -11,28 +11,24 @@ import java.util.Set;
 final class RemoveInvalidParentheses {
 
     List<String> removeInvalidParentheses(String s) {
-        final List<String> solution = new ArrayList<>(16);
-        final Set<String> cache = new HashSet<>(16);
-        final Queue<String> queue = new ArrayDeque<>();
+        final List<String> solution = new ArrayList<>();
+        final Set<String> cache = new HashSet<>();
+        final Queue<String> queue = new LinkedList<>();
         queue.add(s);
-        cache.add(s);
         boolean found = false;
         while (!queue.isEmpty()) {
             final String poll = queue.poll();
             if (this.isValid(poll)) {
-                solution.add(poll);
                 found = true;
+                solution.add(poll);
             }
-            //we need only min
             if (!found) {
                 for (int i = 0; i < poll.length(); i++) {
-                    if (poll.charAt(i) != '(' && poll.charAt(i) != ')') {
-                        continue;
-                    }
-                    final String withRemoved = poll.substring(0, i) + poll.substring(i + 1);
-                    if (!cache.contains(withRemoved)) {
-                        cache.add(withRemoved);
-                        queue.offer(withRemoved);
+                    if (poll.charAt(i) == '(' || poll.charAt(i) == ')') {
+                        final String sub = poll.substring(0, i) + poll.substring(i + 1);
+                        if (cache.add(sub)) {
+                            queue.add(sub);
+                        }
                     }
                 }
             }
@@ -42,13 +38,17 @@ final class RemoveInvalidParentheses {
 
     // helper function checks if string s contains valid parantheses
     private boolean isValid(final String line) {
-        int count = 0;
-
+        int cnt = 0;
         for (int i = 0; i < line.length(); i++) {
-            char c = line.charAt(i);
-            if (c == '(') count++;
-            if (c == ')' && count-- == 0) return false;
+            if (line.charAt(i) == '(') {
+                cnt++;
+            } else {
+                cnt--;
+                if (cnt < 0) {
+                    return false;
+                }
+            }
         }
-        return count == 0;
+        return cnt == 0;
     }
 }

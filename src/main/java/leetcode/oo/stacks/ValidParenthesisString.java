@@ -8,12 +8,13 @@ final class ValidParenthesisString {
         final Stack<Integer> left = new Stack<>();
         final Stack<Integer> star = new Stack<>();
         for (int i = 0; i < str.length(); i++) {
-            if (str.charAt(i) == '(') {
+            final char c = str.charAt(i);
+            if (c == '(') {
                 left.push(i);
-            } else if (str.charAt(i) == '*') {
+            } else if (c == '*') {
                 star.push(i);
             } else {
-                if (!left.isEmpty()) {
+                if (!left.empty()) {
                     left.pop();
                 } else if (!star.isEmpty()) {
                     star.pop();
@@ -22,8 +23,8 @@ final class ValidParenthesisString {
                 }
             }
         }
-        while(!left.isEmpty() && !star.isEmpty()){
-            if(left.pop() > star.pop()){
+        while (!left.isEmpty() && !star.isEmpty()) {
+            if(left.pop()> star.pop()){
                 return false;
             }
         }

@@ -1,6 +1,5 @@
 package leetcode.oo.tree;
 
-import java.util.ArrayDeque;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -12,32 +11,34 @@ final class SerializeAndDeser {
         if (root == null) {
             return null;
         }
-        final StringBuilder builder = new StringBuilder();
+        final StringBuilder builder = new StringBuilder(16);
         final Queue<PlainTree> queue = new LinkedList<>();
         queue.add(root);
         while (!queue.isEmpty()) {
-            Boolean hasMoreElements = null;
-            final StringBuilder temp = new StringBuilder();
             final int size = queue.size();
+            final StringBuilder temp = new StringBuilder(16);
+            boolean anyAdded = false;
             for (int i = 0; i < size; i++) {
-                final PlainTree poll = queue.poll();
-                if (poll != null) {
-                    hasMoreElements = true;
-                    if (builder.length() == 0) {
-                        temp.append(poll.val);
-                    } else {
-                        temp.append(',').append(poll.val);
-                    }
-                    queue.offer(poll.left);
-                    queue.offer(poll.right);
+                final PlainTree current = queue.poll();
+                if (builder.length() == 0) {
+                    builder.append(current.val);
+                }
+                if (current.left != null) {
+                    temp.append(',').append(current.left.val);
+                    queue.add(current.left);
+                    anyAdded = true;
                 } else {
-                    if (hasMoreElements == null) {
-                        hasMoreElements = false;
-                    }
+                    temp.append(",null");
+                }
+                if (current.right != null) {
+                    temp.append(',').append(current.right.val);
+                    queue.add(current.right);
+                    anyAdded = true;
+                } else {
                     temp.append(",null");
                 }
             }
-            if (hasMoreElements) {
+            if (anyAdded) {
                 builder.append(temp);
             }
         }
@@ -46,28 +47,31 @@ final class SerializeAndDeser {
 
     // Decodes your encoded data to tree.
     public PlainTree deserialize(String data) {
-        if (data == null) {
+        if (data == null || data.isEmpty()) {
             return null;
         }
-        final String[] split = data.split(",");
-        final PlainTree root = new PlainTree(Integer.parseInt(split[0]));
-        final Queue<PlainTree> queue = new ArrayDeque<>();
+        final String[] parts = data.split(",");
+        final PlainTree root = new PlainTree(Integer.parseInt(parts[0]));
+        final Queue<PlainTree> queue = new LinkedList<>();
         queue.add(root);
         int index = 1;
-        while (!queue.isEmpty() && index < split.length) {
+        while (!queue.isEmpty() && index < parts.length) {
             final int size = queue.size();
             for (int i = 0; i < size; i++) {
-                final PlainTree poll = queue.poll();
-                final String left = split[index++];
+                final PlainTree current = queue.poll();
+                final String left = parts[index];
                 if (!"null".equals(left)) {
-                    poll.left = new PlainTree(Integer.parseInt(left));
-                    queue.add(poll.left);
+                    current.left = new PlainTree(Integer.parseInt(left));
+                    queue.add(current.left);
                 }
-                final String right = split[index++];
-                if (!"null".equals(right)) {
-                    poll.right = new PlainTree(Integer.parseInt(right));
-                    queue.add(poll.right);
+                if (index + 1 < parts.length) {
+                    final String right = parts[index + 1];
+                    if (!"null".equals(right)) {
+                        current.right = new PlainTree(Integer.parseInt(right));
+                        queue.add(current.right);
+                    }
                 }
+                index += 2;
             }
         }
         return root;

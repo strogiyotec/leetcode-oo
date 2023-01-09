@@ -17,20 +17,22 @@ final class Permutations {
         return list;
     }
 
-    private void dfs(final int left, final List<List<Integer>> list, final int[] array) {
-        if (left == array.length - 1) {
-            list.add(IntStream.of(array).boxed().collect(Collectors.toList()));
+    private void dfs(final int index, final List<List<Integer>> list, final int[] nums) {
+        if (index >= nums.length) {
             return;
         }
-        for (int i = left; i < array.length; i++) {
-            swap(array, i, left);
-            this.dfs(left + 1, list, array);
-            swap(array, i, left);
+        if (index == nums.length - 1) {
+            list.add(IntStream.of(nums).boxed().collect(Collectors.toList()));
+        }
+        for (int i = index; i < nums.length; i++) {
+            swap(i, index, nums);
+            this.dfs(index + 1, list, nums);
+            swap(i, index, nums);
         }
     }
 
-    static private void swap(int[] nums, int from, int to) {
-        int temp = nums[from];
+    private void swap(final int from, final int to, final int[] nums) {
+        final int temp = nums[from];
         nums[from] = nums[to];
         nums[to] = temp;
     }

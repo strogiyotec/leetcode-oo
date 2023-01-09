@@ -1,9 +1,9 @@
 package leetcode.oo.dp.greedy;
 
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.PriorityQueue;
-
 
 /**
  * Reorganize string.
@@ -12,32 +12,37 @@ import java.util.PriorityQueue;
 final class ReorganizeString {
 
     String reorganizeString(final String word) {
-        final Map<Character, Integer> counts = new HashMap<>(word.length() + 2);
+        final Map<Character, Integer> map = new HashMap<>(word.length());
         for (int i = 0; i < word.length(); i++) {
-            counts.merge(word.charAt(i), 1, Integer::sum);
+            map.merge(word.charAt(i), 1, Integer::sum);
         }
-        final PriorityQueue<Character> queue = new PriorityQueue<>((a, b) -> counts.get(b) - counts.get(a));
-        queue.addAll(counts.keySet());
-        final StringBuilder result = new StringBuilder(word.length() + 2);
+        final PriorityQueue<Character> queue = new PriorityQueue<>(Comparator.<Character>comparingInt(map::get).reversed());
+        queue.addAll(map.keySet());
+        final StringBuilder builder = new StringBuilder(word.length());
         while (queue.size() >= 2) {
             final Character first = queue.poll();
             final Character second = queue.poll();
-            result.append(first).append(second);
-            if (counts.computeIfPresent(first, (k, v) -> v - 1) != 0) {
-                queue.offer(first);
+            builder.append(first);
+            builder.append(second);
+            if (map.computeIfPresent(first, (key, val) -> val - 1) == 0) {
+                map.remove(first);
+            } else{
+                queue.add(first);
             }
-            if (counts.computeIfPresent(second, (k, v) -> v - 1) != 0) {
-                queue.offer(second);
+            if (map.computeIfPresent(second, (key, val) -> val - 1) == 0) {
+                map.remove(second);
+            } else{
+                queue.add(second);
             }
         }
         if (!queue.isEmpty()) {
-            final Character last = queue.poll();
-            if (counts.get(last) >=2) {
+            final Character poll = queue.poll();
+            if (map.get(poll) > 1) {
                 return "";
             } else {
-                result.append(last);
+                builder.append(poll);
             }
         }
-        return result.toString();
+        return builder.toString();
     }
 }

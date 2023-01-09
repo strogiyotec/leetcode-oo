@@ -11,41 +11,40 @@ import java.util.stream.IntStream;
 final class ValidateTreeNodes {
 
     public boolean validateBinaryTreeNodes(int n, int[] leftChild, int[] rightChild) {
-        int root = this.findRoot(n, leftChild, rightChild);
+        final int root = this.getRoot(n, leftChild, rightChild);
         if (root == -1) {
             return false;
         }
         final Queue<Integer> queue = new LinkedList<>();
         queue.add(root);
-        final Set<Integer> cache = new HashSet<>(n);
+        final Set<Integer> visited = new HashSet<>(n << 1);
         while (!queue.isEmpty()) {
-            final Integer node = queue.poll();
-            if (cache.contains(node)) {
+            final Integer current = queue.poll();
+            if (!visited.add(current)) {
                 return false;
             }
-            cache.add(node);
-            if (leftChild[node] != -1) {
-                queue.offer(leftChild[node]);
+            if (rightChild[current] != -1) {
+                queue.add(rightChild[current]);
             }
-            if (rightChild[node] != -1) {
-                queue.offer(rightChild[node]);
+            if (leftChild[current] != -1) {
+                queue.add(leftChild[current]);
             }
         }
-        return cache.size() == n;
+        return visited.size() == n;
     }
 
-    private int findRoot(final int amount, final int[] leftChild, final int[] rightChild) {
-        final Set<Integer> roots = IntStream.range(0, amount).boxed().collect(Collectors.toSet());
-        for (final int number : leftChild) {
-            roots.remove(number);
+    private int getRoot(final int n, final int[] leftChild, final int[] rightChild) {
+        final Set<Integer> sequence = IntStream.range(0, n).boxed().collect(Collectors.toSet());
+        for (final int i : rightChild) {
+            sequence.remove(i);
         }
-        for (final int number : rightChild) {
-            roots.remove(number);
+        for (final int i : leftChild) {
+            sequence.remove(i);
         }
-        if (roots.size() == 1) {
-            return roots.iterator().next();
-        } else {
+        if (sequence.size() != 1) {
             return -1;
         }
+        return sequence.iterator().next();
     }
+
 }

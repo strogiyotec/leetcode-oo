@@ -10,14 +10,16 @@ final class Isomorphic {
         return this.toNumeric(s).equals(this.toNumeric(t));
     }
 
-    private String toNumeric(final String str) {
-        final StringBuilder builder = new StringBuilder(str.length());
-        final Map<Character, Integer> map = new HashMap<>(str.length());
-        for (int i = 0; i < str.length(); i++) {
-            if (!map.containsKey(str.charAt(i))) {
-                map.put(str.charAt(i), i);
+    private String toNumeric(final String word) {
+        final StringBuilder builder = new StringBuilder(word.length());
+        final Map<Character, Integer> charToInt = new HashMap<>(word.length() << 1);
+        int cnt = 0;
+        for (int i = 0; i < word.length(); i++) {
+            if (!charToInt.containsKey(word.charAt(i))) {
+                charToInt.put(word.charAt(i), cnt);
+                cnt++;
             }
-            builder.append(map.get(str.charAt(i))).append(' ');
+            builder.append(word.charAt(i));
         }
         return builder.toString();
     }

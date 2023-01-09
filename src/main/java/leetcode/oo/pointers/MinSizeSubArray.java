@@ -6,23 +6,24 @@ package leetcode.oo.pointers;
  */
 final class MinSizeSubArray {
 
-
     int minSubArrayLen(final int sum, final int[] nums) {
         int left = 0;
         int right = 0;
         int currentSum = 0;
         int length = Integer.MAX_VALUE;
-        while (left <= nums.length) {
-            if (currentSum >= sum) {
-                length = Math.min(length, right - left );
-                currentSum -= nums[left++];
-            } else {
-                if(right == nums.length){
-                    break;
-                }
-                currentSum += nums[right++];
+        do {
+            while (currentSum >= sum) {
+                length = Math.min(length, right - left);
+                currentSum -= nums[left];
+                left++;
             }
-        }
+            if (right < nums.length) {
+                currentSum += nums[right];
+                right++;
+            } else{
+                break;
+            }
+        } while (right <= nums.length);
         return length == Integer.MAX_VALUE ? 0 : length;
     }
 }

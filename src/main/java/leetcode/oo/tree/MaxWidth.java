@@ -8,25 +8,26 @@ import java.util.LinkedList;
 final class MaxWidth {
 
     int widthOfBinaryTree(PlainTree root) {
-        final Deque<AbstractMap.SimpleEntry<PlainTree, Integer>> queue = new LinkedList<>();
-        queue.add(new AbstractMap.SimpleEntry<>(root, 1));
-        int maxWidth = 1;
+        final Deque<AbstractMap.SimpleImmutableEntry<Integer, PlainTree>> queue = new LinkedList<>();
+        queue.add(new AbstractMap.SimpleImmutableEntry<>(1, root));
+        int max = 0;
         while (!queue.isEmpty()) {
-            final AbstractMap.SimpleEntry<PlainTree, Integer> first = queue.peekFirst();
-            final AbstractMap.SimpleEntry<PlainTree, Integer> last = queue.peekLast();
-            maxWidth = Math.max(maxWidth, last.getValue() - first.getValue() + 1);
             final int size = queue.size();
+            max = Math.max(
+                queue.peekLast().getKey() - queue.peekFirst().getKey() + 1,
+                max
+            );
             for (int i = 0; i < size; i++) {
-                final AbstractMap.SimpleEntry<PlainTree, Integer> node = queue.poll();
-                if (node.getKey().left != null) {
-                    queue.add(new AbstractMap.SimpleEntry<>(node.getKey().left, node.getValue() << 1));
+                var current = queue.poll();
+                if (current.getValue().left != null) {
+                    queue.add(new AbstractMap.SimpleImmutableEntry<>(current.getKey() * 2, current.getValue().left));
                 }
-                if (node.getKey().right != null) {
-                    queue.add(new AbstractMap.SimpleEntry<>(node.getKey().right, (node.getValue() << 1) + 1));
+                if (current.getValue().right != null) {
+                    queue.add(new AbstractMap.SimpleImmutableEntry<>(current.getKey() * 2 + 1, current.getValue().right));
                 }
             }
         }
-        return maxWidth;
+        return max;
     }
 
 }

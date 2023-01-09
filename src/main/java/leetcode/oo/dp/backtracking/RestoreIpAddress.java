@@ -8,29 +8,31 @@ final class RestoreIpAddress {
 
     List<String> restoreIpAddresses(final String word) {
         final List<String> solution = new ArrayList<>();
-        this.dfs(solution, word, 0, "");
+        this.dfs(solution, 0, word, "");
         return solution;
     }
 
-    private void dfs(final List<String> solution, final String word, final int dots, final String remaining) {
+    private void dfs(final List<String> solution, final int dots, final String word, final String accumulative) {
         if (dots == 4) {
             if (word.isEmpty()) {
-                solution.add(remaining);
+                solution.add(accumulative);
             }
             return;
         }
         for (int i = 1; i <= 3; i++) {
             if (word.length() < i) {
-                continue;
+                return;
             }
-            final Integer sub = Integer.parseInt(word.substring(0, i));
-            if (sub <= 255 && String.valueOf(sub).length() == i) {
+            final String sub = word.substring(0, i);
+            final Integer parsed = Integer.parseInt(sub);
+            if (parsed <= 255 && sub.length() == String.valueOf(parsed).length()) {
                 if (dots < 3) {
-                    this.dfs(solution, word.substring(i), dots + 1, remaining + sub + ".");
+                    this.dfs(solution, dots + 1, word.substring(i), accumulative + sub + ".");
                 } else {
-                    this.dfs(solution, word.substring(i), dots + 1, remaining + sub);
+                    this.dfs(solution, dots + 1, word.substring(i), accumulative + sub);
                 }
             }
         }
     }
+
 }

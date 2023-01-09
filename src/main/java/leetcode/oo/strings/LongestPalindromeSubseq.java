@@ -6,32 +6,32 @@ import java.util.Arrays;
 final class LongestPalindromeSubseq {
 
     public int longestPalindromeSubseq(final String word) {
-        final int[][] dp = new int[word.length() + 1][word.length() + 1];
+        final int[][] dp = new int[word.length()][word.length()];
         for (final int[] ints : dp) {
             Arrays.fill(ints, -1);
         }
-        return this.longest(0, word.length() - 1, dp, word);
+        return this.dfs(dp, 0, word.length() - 1, word);
     }
 
-    private int longest(final int left, final int right, final int[][] dp, final String word) {
+    private int dfs(final int[][] dp, final int left, final int right, final String word) {
         if (left > right) {
             return 0;
         }
         if (dp[left][right] != -1) {
             return dp[left][right];
         }
-        final int longest;
+        int longest = 0;
         if (word.charAt(left) == word.charAt(right)) {
             if (left == right) {
-                longest = 1 + this.longest(left + 1, right - 1, dp, word);
+                longest = 1;
             } else {
-                longest = 2 + this.longest(left + 1, right - 1, dp, word);
+                longest = 2 + this.dfs(dp, left + 1, right - 1, word);
             }
         } else {
             longest = Math.max(
-                this.longest(left + 1, right, dp, word),
-                this.longest(left, right - 1, dp, word)
-            );
+                this.dfs(dp, left + 1, right, word),
+                this.dfs(dp, left, right - 1, word)
+                );
         }
         dp[left][right] = longest;
         return longest;

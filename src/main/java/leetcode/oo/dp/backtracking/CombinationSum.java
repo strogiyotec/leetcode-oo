@@ -21,12 +21,11 @@ final class CombinationSum {
         }
         if (target == 0) {
             combinations.add(new ArrayList<>(sum));
-            return;
         }
         for (int i = position; i < candidates.length; i++) {
             sum.add(candidates[i]);
             this.combinations(candidates, target - candidates[i], i, sum, combinations);
-            sum.remove(sum.size() - 1);
+            sum.remove(candidates[i]);
         }
     }
 }

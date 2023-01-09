@@ -15,27 +15,30 @@ public final class ProcessServers {
     }
 
     public int[] assignTasks(final int[] servers, final int[] tasks) {
-        final PriorityQueue<Server> freeServers = new PriorityQueue<>(Comparator.comparingInt(o -> o.weight));
-        final PriorityQueue<Server> usedServers = new PriorityQueue<>(Comparator.comparingInt(o -> o.availableTime));
+        final PriorityQueue<Server> freeServers = new PriorityQueue<>(Comparator.comparing(s -> s.weight));
+        final PriorityQueue<Server> usedServers = new PriorityQueue<>(Comparator.comparing(s -> s.availableTime));
         for (int i = 0; i < servers.length; i++) {
-            freeServers.offer(new Server(i, servers[i], 0));
+            freeServers.add(new Server(i, servers[i], 0));
         }
-        final int[] solution = new int[tasks.length];
-        for (int i = 0; i < tasks.length; i++) {
-            final int task = tasks[i];
-            while (!usedServers.isEmpty() && usedServers.peek().availableTime <= i) {
-                freeServers.offer(usedServers.poll());
+        final int[] assignedTasks = new int[tasks.length];
+        for (int second = 0; second < tasks.length; second++) {
+            while (!usedServers.isEmpty() && usedServers.peek().availableTime <= second) {
+                final Server used = usedServers.poll();
+                freeServers.add(
+                    new Server(used.index, used.weight, 0)
+                );
             }
-            final Server poll = freeServers.poll();
-            solution[i] = poll.index;
-            usedServers.add(new Server(
-                    poll.index,
-                    poll.weight,
-                    i + task
+            final Server free = freeServers.poll();
+            assignedTasks[second] = free.index;
+            usedServers.add(
+                new Server(
+                    free.index,
+                    free.weight,
+                    tasks[second] + second
                 )
             );
         }
-        return solution;
+        return assignedTasks;
     }
 
     @SuppressWarnings("ALL")
