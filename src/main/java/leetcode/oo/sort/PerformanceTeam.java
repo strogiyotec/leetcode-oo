@@ -23,24 +23,42 @@ public final class PerformanceTeam {
         int[] efficiency,
         int k
     ) {
-        final List<SpeedToEfficiency> list = new ArrayList<>(speed.length);
-        for (int i = 0; i < speed.length; i++) {
+        final List<SpeedToEfficiency> list = new ArrayList<>(n);
+        for (int i = 0; i < n; i++) {
             list.add(new SpeedToEfficiency(efficiency[i], speed[i]));
         }
-        list.sort(Comparator.comparingInt(o -> o.efficiency));
-        final PriorityQueue<Integer> queue = new PriorityQueue<>();
-        long sum = 0;
-        long out = 0;
-        final int mod = 1_000_000_000+7;
-        for (int i = speed.length - 1; i >= 0; i--) {
-            queue.add(list.get(i).speed);
-            sum += list.get(i).speed;
+        list.sort(Comparator.<SpeedToEfficiency>comparingInt(value -> value.efficiency).reversed());
+        final PriorityQueue<WorkerWithIndex> queue = new PriorityQueue<>(Comparator.comparingInt(value -> value.speed));
+        long speedSum = 0;
+        long maxEfficiency = 0L;
+        final int mod = 1_000_000_000 + 7;
+        for (int i = 0; i < n; i++) {
+            queue.add(new WorkerWithIndex(i, list.get(i).speed));
+            speedSum += list.get(i).speed;
+            boolean skip = false;
             if (queue.size() > k) {
-                sum -= queue.poll();
+                final WorkerWithIndex poll = queue.poll();
+                if (poll.index == i) {
+                    skip = true;
+                }
+                if (!skip) {
+                    speedSum -= poll.speed;
+                }
             }
-            out = Math.max(out, sum * list.get(i).efficiency);
+            maxEfficiency = Math.max(maxEfficiency, speedSum * list.get(i).efficiency);
         }
-        return (int) (out % (long)(1e9 + 7));
+        return (int) (maxEfficiency % mod);
+    }
+
+    private static class WorkerWithIndex {
+        final int index;
+
+        final int speed;
+
+        WorkerWithIndex(final int index, final int speed) {
+            this.index = index;
+            this.speed = speed;
+        }
     }
 
     private static class SpeedToEfficiency {
